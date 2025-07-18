@@ -155,7 +155,7 @@ const SpecialOffersSection = () => {
             </div>
 
             <p className="text-blue-100 text-lg mb-8">
-              We're here to help you in your preferred language. Call us today!
+              Were here to help you in your preferred language. Call us today!
             </p>
 
             {/* Call to Action */}
