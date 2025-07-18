@@ -80,7 +80,7 @@ const InsuranceSection = () => {
             {duplicatedLogos.map((insurance, index) => (
               <div
                 key={`${insurance.id}-${index}`}
-                className="flex-shrink-0 mx-8 flex items-center justify-center h-24 w-48"
+                className="flex-shrink-0 mx-3 md:mx-8 flex items-center justify-center h-16 w-32 md:h-24 md:w-48"
               >
                 <img
                   src={insurance.logo}

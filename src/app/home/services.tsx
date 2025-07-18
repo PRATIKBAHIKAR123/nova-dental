@@ -1,12 +1,14 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { useIsMobile } from "@/lib/hooks/useIsMobile";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import React, { useState } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 
 export default function ServicesSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
+    const isMobile = useIsMobile();
 
   const services = [
     { id: 1, title: "Teeth Checkup", description: "General dental exams", image: "/Images/banners/div.elementor-widget-wrap (5).png", icon: "/Images/whitening.png.png" },
@@ -17,7 +19,7 @@ export default function ServicesSection() {
     { id: 6, title: "Oral Surgery", description: "Advanced procedures", image: "/Images/banners/div.elementor-widget-wrap.png", icon: "/Images/whitening.png.png" },
   ];
 
-  const slidesPerView = 3;
+  const slidesPerView = isMobile?1:3;
   const maxSlides = Math.ceil(services.length / slidesPerView);
 
   const nextSlide = () => setCurrentSlide((prev) => Math.min(prev + 1, maxSlides - 1));

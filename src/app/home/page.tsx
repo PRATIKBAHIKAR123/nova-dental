@@ -70,25 +70,25 @@ export default function HomePage() {
             </section>
             <div className='h-20 w-full flex'>
                 <div className='flex-1 bg-primary flex flex-col text-center items-center justify-center'>
-                    <a className='text-white text-2xl font-semibold'>
+                    <a className='text-white text-md md:text-2xl font-semibold'>
                         About Us
                     </a>
 
                 </div>
                 <div className='flex-1 bg-primary/90 flex flex-col text-center items-center justify-center'>
-                    <a className='text-white text-2xl font-semibold'>
+                    <a className='text-white text-md md:text-2xl font-semibold'>
                         Our Providers
                     </a>
 
                 </div>
                 <div className='flex-1 bg-primary/70 flex flex-col text-center items-center justify-center'>
-                    <a className='text-white text-2xl font-semibold'>
+                    <a className='text-white text-md md:text-2xl font-semibold'>
                         Our Services
                     </a>
 
                 </div>
                 <div className='flex-1 bg-primary flex flex-col text-center items-center justify-center'>
-                    <a className='text-white text-2xl font-semibold'>
+                    <a className='text-white text-md md:text-2xl font-semibold'>
                         Contact Us
                     </a>
 
@@ -96,14 +96,14 @@ export default function HomePage() {
 
             </div>
 
-            <section className='w-full flex'>
+            <section className='w-full flex flex-col md:flex-row gap-3'>
                 <Slide direction='right' className='flex-1 h-120 w-full'>
                     <img src="/Images/banners/close-up-man-carrying-young-woman-his-back.jpg" alt="dental-banner" className='h-full w-full' />
                 </Slide>
                 <div className='flex-1 flex items-center'>
-                    <div className='text-center flex flex-col gap-5 items-center justify-center px-38 text-left'>
+                    <div className='text-center flex flex-col gap-5 items-center justify-center px-8 md:px-38 text-left'>
                         <Fade delay={200}>
-                        <div className='text-[3.3rem] font-normal'>
+                        <div className='text-4xl md:text-[3.3rem] font-normal'>
                             About Nova Dental
 
                         </div>
@@ -132,15 +132,15 @@ export default function HomePage() {
 
             <SpecialOffersSection />
 
-            <section className='w-full flex'>
+            <section className='w-full flex flex-col md:flex-row gap-3'>
                 <Slide direction='left' className='flex-1 '>
                 <div className='h-120 w-full'>
                     <img src="/Images/banners/portrait-smiling-teenage-girl-with-braces-sitting-chair-while-dentist-standing-clinic.jpg" alt="dental-banner" className='h-full w-full' />
                 </div>
                 </Slide>
                 <div className='flex-1 flex items-center'>
-                    <div className='text-center flex flex-col gap-5 items-center justify-center px-38 text-left'>
-                        <div className='text-[3.3rem] font-normal'>
+                    <div className='text-center flex flex-col gap-5 items-center justify-center px-9 md:px-38 text-left'>
+                        <div className='text-4xl md:text-[3.3rem] font-normal'>
                             <Fade delay={200}>
                             No Insurance? No Problem.
                             </Fade>

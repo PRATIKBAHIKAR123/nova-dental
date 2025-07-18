@@ -64,7 +64,7 @@ export default function LocationTabs() {
   return (
     <div className="max-w-7xl mx-auto px-4 md:px-8 py-12 space-y-12">
       {/* Tab Buttons */}
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex justify-start md:justify-center gap-2 md:gap-4 w-full overflow-x-scroll overflow-y-hidden">
         {locations.map((loc) => (
           <Button
             key={loc.id}
@@ -75,7 +75,7 @@ export default function LocationTabs() {
           </Button>
         ))}
       </div>
-      <div className="flex items-center justify-center gap-4">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4">
 
       {/* Info Block */}
       <div className="flex-1 text-center space-y-4">

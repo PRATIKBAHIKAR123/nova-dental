@@ -78,7 +78,7 @@ const SpecialOffersSection = () => {
           {offers.map((offer) => (
             <div key={offer.id} className="group relative">
               {/* Card */}
-              <div className="bg-white rounded-md p-16 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2 border border-white/20">
+              <div className="bg-white rounded-md p-4 md:p-16 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2 border border-white/20">
                 {/* Badge */}
                 {/* <div className={`inline-flex items-center gap-2 ${offer.badgeColor} text-white px-4 py-2 rounded-full text-sm font-medium mb-6`}>
                   <span>{offer.icon}</span>
@@ -86,13 +86,13 @@ const SpecialOffersSection = () => {
                 </div> */}
 
                 {/* Title */}
-                <h3 className="text-4xl font-normal text-gray-900 mb-4">
+                <h3 className="text-lg md:text-4xl font-normal text-gray-900 mb-4">
                   {offer.title}
                 </h3>
 
                 {/* Price */}
                 <div className="flex items-baseline gap-3 mb-6">
-                  <span className="text-5xl font-bold text-primary">
+                  <span className="text-2xl md:text-5xl font-bold text-primary">
                     {offer.price}
                   </span>
                   <span className="text-2xl text-gray-400 line-through">
@@ -133,7 +133,7 @@ const SpecialOffersSection = () => {
         </div>
 
         {/* Language Section */}
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-3 md:p-8 border border-white/20">
           <div className="text-center">
             {/* <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-6">
               <Globe className="w-8 h-8 text-white" />
