@@ -64,7 +64,7 @@ const InsuranceSection = () => {
             Most Insurances Accepted
           </h2>
           <p className="text-lg max-w-3xl mx-auto leading-relaxed">
-            Here at Nova Dental, we accept most major dental insurance providers. For additional 
+            Here at Maple Dental, we accept most major dental insurance providers. For additional 
             questions regarding insurance, please contact our office.
           </p>
         </div>

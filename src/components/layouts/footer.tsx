@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white py-10 px-4 md:px-10">
       <div className="text-center space-y-4">
         {/* Clinic Name */}
-        <h2 className="text-2xl font-semibold">Nova Dental</h2>
+        <h2 className="text-2xl font-semibold">Maple Dental</h2>
 
         {/* Contact Info */}
         <div className="text-sm text-gray-300">

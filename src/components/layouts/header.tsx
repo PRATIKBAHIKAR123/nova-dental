@@ -126,7 +126,7 @@ export default function Header() {
           <button className="border border-primary text-primary rounded-lg px-4 py-1 hover:bg-blue-50 text-sm font-medium transition">
             Call Us
           </button>
-          <button   className="bg-primary text-white rounded-lg px-4 py-1 hover:bg-blue-700 text-sm font-medium transition">
+          <button onClick={()=>setIsBookingOpen(true)}  className="bg-primary text-white rounded-lg px-4 py-1 hover:bg-blue-700 text-sm font-medium transition">
             Book Online
           </button>
         </div>
@@ -137,7 +137,7 @@ export default function Header() {
           <button className="border border-primary text-primary rounded-lg px-3 py-1 hover:bg-blue-50 text-xs font-medium transition">
             Call Us
           </button>
-          <button  className="bg-primary text-white rounded-lg px-3 py-1 hover:bg-blue-700 text-xs font-medium transition">
+          <button onClick={()=>setIsBookingOpen(true)} className="bg-primary text-white rounded-lg px-3 py-1 hover:bg-blue-700 text-xs font-medium transition">
             Book Online
           </button>
           

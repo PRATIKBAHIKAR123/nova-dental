@@ -68,7 +68,7 @@ export default function ServicesSection() {
                         <p className="text-gray-600 text-sm mb-3">
                           {service.description}
                         </p>
-                        <button className="text-blue-600 hover:text-blue-800 inline-flex items-center">
+                        <button className="text-primary hover:text-blue-800 inline-flex items-center">
                           Learn More
                           <ChevronRight className="w-4 h-4 ml-1" />
                         </button>
