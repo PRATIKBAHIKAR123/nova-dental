@@ -51,7 +51,7 @@ export default function HomePage() {
                             className="w-full h-full object-cover"
                         />
                         <div className="carousel-texts absolute bottom-0 flex flex-col gap-4 justify-center items-center text-center text-white">
-                            <img src="/Images/nova-dental-logo.webp" alt="logo" className='h-[110px] w-auto' />
+                            <img src="/Images/Maple MHA Logo.png" alt="logo" className='h-[110px] w-auto' />
                             <div className='flex gap-2 align-center justify-center'>
                                 {banners.map((_, idx) => (
                                     <button

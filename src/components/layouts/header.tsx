@@ -2,11 +2,13 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import BookingModal from "@/app/booking/bookingScreen";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+    const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -63,10 +65,10 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/Images/nova-dental-logo.webp"
+            src="/Images/Maple MHA website header.png"
             alt="Nova Dental Logo"
-            width={isScrolled ? 100 : 140}
-            height={isScrolled ? 40 : 60}
+            width={isScrolled ? 140 : 180}
+            height={isScrolled ? 60 : 80}
             className="transition-all duration-300"
           />
         </Link>
@@ -124,7 +126,7 @@ export default function Header() {
           <button className="border border-primary text-primary rounded-lg px-4 py-1 hover:bg-blue-50 text-sm font-medium transition">
             Call Us
           </button>
-          <button className="bg-primary text-white rounded-lg px-4 py-1 hover:bg-blue-700 text-sm font-medium transition">
+          <button   className="bg-primary text-white rounded-lg px-4 py-1 hover:bg-blue-700 text-sm font-medium transition">
             Book Online
           </button>
         </div>
@@ -135,7 +137,7 @@ export default function Header() {
           <button className="border border-primary text-primary rounded-lg px-3 py-1 hover:bg-blue-50 text-xs font-medium transition">
             Call Us
           </button>
-          <button className="bg-primary text-white rounded-lg px-3 py-1 hover:bg-blue-700 text-xs font-medium transition">
+          <button  className="bg-primary text-white rounded-lg px-3 py-1 hover:bg-blue-700 text-xs font-medium transition">
             Book Online
           </button>
           
@@ -184,7 +186,7 @@ export default function Header() {
           {/* Mobile Menu Header */}
           <div className="flex items-center justify-between p-4 border-b">
             <Image
-              src="/Images/nova-dental-logo.webp"
+              src="/Images/Maple MHA website header.png"
               alt="Nova Dental Logo"
               width={100}
               height={40}
@@ -293,6 +295,7 @@ export default function Header() {
           </nav>
         </div>
       </div>
+      <BookingModal open={isBookingOpen} setOpen={setIsBookingOpen}/>
     </header>
   );
 }
