@@ -64,7 +64,7 @@ export default function LocationTabs() {
   return (
     <div className="max-w-7xl mx-auto px-4 md:px-8 py-12 space-y-12">
       {/* Tab Buttons */}
-      <div className="flex justify-start md:justify-center gap-2 md:gap-4 w-full overflow-x-scroll overflow-y-hidden">
+      <div className="flex justify-start md:justify-center gap-2 md:gap-4 w-full overflow-x-scroll md:overflow-x-hidden overflow-y-hidden">
         {locations.map((loc) => (
           <Button
             key={loc.id}

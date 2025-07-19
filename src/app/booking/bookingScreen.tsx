@@ -8,6 +8,7 @@ import {  Check } from 'lucide-react';
 import StepAppointment from './stepAppointment';
 import StepInsuranceInfo from './stepInsuranceInfo';
 import StepContactInfo from './stepContactInfo';
+import RequestSubmitted from './requestSubmitted';
 
 interface BookingModalProps {
   open: boolean;
@@ -36,10 +37,10 @@ const BookingModal: React.FC<BookingModalProps> = ({ open, setOpen }) => {
   const handleComplete = () => {
     // Handle appointment booking completion
     console.log('Appointment booked:', formData);
-    alert('Appointment booked successfully!');
-    setOpen(false);
-    setStep(1);
-    setFormData({});
+    // alert('Appointment booked successfully!');
+    // setOpen(false);
+    setStep(4);
+    //setFormData({});
   };
 
   const resetModal = () => {
@@ -66,9 +67,9 @@ const BookingModal: React.FC<BookingModalProps> = ({ open, setOpen }) => {
           </button> */}
         </div>
 
-        <div className="p-6">
+        <div className="p-4 md:p-6">
           {/* New Patient Checkbox */}
-          <div className="flex items-center gap-2 mb-4">
+          {/* <div className="flex items-center gap-2 mb-4">
             <div className="relative">
               <input
                 type="checkbox"
@@ -79,7 +80,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ open, setOpen }) => {
               <div
                 onClick={() => setIsNewPatient(!isNewPatient)}
                 className={`w-5 h-5 rounded border-2 cursor-pointer flex items-center justify-center ${
-                  isNewPatient ? 'bg-teal-600 border-teal-600' : 'border-gray-300'
+                  isNewPatient ? 'bg-primary border-primary' : 'border-gray-300'
                 }`}
               >
                 {isNewPatient && <Check className="w-3 h-3 text-white" />}
@@ -88,10 +89,10 @@ const BookingModal: React.FC<BookingModalProps> = ({ open, setOpen }) => {
             <label className="text-sm text-gray-700 cursor-pointer" onClick={() => setIsNewPatient(!isNewPatient)}>
               I&lsquo;m a new patient at this practice
             </label>
-          </div>
+          </div> */}
 
           {/* Location Selection */}
-          <div className="mb-6">
+          {/* <div className="mb-6">
             <label className="block text-sm text-gray-600 mb-2">Location</label>
             <select
               value={selectedLocation}
@@ -102,12 +103,12 @@ const BookingModal: React.FC<BookingModalProps> = ({ open, setOpen }) => {
                 <option key={location} value={location}>{location}</option>
               ))}
             </select>
-          </div>
+          </div> */}
 
           {/* Step Indicators */}
-          <div className="flex items-center gap-4 mb-6">
+          {/* <div className="flex items-center gap-4 mb-6">
             <div className={`flex items-center justify-center w-8 h-8 rounded-full text-sm font-medium ${
-              step >= 1 ? 'bg-teal-600 text-white' : 'bg-gray-200 text-gray-600'
+              step >= 1 ? 'bg-primary text-white' : 'bg-gray-200 text-gray-600'
             }`}>
               1
             </div>
@@ -116,7 +117,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ open, setOpen }) => {
             </span>
 
             <div className={`flex items-center justify-center w-8 h-8 rounded-full text-sm font-medium ${
-              step >= 2 ? 'bg-teal-600 text-white' : 'bg-gray-200 text-gray-600'
+              step >= 2 ? 'bg-primary text-white' : 'bg-gray-200 text-gray-600'
             }`}>
               2
             </div>
@@ -125,14 +126,14 @@ const BookingModal: React.FC<BookingModalProps> = ({ open, setOpen }) => {
             </span>
 
             <div className={`flex items-center justify-center w-8 h-8 rounded-full text-sm font-medium ${
-              step >= 3 ? 'bg-teal-600 text-white' : 'bg-gray-200 text-gray-600'
+              step >= 3 ? 'bg-primary text-white' : 'bg-gray-200 text-gray-600'
             }`}>
               3
             </div>
             <span className={`text-sm ${step >= 3 ? 'text-gray-900' : 'text-gray-500'}`}>
               Insurance info
             </span>
-          </div>
+          </div> */}
 
           {/* Step Content */}
           {step === 1 && (
@@ -156,6 +157,11 @@ const BookingModal: React.FC<BookingModalProps> = ({ open, setOpen }) => {
               formData={formData}
               setFormData={setFormData}
               onComplete={handleComplete}
+            />
+          )}
+          {step === 4 && (
+            <RequestSubmitted
+              formData={formData}
             />
           )}
         </div>

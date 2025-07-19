@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Check, Clock } from "lucide-react";
 import { useState } from "react";
 
 const StepInsuranceInfo = ({ prevStep, formData, setFormData, onComplete }: any) => {
@@ -9,6 +10,58 @@ const StepInsuranceInfo = ({ prevStep, formData, setFormData, onComplete }: any)
     groupNumber: formData.groupNumber || '',
     ...formData
   });
+  const provider = formData.provider;
+
+    const insurenceCompanies = [
+    {
+      id: 1,
+      name: "Assurant",
+      logo: "/Images/Insurance companies/1771832.webp",
+      alt: "Assurant Insurance"
+    },
+    {
+      id: 2,
+      name: "UnitedHealthcare",
+      logo: "/Images/Insurance companies/1771881.webp",
+      alt: "UnitedHealthcare Insurance"
+    },
+    {
+      id: 3,
+      name: "Aetna",
+      logo: "/Images/Insurance companies/1772502.webp",
+      alt: "Aetna Insurance"
+    },
+    {
+      id: 4,
+      name: "AIG",
+      logo: "/Images/Insurance companies/1772499.webp",
+      alt: "AIG Insurance"
+    },
+    {
+      id: 5,
+      name: "Blue Cross Blue Shield",
+      logo: "/Images/Insurance companies/1773057.webp",
+      alt: "Blue Cross Blue Shield Insurance"
+    },
+    {
+      id: 6,
+      name: "Cigna",
+      logo: "/Images/Insurance companies/1858337.webp",
+      alt: "Cigna Healthcare"
+    },
+    {
+      id: 7,
+      name: "Humana",
+      logo: "/Images/Insurance companies/2206449.webp",
+      alt: "Humana Insurance"
+    },
+    {
+      id: 8,
+      name: "MetLife",
+      logo: "/Images/Insurance companies/2761735.webp",
+      alt: "MetLife Insurance"
+    }
+  ];
 
   const handleChange = (field: string, value: string) => {
     setInsuranceData({ ...insuranceData, [field]: value });
@@ -21,6 +74,61 @@ const StepInsuranceInfo = ({ prevStep, formData, setFormData, onComplete }: any)
 
   return (
     <div className="mt-4">
+        <div className="flex items-start gap-3">
+                    {/* Avatar */}
+                    <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <img
+                            src="/Images/doctor_9439268.png"
+                            alt="Provider Avatar"
+                            className="w-10 h-10 rounded-full"
+                        />
+                    </div>
+                    
+                    {/* Provider Details */}
+                    <div className="flex-1 min-w-0">
+                      <h4 className="font-medium text-gray-900 text-sm mb-1">
+                        {provider!.name}
+                      </h4>
+                      <div className="text-xs text-gray-600 space-y-1">
+                        <div>{provider!.address}</div>
+                        {/* <div>{provider.suite}</div>
+                        <div>{provider.city}</div> */}
+                        <div className="flex items-center gap-1 mt-2 pt-1">
+                          <Clock className="w-3 h-3" />
+                          <span>Appointments in EDT</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        <div className="flex items-center gap-1 md:gap-4 mb-6 mt-3">
+  {/* Step 1 */}
+  <div className="flex items-center gap-2">
+    <div className="w-6 h-6 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-secondary text-white text-sm font-medium shrink-0">
+      <Check className="w-4 h-4" />
+    </div>
+    <span className="text-sm text-gray-500">Appointment details</span>
+  </div>
+
+  <div className="flex-1 h-1 bg-primary"></div>
+
+  {/* Step 2 */}
+  <div className="flex items-center gap-2">
+    <div className="w-6 h-6 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-secondary text-white text-sm font-medium shrink-0">
+      <Check className="w-4 h-4" />
+    </div>
+    <span className="text-sm text-gray-500">Contact info</span>
+  </div>
+
+  <div className="flex-1 h-1 bg-primary"></div>
+
+  {/* Step 3 */}
+  <div className="flex items-center gap-2">
+    <div className="w-6 h-6 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-primary text-white text-sm font-medium shrink-0">
+      3
+    </div>
+    <span className="text-sm text-gray-900">Insurance info</span>
+  </div>
+</div>
       <h3 className="text-lg font-medium mb-4">Insurance info</h3>
       
       <div className="space-y-4">
@@ -55,15 +163,21 @@ const StepInsuranceInfo = ({ prevStep, formData, setFormData, onComplete }: any)
         {insuranceData.hasInsurance === 'yes' && (
           <>
             <div>
-              <label className="block text-sm text-gray-600 mb-1">Insurance Provider</label>
-              <input
-                type="text"
-                value={insuranceData.insuranceProvider}
-                onChange={(e) => handleChange('insuranceProvider', e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500"
-                placeholder="e.g., Blue Cross Blue Shield"
-              />
-            </div>
+            <label className="block text-sm text-gray-600 mb-1">Insurance</label>
+            <select
+              value={insuranceData.insuranceProvider}
+              onChange={(e) => handleChange('insuranceProvider', e.target.value)}
+              className="w-full px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500"
+            >
+              <option value="">Select Insurance</option>
+              {insurenceCompanies.map((c) => (
+                <option key={c.id} value={c.name}>
+                  {c.name}
+                </option>
+              ))}
+              
+            </select>
+          </div>
 
             <div>
               <label className="block text-sm text-gray-600 mb-1">Member ID</label>
