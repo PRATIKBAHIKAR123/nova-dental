@@ -95,19 +95,26 @@ export default function Header() {
             </Link>
             
             {/* Desktop Dropdown */}
-            <div className="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border">
-              <div className="py-2">
-                {servicesItems.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-primary transition"
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
+            <div className="absolute left-0 mt-2 w-screen max-w-5xl bg-white border shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-40 rounded-lg">
+  <div className="grid grid-cols-4 gap-6 p-6 text-sm">
+    {[
+      "Emergency Dentistry", "Root Canal", "Oral Surgery", "Cosmetic Dentistry",
+      "Fillings", "Dental Implants", "Orthodontics", "Crowns and Bridges",
+      "Dental Emergencies", "Tooth Extraction", "Whitening & Veneers", "Invisalign",
+      "Kids & Children Dentistry", "Permanent Teeth Replacement", "Sports Dentistry", "Wisdom Teeth",
+      "Endodontics", "Same-Day Dentistry", "Painless Treatment", "Perio Protect",
+      "Halitosis"
+    ].map((service, index) => (
+      <Link
+        key={index}
+        href={`/services/${service.toLowerCase().replace(/\s+/g, "-")}`}
+        className="text-gray-700 hover:text-primary hover:underline transition"
+      >
+        {service}
+      </Link>
+    ))}
+  </div>
+</div>
           </div>
           
           <Link href="/reviews" className="hover:text-primary transition">
@@ -248,26 +255,30 @@ export default function Header() {
                 
                 {/* Services Submenu */}
                 {isServicesOpen && (
-                  <div className="bg-gray-50">
-                    <Link
-                      href="/services"
-                      className="block px-8 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-primary transition"
-                      onClick={closeMobileMenu}
-                    >
-                      All Services
-                    </Link>
-                    {servicesItems.map((item) => (
-                      <Link
-                        key={item.name}
-                        href={item.href}
-                        className="block px-8 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-primary transition"
-                        onClick={closeMobileMenu}
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
+  <div className="bg-gray-50 px-4 py-2">
+    
+
+    <div className="grid grid-cols-2 gap-3 mt-2 text-sm">
+      {[
+        "Emergency Dentistry", "Root Canal", "Oral Surgery", "Cosmetic Dentistry",
+        "Fillings", "Dental Implants", "Orthodontics", "Crowns and Bridges",
+        "Dental Emergencies", "Tooth Extraction", "Whitening & Veneers", "Invisalign",
+        "Kids & Children Dentistry", "Permanent Teeth Replacement", "Sports Dentistry", "Wisdom Teeth",
+        "Endodontics", "Same-Day Dentistry", "Painless Treatment", "Perio Protect",
+        "Halitosis"
+      ].map((service, index) => (
+        <Link
+          key={index}
+          href={`/services/${service.toLowerCase().replace(/\s+/g, "-")}`}
+          onClick={closeMobileMenu}
+          className="text-gray-600 hover:text-primary hover:underline transition"
+        >
+          {service}
+        </Link>
+      ))}
+    </div>
+  </div>
+)}
               </div>
 
               <Link
