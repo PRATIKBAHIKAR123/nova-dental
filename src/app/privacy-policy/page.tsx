@@ -36,13 +36,13 @@ const privacySections = [
 ];
 
 const sectionIcons = [
-  "/Images/dental-care.png",
-  "/Images/teeth-whitening.png",
-  "/Images/implant.png",
-  "/Images/braces.png.png",
-  "/Images/tooth-insurance.png.png",
-  "/Images/dental-care.png",
-  "/Images/implant.png",
+  "/Images/Maple.png",
+  "/Images/Maple.png",
+  "/Images/Maple.png",
+  "/Images/Maple.png",
+  "/Images/Maple.png",
+  "/Images/Maple.png",
+  "/Images/Maple.png",
 ];
 
 export default function PrivacyPolicy() {
