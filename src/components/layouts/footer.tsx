@@ -19,7 +19,7 @@ export default function Footer() {
 
         {/* Links */}
         <div className="flex flex-wrap justify-center gap-6 mt-6 text-sm font-medium text-white">
-          <a href="/privacy" className="hover:underline">PRIVACY</a>
+          <a href="/privacy-policy" className="hover:underline">PRIVACY</a>
           <a href="/terms-and-conditions" className="hover:underline">TERMS & CONDITIONS</a>
           <a href="/accessibility" className="hover:underline">ACCESSIBILITY</a>
           <a href="/contact" className="hover:underline">CONTACT US</a>
