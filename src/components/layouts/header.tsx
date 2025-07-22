@@ -78,7 +78,7 @@ export default function Header() {
           <Link href="/" className="hover:text-primary transition">
             Home
           </Link>
-          <Link href="/about" className="hover:text-primary transition">
+          <Link href="/about-us" className="hover:text-primary transition">
             About
           </Link>
           <Link href="/providers" className="hover:text-primary transition">
@@ -123,7 +123,7 @@ export default function Header() {
           <Link href="/locations" className="hover:text-primary transition">
             Locations
           </Link>
-          <Link href="/contact" className="hover:text-primary transition">
+          <Link href="/contact-us" className="hover:text-primary transition">
             Contact
           </Link>
         </nav>
@@ -220,7 +220,7 @@ export default function Header() {
                 Home
               </Link>
               <Link
-                href="/about"
+                href="/about-us"
                 className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary transition border-b"
                 onClick={closeMobileMenu}
               >
@@ -296,7 +296,7 @@ export default function Header() {
                 Locations
               </Link>
               <Link
-                href="/contact"
+                href="/contact-us"
                 className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary transition border-b"
                 onClick={closeMobileMenu}
               >
