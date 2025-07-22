@@ -11,12 +11,12 @@ export default function ServicesSection() {
     const isMobile = useIsMobile();
 
   const services = [
-    { id: 1, title: "Teeth Checkup", description: "General dental exams", image: "/Images/banners/div.elementor-widget-wrap (5).png", icon: "/Images/whitening.png.png" },
-    { id: 2, title: "Teeth Whitening", description: "Brighten your smile", image: "/Images/banners/div.elementor-widget-wrap (4).png", icon: "/Images/whitening.png.png" },
-    { id: 3, title: "Dental Braces", description: "Orthodontic correction", image: "/Images/banners/div.elementor-widget-wrap (3).png", icon: "/Images/whitening.png.png" },
-    { id: 4, title: "Root Canal", description: "Save infected teeth", image: "/Images/banners/div.elementor-widget-wrap (2).png", icon: "/Images/whitening.png.png" },
-    { id: 5, title: "Dental Implants", description: "Permanent tooth replacement", image: "/Images/banners/div.elementor-widget-wrap (1).png", icon: "/Images/whitening.png.png" },
-    { id: 6, title: "Oral Surgery", description: "Advanced procedures", image: "/Images/banners/div.elementor-widget-wrap.png", icon: "/Images/whitening.png.png" },
+    { id: 1, title: "Teeth Checkup", description: "General dental exams", image: "/Images/banners/div.elementor-widget-wrap (5).png", icon: "/Images/icons/Dental checkup.png" },
+    { id: 2, title: "Teeth Whitening", description: "Brighten your smile", image: "/Images/banners/div.elementor-widget-wrap (4).png", icon: "/Images/icons/tooth-whitening.png" },
+    { id: 3, title: "Dental Braces", description: "Orthodontic correction", image: "/Images/banners/div.elementor-widget-wrap (3).png", icon: "/Images/icons/braces.png" },
+    { id: 4, title: "Root Canal", description: "Save infected teeth", image: "/Images/banners/div.elementor-widget-wrap (2).png", icon: "/Images/icons/root-canal (1).png" },
+    { id: 5, title: "Dental Implants", description: "Permanent tooth replacement", image: "/Images/banners/div.elementor-widget-wrap (1).png", icon: "/Images/icons/implant.png" },
+    { id: 6, title: "Oral Surgery", description: "Advanced procedures", image: "/Images/banners/div.elementor-widget-wrap.png", icon: "/Images/icons/oral surgery.png" },
   ];
 
   const slidesPerView = isMobile?1:3;
