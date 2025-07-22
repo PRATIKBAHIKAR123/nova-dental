@@ -80,28 +80,28 @@ const testimonials = [
   },
 ];
 
-const partners = [
-  {
-    name: "PERELEX",
-    icon: "/Images/dental-care.png",
-  },
-  {
-    name: "DENTONIX",
-    icon: "/Images/teeth-whitening.png",
-  },
-  {
-    name: "SENOFEX",
-    icon: "/Images/implant.png",
-  },
-  {
-    name: "MEDILEX",
-    icon: "/Images/braces.png.png",
-  },
-  {
-    name: "ZELOMEX",
-    icon: "/Images/tooth-insurance.png.png",
-  },
-];
+// const partners = [
+//   {
+//     name: "PERELEX",
+//     icon: "/Images/dental-care.png",
+//   },
+//   {
+//     name: "DENTONIX",
+//     icon: "/Images/teeth-whitening.png",
+//   },
+//   {
+//     name: "SENOFEX",
+//     icon: "/Images/implant.png",
+//   },
+//   {
+//     name: "MEDILEX",
+//     icon: "/Images/braces.png.png",
+//   },
+//   {
+//     name: "ZELOMEX",
+//     icon: "/Images/tooth-insurance.png.png",
+//   },
+// ];
 
 export default function AboutUs() {
   return (
@@ -276,7 +276,7 @@ export default function AboutUs() {
       </Fade>
 
       {/* Partners Section */}
-      <Slide direction="up" triggerOnce>
+      {/* <Slide direction="up" triggerOnce>
         <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto">
           <div className="flex flex-wrap justify-center items-center gap-12">
             {partners.map((partner, index) => (
@@ -287,7 +287,7 @@ export default function AboutUs() {
             ))}
           </div>
         </section>
-      </Slide>
+      </Slide> */}
 
       {/* Newsletter Section */}
       <Bounce triggerOnce>

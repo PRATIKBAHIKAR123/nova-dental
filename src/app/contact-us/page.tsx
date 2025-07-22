@@ -4,7 +4,7 @@ import { Fade, Slide, Zoom } from "react-awesome-reveal";
 import ContactForm from './components/ContactForm'
 import ContactInfo from './components/ContactInfo'
 import MapSection from './components/MapSection'
-import PartnerLogos from './components/PartnerLogos'
+// import PartnerLogos from './components/PartnerLogos'
 import NewsletterSection from './components/NewsletterSection'
 import FloatingButton from '@/components/ui/floatingButton'
 
@@ -43,9 +43,9 @@ export default function ContactUsPage() {
       </Zoom>
 
       {/* Partner Logos */}
-      <Slide direction="up" triggerOnce>
+      {/* <Slide direction="up" triggerOnce>
         <PartnerLogos />
-      </Slide>
+      </Slide> */}
 
       {/* Newsletter Section */}
       <Fade direction="up" triggerOnce>
