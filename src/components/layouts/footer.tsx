@@ -48,6 +48,7 @@ export default function Footer() {
             <h4 className="font-semibold mb-3 text-lg">Importance</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/about-us" className="hover:underline">About us</Link></li>
+              <li><Link href="/blog" className="hover:underline">Blogs</Link></li>
               <li><Link href="/terms-and-conditions" className="hover:underline">Terms and Conditions</Link></li>
               <li><Link href="/privacy-policy" className="hover:underline">Privacy Policy</Link></li>
               {/* <li><Link href="/accessibility" className="hover:underline">Accessibility</Link></li> */}
