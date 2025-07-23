@@ -67,8 +67,8 @@ export default function Header() {
           <Image
             src="/Images/Maple MHA website header.png"
             alt="Nova Dental Logo"
-            width={isScrolled ? 140 : 180}
-            height={isScrolled ? 60 : 80}
+            width={isScrolled ? 140 : 220}
+            height={isScrolled ? 60 : 110}
             className="transition-all duration-300"
           />
         </Link>
@@ -95,7 +95,7 @@ export default function Header() {
             </Link>
             
             {/* Desktop Dropdown */}
-            <div className="absolute left-0 mt-2 w-screen max-w-5xl bg-white border shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-40 rounded-lg">
+            <div className="absolute left-0 mt-2 w-[100vh] max-w-5xl bg-white border shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-40 rounded-lg">
   <div className="grid grid-cols-4 gap-6 p-6 text-sm">
     {[
       "Emergency Dentistry", "Root Canal", "Oral Surgery", "Cosmetic Dentistry",

@@ -55,7 +55,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ open, setOpen }) => {
       setOpen(open);
       if (!open) resetModal();
     }}>
-      <DialogContent className="!max-w-[700px] p-0 gap-0">
+      <DialogContent className="max-w-full md:!max-w-[900px] p-0 gap-0">
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b">
           <h2 className="text-xl font-semibold">Book Appointment</h2>

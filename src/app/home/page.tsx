@@ -10,6 +10,7 @@ import LocationTabs from './addresses';
 import { Fade, Slide } from 'react-awesome-reveal';
 import FloatingFormButton from '@/components/ui/floatingButton';
 import FloatingTextForm from '@/components/ui/floatingButton';
+import { InfoIcon, MessageCircle, Stethoscope, User } from 'lucide-react';
 
 
 
@@ -21,6 +22,16 @@ const banners = [
     },
     {
         image: '/Images/banners/senior-woman-having-dental-treatment-dentist-s-office-woman-is-being-treated-teeth.jpg',
+        title: 'Expert Dental Care',
+        subtitle: 'Modern solutions for healthy teeth.',
+    },
+        {
+        image: '/Images/banners/Banner_4.jpg',
+        title: 'Expert Dental Care',
+        subtitle: 'Modern solutions for healthy teeth.',
+    },
+        {
+        image: '/Images/banners/Banner_3.jpg',
         title: 'Expert Dental Care',
         subtitle: 'Modern solutions for healthy teeth.',
     },
@@ -50,8 +61,22 @@ export default function HomePage() {
                             alt={banner.title}
                             className="w-full h-full object-cover"
                         />
-                        <div className="carousel-texts absolute bottom-0 flex flex-col gap-4 justify-center items-center text-center text-white">
-                            <img src="/Images/Maple MHA Logo.png" alt="logo" className='h-[110px] w-auto' />
+                        {/* <div className='carousel-text absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[100%] text-left text-primary'>
+                            <h4 className='text-3xl md:text-5xl font-semibold mb-2'>
+                                Welcome to Maple Dental Harrisburg
+                            </h4>
+                            <h2 className='text-2xl md:text-md font-medium'>
+                                Your Trusted Cosmetic & Family Dentist in Harrisburg and Surrounding Areas
+                            </h2>
+                        </div> */}
+                        <div className="carousel-texts absolute bottom-20 flex flex-col gap-4 justify-center items-center text-center text-primary">
+                            <h4 className='text-3xl md:text-5xl font-semibold'>
+                                Welcome to Maple Dental Harrisburg
+                            </h4>
+                            <h2 className='text-2xl md:text-md font-medium'>
+                                Your Trusted Cosmetic & Family Dentist in Harrisburg and Surrounding Areas
+                            </h2>
+                            <img src="/Images/Maple MHA Logo.png" alt="logo" className='h-[58px] w-auto' />
                             <div className='flex gap-2 align-center justify-center'>
                                 {banners.map((_, idx) => (
                                     <button
@@ -68,7 +93,7 @@ export default function HomePage() {
                     </div>
                 ))}
             </section>
-            <div className='h-20 w-full flex'>
+            {/* <div className='h-20 w-full flex'>
                 <div className='flex-1 bg-primary flex flex-col text-center items-center justify-center'>
                     <a className='text-white text-md md:text-2xl font-semibold'>
                         About Us
@@ -94,7 +119,8 @@ export default function HomePage() {
 
                 </div>
 
-            </div>
+            </div> */}
+            <HomepageSections />
 
             <section className='w-full flex flex-col md:flex-row gap-3'>
                 <Slide direction='right' className='flex-1 h-120 w-full'>
@@ -175,4 +201,28 @@ export default function HomePage() {
             <FloatingTextForm />
         </div>
     );
+}
+
+
+ function HomepageSections() {
+  const sections = [
+    { label: 'About Us', icon: <InfoIcon />, bg: 'bg-primary' },
+    { label: 'Our Providers', icon: <User />, bg: 'bg-primary' },
+    { label: 'Our Services', icon: <Stethoscope />, bg: 'bg-primary' },
+    { label: 'Contact Us', icon: <MessageCircle />, bg: 'bg-primary' },
+  ];
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+      {sections.map((section, idx) => (
+        <div
+          key={idx}
+          className={`rounded-sm shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer text-white ${section.bg} flex flex-col items-center justify-center p-6 text-center`}
+        >
+          <div className="text-4xl mb-2">{section.icon}</div>
+          <div className="text-lg md:text-xl font-semibold">{section.label}</div>
+        </div>
+      ))}
+    </div>
+  );
 }

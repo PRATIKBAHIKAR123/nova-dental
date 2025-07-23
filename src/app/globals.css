@@ -127,9 +127,10 @@
     max-width: 2000px;
     margin: 0px;
     padding: 20px;
-    background-color: rgba(255,255,255, 0.85);
+    background-color: rgba(255, 255, 255, 0.518);
     border-radius: 0px;
   }
+  
 
   .details-page-header-section{
     width: 100%;
@@ -140,6 +141,21 @@
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
     text-align: center;
+      background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 20px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 20px
+    );
   }
 
   .details-page-header-section h1 {
@@ -230,10 +246,56 @@
       color: var(--primary);
       font-size: 1.5rem !important; /* text-2xl */
     }
+    .faq-title{
+      color: var(--secondary);
+      font-size: 2.25rem; /* text-4xl */
+      text-align: center;
+    }
     .faq-ans {
       font-size: 1.125rem; /* text-lg */
       color: gray(500); /* text-gray-700 */
     }
+  }
+
+  .why-us-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .why-us-descritption{
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem; /* gap-3 */
+          align-items: center;
+          justify-content: center;
+          background-color: var(--primary);
+          padding: 1.25rem; /* p-5 */
+          .desc-title{
+            color: #fff;
+            font-size: 3rem; /* text-5xl */
+            font-weight: 600; /* font-semibold */
+          }
+          .desc-subtitle{
+            font-size: 1rem; /* text-md */
+            color: #fff;
+          }
+          .desc-points{
+            color: #fff;
+            font-size: 1.125rem; /* text-lg */
+            font-weight: 600; /* font-semibold */
+          }
+        }
+        .why-us-img-section{
+          flex: 1;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        @media (min-width: 768px) {
+          flex-direction: row;
+        }
   }
 
   @media (min-width: 768px) {

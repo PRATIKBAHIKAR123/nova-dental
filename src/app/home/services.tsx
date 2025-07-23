@@ -17,6 +17,9 @@ export default function ServicesSection() {
     { id: 4, title: "Root Canal", description: "Save infected teeth", image: "/Images/banners/div.elementor-widget-wrap (2).png", icon: "/Images/icons/root-canal (1).png" },
     { id: 5, title: "Dental Implants", description: "Permanent tooth replacement", image: "/Images/banners/div.elementor-widget-wrap (1).png", icon: "/Images/icons/implant.png" },
     { id: 6, title: "Oral Surgery", description: "Advanced procedures", image: "/Images/banners/div.elementor-widget-wrap.png", icon: "/Images/icons/oral surgery.png" },
+    { id: 12, title: "Tooth Extraction", description: "Safe tooth removal", image: "/Images/banners/Tooth Extraction_ homepage.jpg", icon: "/Images/icons/tooth-extraction.png" },
+    { id: 14, title: "Dental Crowns", description: "Restore damaged teeth", image: "/Images/banners/dental crown_homepage.jpg", icon: "/Images/icons/dental-crown.png" },
+    { id: 16, title: "Dental Fillings", description: "Repair cavities", image: "/Images/banners/Tooth filling.jpg", icon: "/Images/icons/tooth-filling.png" },
   ];
 
   const slidesPerView = isMobile?1:3;
