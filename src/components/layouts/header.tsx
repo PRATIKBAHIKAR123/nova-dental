@@ -95,7 +95,7 @@ export default function Header() {
             </Link>
             
             {/* Desktop Dropdown */}
-            <div className="absolute left-0 mt-2 w-[100vh] max-w-5xl bg-white border shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-40 rounded-lg">
+            <div className="absolute -left-38 mt-2 w-[100vh] max-w-5xl bg-white border shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-40 rounded-lg">
   <div className="grid grid-cols-4 gap-6 p-6 text-sm">
     {[
       "Emergency Dentistry", "Root Canal", "Oral Surgery", "Cosmetic Dentistry",
