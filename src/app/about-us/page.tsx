@@ -290,7 +290,7 @@ export default function AboutUs() {
       </Slide> */}
 
       {/* Newsletter Section */}
-      <Bounce triggerOnce>
+      {/* <Bounce triggerOnce>
         <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto">
           <div className="bg-primary rounded-xl p-8 md:p-12 shadow-lg">
             <div className="flex flex-col md:flex-row items-center gap-8">
@@ -313,7 +313,7 @@ export default function AboutUs() {
             </div>
           </div>
         </section>
-      </Bounce>
+      </Bounce> */}
     </div>
   );
 } 

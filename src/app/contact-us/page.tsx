@@ -5,7 +5,7 @@ import ContactForm from './components/ContactForm'
 import ContactInfo from './components/ContactInfo'
 import MapSection from './components/MapSection'
 // import PartnerLogos from './components/PartnerLogos'
-import NewsletterSection from './components/NewsletterSection'
+// import NewsletterSection from './components/NewsletterSection'
 import FloatingButton from '@/components/ui/floatingButton'
 
 export default function ContactUsPage() {
@@ -49,7 +49,7 @@ export default function ContactUsPage() {
 
       {/* Newsletter Section */}
       <Fade direction="up" triggerOnce>
-        <NewsletterSection />
+        {/* <NewsletterSection /> */}
       </Fade>
 
       {/* Floating Scroll to Top Button */}
