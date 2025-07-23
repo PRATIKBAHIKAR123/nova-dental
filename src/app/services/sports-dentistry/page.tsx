@@ -12,7 +12,7 @@ export default function SportsDentistryPage() {
           <h1>Sports Dentistry</h1>
         </Fade>
         <Fade direction='down' duration={1000}>
-          <p>Sports Dentistry for Newark and East Orange, NJ | Nova Dental | Cosmetic & Family Dentist</p>
+          <p>Sports Dentistry for Newark and East Orange, NJ | Maple Dental | Cosmetic & Family Dentist</p>
         </Fade>
       </div>
 
@@ -35,7 +35,7 @@ export default function SportsDentistryPage() {
             <div className='desc-text-subtitle'>Sports Dentistry</div>
             <h3 className='desc-text-title'>About Sports Dentistry</h3>
             <p>
-              Dental injuries are the most common type of orofacial injury in sports, yet many athletes are unaware of the serious health risks they pose. If you’re looking for a dentist near you, Nova Dental offers expert sports dentistry services to help prevent and manage dental injuries. Their knowledgeable team works with patients, athletes, and coaches to promote safety and oral health. With offices in Newark and East Orange, New Jersey, care is always close by. Call today to learn more or book an appointment online.
+              Dental injuries are the most common type of orofacial injury in sports, yet many athletes are unaware of the serious health risks they pose. If you’re looking for a dentist near you, Maple Dental offers expert sports dentistry services to help prevent and manage dental injuries. Their knowledgeable team works with patients, athletes, and coaches to promote safety and oral health. With offices in Newark and East Orange, New Jersey, care is always close by. Call today to learn more or book an appointment online.
             </p>
           </Fade>
         </div>
@@ -50,7 +50,7 @@ export default function SportsDentistryPage() {
               <p>If you or your child is active in sports, you have likely heard the term sports dentistry. Sports dentists work to prevent and manage orofacial injuries that result from playing sports, such as hard and soft tissue injuries to the bones and teeth.</p>
               <p className='mt-3'>For instance, tooth intrusions and root fractures are examples of pediatric dental emergencies or kid dentistry that sports dentists handle.</p>
               <p className='mt-3'>
-Sports dentists also take care of oral diseases resulting from sports-related injuries. These injuries cause a broad range of dental issues, and the sports dentists at Nova Dental are with you every step of the way.
+Sports dentists also take care of oral diseases resulting from sports-related injuries. These injuries cause a broad range of dental issues, and the sports dentists at Maple Dental are with you every step of the way.
               </p>
             </AccordionContent>
           </AccordionItem>
@@ -81,11 +81,11 @@ Sports dentists also take care of oral diseases resulting from sports-related in
           <AccordionItem value='q4'>
             <AccordionTrigger className='faq-qn'>What does getting dental implants involve?</AccordionTrigger>
             <AccordionContent className='faq-ans'>
-              <p>At Nova Dental, getting dental implants takes several appointments and a period of 6-12 months.</p>
+              <p>At Maple Dental, getting dental implants takes several appointments and a period of 6-12 months.</p>
               <p className='mt-3'><strong>First appointment:</strong> If your provider determines you qualify for implants, they administer a local anesthetic and insert a series of titanium posts into your jaw. Following the procedure, your provider writes a prescription for pain medication and antibiotics and provides care instructions.</p>
-              <p className='mt-3'><strong>Second appointment:</strong> When the implants finish fusing with your jaw, 12-16 weeks later, you return to Nova Dental. Your provider takes impressions of your mouth with an intraoral scanner and sends them to a dental laboratory to create restorations.</p>
-              <p className='mt-3'><strong>Third appointment:</strong> When Nova Dental receives your restorations from the lab, you return to the office. Your provider administers a local anesthetic, bonds the restorations to your implants, and polishes them.</p>
-              <p className='mt-3'>To see if you’re a candidate for dental implants, make an appointment at Nova Dental by calling the office, or clicking the online booking tool today.</p>
+              <p className='mt-3'><strong>Second appointment:</strong> When the implants finish fusing with your jaw, 12-16 weeks later, you return to Maple Dental. Your provider takes impressions of your mouth with an intraoral scanner and sends them to a dental laboratory to create restorations.</p>
+              <p className='mt-3'><strong>Third appointment:</strong> When Maple Dental receives your restorations from the lab, you return to the office. Your provider administers a local anesthetic, bonds the restorations to your implants, and polishes them.</p>
+              <p className='mt-3'>To see if you’re a candidate for dental implants, make an appointment at Maple Dental by calling the office, or clicking the online booking tool today.</p>
             </AccordionContent>
           </AccordionItem>
         </Accordion>

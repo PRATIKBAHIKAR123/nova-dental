@@ -11,13 +11,14 @@ import { Fade, Slide } from 'react-awesome-reveal';
 import FloatingFormButton from '@/components/ui/floatingButton';
 import FloatingTextForm from '@/components/ui/floatingButton';
 import { InfoIcon, MessageCircle, Stethoscope, User } from 'lucide-react';
+import Link from 'next/link';
 
 
 
 const banners = [
     {
         image: '/Images/banners/portrait-smiling-teenage-girl-with-braces-sitting-chair-while-dentist-standing-clinic.jpg',
-        title: 'Welcome to Nova Dental',
+        title: 'Welcome to Maple Dental',
         subtitle: 'Your smile, our passion.',
     },
     {
@@ -59,7 +60,7 @@ export default function HomePage() {
                         <img
                             src={banner.image}
                             alt={banner.title}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-fit"
                         />
                         {/* <div className='carousel-text absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[100%] text-left text-primary'>
                             <h4 className='text-3xl md:text-5xl font-semibold mb-2'>
@@ -130,7 +131,7 @@ export default function HomePage() {
                     <div className='text-center flex flex-col gap-5 items-center justify-center px-8 md:px-38 text-left'>
                         <Fade delay={200}>
                         <div className='text-4xl md:text-[3.3rem] font-normal'>
-                            About Nova Dental
+                            About Maple Dental
 
                         </div>
                         </Fade>
@@ -142,7 +143,7 @@ export default function HomePage() {
                         <Fade delay={700}>
                         <div>
                             Cosmetic & Family Dentist located in Newark and East Orange, NJ
-                            If you’re looking for a dentist near you, Nova Dental provides comprehensive oral health care to people of all ages living in and around Newark, East Orange, and throughout Essex County, New Jersey. Nova Dental provides affordable, complete care in a welcoming, upscale environment. Each
+                            If you’re looking for a dentist near you, Maple Dental provides comprehensive oral health care to people of all ages living in and around Newark, East Orange, and throughout Essex County, New Jersey. Maple Dental provides affordable, complete care in a welcoming, upscale environment. Each
                         </div>
                         </Fade>
                     </div>
@@ -179,12 +180,13 @@ export default function HomePage() {
                         </div>
                         <div>
                             <Fade delay={600}>
-                            We help fit dentistry into your budget:
+                            We believe quality dental care should be accessible to all. That’s why we offer:
                             </Fade>
-                            <ul className='list-disc gap-3'>
-                                <li><Fade delay={800}>Interest-free financing for up to 12 months!</Fade></li>
-                                <li><Fade delay={1000}>Senior Discounts & Select Hours for Senior Safety!</Fade></li>
-                                <li><Fade delay={1200}>$130 Exam & X-rays and discounted prices for treatment.</Fade></li>
+                            <ul className='list-disc gap-3 mt-2'>
+                                <li><Fade delay={800}>$55 Emergency Dental Visit (Includes Exam & X-ray)</Fade></li>
+                                <li><Fade delay={1000}>$79 New Patient Special (Exam , Cleaning + X-rays)</Fade></li>
+                                <li><Fade delay={1200}>Interest-Free Financing Available (Up to 12 Months)</Fade></li>
+                                <li><Fade delay={1200}>Senior Discounts During Special Hours</Fade></li>
                             </ul>
                         </div>
                         <div>
@@ -206,22 +208,21 @@ export default function HomePage() {
 
  function HomepageSections() {
   const sections = [
-    { label: 'About Us', icon: <InfoIcon />, bg: 'bg-primary' },
-    { label: 'Our Providers', icon: <User />, bg: 'bg-primary' },
-    { label: 'Our Services', icon: <Stethoscope />, bg: 'bg-primary' },
-    { label: 'Contact Us', icon: <MessageCircle />, bg: 'bg-primary' },
+    { label: 'About Us', icon: <InfoIcon />, bg: 'bg-primary', href: '/about-us' },
+    { label: 'Our Providers', icon: <User />, bg: 'bg-primary', href: '/about-us' },
+    { label: 'Our Services', icon: <Stethoscope />, bg: 'bg-primary', href: '/services' },
+    { label: 'Contact Us', icon: <MessageCircle />, bg: 'bg-primary', href: '/contact-us' },
   ];
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
       {sections.map((section, idx) => (
-        <div
-          key={idx}
+        <Link href={section.href} key={idx}
           className={`rounded-sm shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer text-white ${section.bg} flex flex-col items-center justify-center p-6 text-center`}
         >
           <div className="text-4xl mb-2">{section.icon}</div>
           <div className="text-lg md:text-xl font-semibold">{section.label}</div>
-        </div>
+        </Link>
       ))}
     </div>
   );

@@ -3,23 +3,26 @@
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/lib/hooks/useIsMobile";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Link from "next/link";
 import React, { useState } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
+import BookingModal from "../booking/bookingScreen";
 
 export default function ServicesSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
     const isMobile = useIsMobile();
+    const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   const services = [
-    { id: 1, title: "Teeth Checkup", description: "General dental exams", image: "/Images/banners/div.elementor-widget-wrap (5).png", icon: "/Images/icons/Dental checkup.png" },
-    { id: 2, title: "Teeth Whitening", description: "Brighten your smile", image: "/Images/banners/div.elementor-widget-wrap (4).png", icon: "/Images/icons/tooth-whitening.png" },
-    { id: 3, title: "Dental Braces", description: "Orthodontic correction", image: "/Images/banners/div.elementor-widget-wrap (3).png", icon: "/Images/icons/braces.png" },
-    { id: 4, title: "Root Canal", description: "Save infected teeth", image: "/Images/banners/div.elementor-widget-wrap (2).png", icon: "/Images/icons/root-canal (1).png" },
-    { id: 5, title: "Dental Implants", description: "Permanent tooth replacement", image: "/Images/banners/div.elementor-widget-wrap (1).png", icon: "/Images/icons/implant.png" },
-    { id: 6, title: "Oral Surgery", description: "Advanced procedures", image: "/Images/banners/div.elementor-widget-wrap.png", icon: "/Images/icons/oral surgery.png" },
-    { id: 12, title: "Tooth Extraction", description: "Safe tooth removal", image: "/Images/banners/Tooth Extraction_ homepage.jpg", icon: "/Images/icons/tooth-extraction.png" },
-    { id: 14, title: "Dental Crowns", description: "Restore damaged teeth", image: "/Images/banners/dental crown_homepage.jpg", icon: "/Images/icons/dental-crown.png" },
-    { id: 16, title: "Dental Fillings", description: "Repair cavities", image: "/Images/banners/Tooth filling.jpg", icon: "/Images/icons/tooth-filling.png" },
+    { id: 1, title: "Emergency Dentistry", description: "Emergency dentistry provides 24/7 oral health care", image: "/Images/banners/div.elementor-widget-wrap (5).png", icon: "/Images/icons/Dental checkup.png", href: "/services/emergency-dentistry" },
+    { id: 2, title: "Teeth Whitening", description: "Brighten your smile", image: "/Images/banners/div.elementor-widget-wrap (4).png", icon: "/Images/icons/tooth-whitening.png" , href: "/services/whitening-&-veneers" },
+    { id: 3, title: "Dental Braces", description: "Orthodontic correction", image: "/Images/banners/div.elementor-widget-wrap (3).png", icon: "/Images/icons/braces.png", href: "/services/orthodontics" },
+    { id: 4, title: "Root Canal", description: "Save infected teeth", image: "/Images/banners/div.elementor-widget-wrap (2).png", icon: "/Images/icons/root-canal (1).png" , href: "/services/root-canal" },
+    { id: 5, title: "Dental Implants", description: "Permanent tooth replacement", image: "/Images/banners/div.elementor-widget-wrap (1).png", icon: "/Images/icons/implant.png", href: "/services/dental-implants" },
+    { id: 6, title: "Oral Surgery", description: "Advanced procedures", image: "/Images/banners/div.elementor-widget-wrap.png", icon: "/Images/icons/oral surgery.png", href: "/services/oral-surgery" },
+    { id: 12, title: "Tooth Extraction", description: "Safe tooth removal", image: "/Images/banners/Tooth Extraction_ homepage.jpg", icon: "/Images/icons/tooth-extraction.png", href: "/services/tooth-extraction" },
+    { id: 14, title: "Dental Crowns", description: "Restore damaged teeth", image: "/Images/banners/dental crown_homepage.jpg", icon: "/Images/icons/dental-crown (1).png", href: "/services/crowns-and-bridges" },
+    { id: 16, title: "Dental Fillings", description: "Repair cavities", image: "/Images/banners/Tooth filling.jpg", icon: "/Images/icons/tooth-filling (1).png", href: "/services/fillings" },
   ];
 
   const slidesPerView = isMobile?1:3;
@@ -27,6 +30,14 @@ export default function ServicesSection() {
 
   const nextSlide = () => setCurrentSlide((prev) => Math.min(prev + 1, maxSlides - 1));
   const prevSlide = () => setCurrentSlide((prev) => Math.max(prev - 1, 0));
+  
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % maxSlides);
+    }, 10000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="relative w-full mt-20 mx-auto px-4">
@@ -71,10 +82,10 @@ export default function ServicesSection() {
                         <p className="text-gray-600 text-sm mb-3">
                           {service.description}
                         </p>
-                        <button className="text-primary hover:text-blue-800 inline-flex items-center">
+                        <Link href={service.href} className="text-primary hover:text-blue-800 inline-flex items-center">
                           Learn More
                           <ChevronRight className="w-4 h-4 ml-1" />
-                        </button>
+                        </Link>
                       </div>
                       </div>
                       
@@ -129,9 +140,10 @@ export default function ServicesSection() {
       </Fade>
       <Fade delay={600}>
       <div className="text-center">
-      <Button size={'lg'}>Book Appointment</Button>
+      <Button onClick={()=>setIsBookingOpen(true)} size={'lg'}>Book Appointment</Button>
       </div>
       </Fade>
+      <BookingModal open={isBookingOpen} setOpen={setIsBookingOpen}/>
     </section>
   );
 }

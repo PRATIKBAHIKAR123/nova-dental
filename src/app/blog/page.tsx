@@ -11,23 +11,23 @@ const blogPosts = [
     id: 1,
     title: "5 Clear Signs It's Time for Wisdom Teeth Removal in East Orange",
     date: "Jul 16, 2025",
-    description: "Wisdom teeth removal is a common dental procedure that many people need. Learn about the signs that indicate it's time to consider wisdom teeth extraction and how Nova Dental can help you through the process.",
+    description: "Wisdom teeth removal is a common dental procedure that many people need. Learn about the signs that indicate it's time to consider wisdom teeth extraction and how Maple Dental can help you through the process.",
     image: "/Images/banners/dentist-examining-patient-s-teeth.jpg",
     slug: "wisdom-teeth-removal-signs"
   },
   {
     id: 2,
-    title: "The Benefits of Choosing Nova Dental for Root Canals in Newark & East Orange, NJ",
+    title: "The Benefits of Choosing Maple Dental for Root Canals in Newark & East Orange, NJ",
     date: "May 18, 2025",
-    description: "Root canal treatment doesn't have to be scary. Discover why choosing Nova Dental for your root canal procedure ensures a comfortable experience with advanced technology and experienced professionals.",
+    description: "Root canal treatment doesn't have to be scary. Discover why choosing Maple Dental for your root canal procedure ensures a comfortable experience with advanced technology and experienced professionals.",
     image: "/Images/banners/dentist-matching-colour-tooth-enamel-with-whitening-chart.jpg",
     slug: "root-canal-benefits-nova-dental"
   },
   {
     id: 3,
-    title: "Smile Brighter with Natural-Looking Implants from Nova Dental, NJ",
+    title: "Smile Brighter with Natural-Looking Implants from Maple Dental, NJ",
     date: "May 12, 2025",
-    description: "Dental implants are the gold standard for tooth replacement. Learn how Nova Dental's advanced implant technology can restore your smile with natural-looking, permanent results.",
+    description: "Dental implants are the gold standard for tooth replacement. Learn how Maple Dental's advanced implant technology can restore your smile with natural-looking, permanent results.",
     image: "/Images/banners/young-man-with-patient-bib-dental-chair-dentist-who-sits-him-he-looks-his-teeth-using-dental-microscope-holds-dental-bur-mirror.jpg",
     slug: "natural-looking-implants-nova-dental"
   },
@@ -41,9 +41,9 @@ const blogPosts = [
   },
   {
     id: 5,
-    title: "Trust a Local Dentist in Newark & East Orange, NJ | Nova Dental",
+    title: "Trust a Local Dentist in Newark & East Orange, NJ | Maple Dental",
     date: "Mar 21, 2025",
-    description: "Choosing a local dentist you can trust is crucial for your oral health. Discover why Nova Dental is the preferred choice for families in Newark and East Orange, offering comprehensive care close to home.",
+    description: "Choosing a local dentist you can trust is crucial for your oral health. Discover why Maple Dental is the preferred choice for families in Newark and East Orange, offering comprehensive care close to home.",
     image: "/Images/banners/portrait-smiling-teenage-girl-with-braces-sitting-chair-while-dentist-standing-clinic.jpg",
     slug: "local-dentist-newark-east-orange"
   },
@@ -51,31 +51,31 @@ const blogPosts = [
     id: 6,
     title: "Is My Dental Practice Available When I Need Them the Most?",
     date: "Mar 18, 2025",
-    description: "Dental emergencies can happen at any time. Learn about Nova Dental's emergency services and how we ensure you have access to quality dental care when you need it most.",
+    description: "Dental emergencies can happen at any time. Learn about Maple Dental's emergency services and how we ensure you have access to quality dental care when you need it most.",
     image: "/Images/banners/close-up-man-carrying-young-woman-his-back.jpg",
     slug: "dental-practice-availability-emergency"
   },
   {
     id: 7,
-    title: "Emergency Dentist: Same-Day Appointments in Newark & East Orange | Nova Dental",
+    title: "Emergency Dentist: Same-Day Appointments in Newark & East Orange | Maple Dental",
     date: "Jan 31, 2025",
-    description: "Don't wait for dental emergencies to get worse. Nova Dental offers same-day emergency appointments to provide immediate relief and treatment when you're experiencing severe dental pain.",
+    description: "Don't wait for dental emergencies to get worse. Maple Dental offers same-day emergency appointments to provide immediate relief and treatment when you're experiencing severe dental pain.",
     image: "/Images/banners/doctor-presenting-something-isolated-white-background.jpg",
     slug: "emergency-dentist-same-day-appointments"
   },
   {
     id: 8,
-    title: "Get Instant Tooth Pain Relief at Nova Dental in Newark & East Orange, NJ",
+    title: "Get Instant Tooth Pain Relief at Maple Dental in Newark & East Orange, NJ",
     date: "Jan 17, 2025",
-    description: "Tooth pain can be debilitating and affect your daily life. Learn about the various causes of tooth pain and how Nova Dental provides effective, immediate relief through advanced treatment options.",
+    description: "Tooth pain can be debilitating and affect your daily life. Learn about the various causes of tooth pain and how Maple Dental provides effective, immediate relief through advanced treatment options.",
     image: "/Images/banners/dentist-examining-patient-s-teeth.jpg",
     slug: "instant-tooth-pain-relief-nova-dental"
   },
   {
     id: 9,
-    title: "Your Trusted Emergency Dentist in Newark & East Orange, NJ | Nova Dental",
+    title: "Your Trusted Emergency Dentist in Newark & East Orange, NJ | Maple Dental",
     date: "Jan 06, 2025",
-    description: "When dental emergencies strike, you need a trusted provider you can rely on. Discover why Nova Dental is the go-to emergency dentist for families throughout Newark and East Orange.",
+    description: "When dental emergencies strike, you need a trusted provider you can rely on. Discover why Maple Dental is the go-to emergency dentist for families throughout Newark and East Orange.",
     image: "/Images/banners/AdobeStock_537857878.webp",
     slug: "trusted-emergency-dentist-newark-east-orange"
   },
@@ -83,7 +83,7 @@ const blogPosts = [
     id: 10,
     title: "Caring for Your Dental Health During COVID-19",
     date: "Jun 17, 2020",
-    description: "Nova Dental is a warm, inviting dentist facility in Newark,NJ. Dr. Bhavneet Singh, DDS, is a trusted dentist who practices adults and kids’ dentistry, and is dedicated to providing the best dental care in Newark, NJ.",
+    description: "Maple Dental is a warm, inviting dentist facility in Newark,NJ. Dr. Bhavneet Singh, DDS, is a trusted dentist who practices adults and kids’ dentistry, and is dedicated to providing the best dental care in Newark, NJ.",
     image: "/Images/banners/AdobeStock_537857878.webp",
     slug: "caring-for-your-dental-health-during-covid-19"
   }

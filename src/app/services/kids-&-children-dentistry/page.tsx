@@ -12,7 +12,7 @@ export default function InvisalignPage() {
           <h1>Kids & Children Dentistry</h1>
         </Fade>
         <Fade direction='down' duration={1000}>
-          <p>Kids & Children Dentistry for Newark and East Orange, NJ | Nova Dental | Cosmetic & Family Dentist</p>
+          <p>Kids & Children Dentistry for Newark and East Orange, NJ | Maple Dental | Cosmetic & Family Dentist</p>
         </Fade>
       </div>
 
@@ -35,7 +35,7 @@ export default function InvisalignPage() {
             <div className='desc-text-subtitle'>Kids & Children Dentistry</div>
             <h3 className='desc-text-title'>About Kids & Children Dentistry</h3>
             <p>
-              If you’re searching for a trusted kids’ dentist near you, look no further than Nova Dental. Their team of experienced cosmetic and family dentists provides gentle, high-quality care for children and adults alike. With two offices in Newark and one in East Orange, New Jersey, convenient care is always close by. Schedule an appointment online or call today to get started.
+              If you’re searching for a trusted kids’ dentist near you, look no further than Maple Dental. Their team of experienced cosmetic and family dentists provides gentle, high-quality care for children and adults alike. With two offices in Newark and one in East Orange, New Jersey, convenient care is always close by. Schedule an appointment online or call today to get started.
             </p>
           </Fade>
         </div>

@@ -66,7 +66,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/Images/Maple MHA website header.png"
-            alt="Nova Dental Logo"
+            alt="Maple Dental Logo"
             width={isScrolled ? 140 : 220}
             height={isScrolled ? 60 : 110}
             className="transition-all duration-300"
@@ -194,7 +194,7 @@ export default function Header() {
           <div className="flex items-center justify-between p-4 border-b">
             <Image
               src="/Images/Maple MHA website header.png"
-              alt="Nova Dental Logo"
+              alt="Maple Dental Logo"
               width={100}
               height={40}
             />

@@ -12,7 +12,7 @@ export default function CrownsBridgesPage() {
           <h1>Crowns and Bridges Specialist</h1>
         </Fade>
         <Fade direction='down' duration={1000}>
-          <p>Crowns and Bridges for Newark and East Orange, NJ | Nova Dental</p>
+          <p>Crowns and Bridges for Newark and East Orange, NJ | Maple Dental</p>
         </Fade>
       </div>
 
@@ -35,7 +35,7 @@ export default function CrownsBridgesPage() {
             <div className='desc-text-subtitle'>Crowns and Bridges</div>
             <h3 className='desc-text-title'>About Crowns and Bridges</h3>
             <p>
-              If you have decayed or damaged teeth that make eating, speaking, or smiling uncomfortable, a dental crown or bridge could restore your smile. If you’re searching for a trusted dentist near you, Nova Dental provides expert restorative care to help you regain confidence and comfort. With offices in Newark and East Orange, New Jersey, scheduling is convenient. Call today or book your appointment online.
+              If you have decayed or damaged teeth that make eating, speaking, or smiling uncomfortable, a dental crown or bridge could restore your smile. If you’re searching for a trusted dentist near you, Maple Dental provides expert restorative care to help you regain confidence and comfort. With offices in Newark and East Orange, New Jersey, scheduling is convenient. Call today or book your appointment online.
             </p>
           </Fade>
         </div>
@@ -76,7 +76,7 @@ export default function CrownsBridgesPage() {
             <AccordionTrigger className='faq-qn'>What is the process for getting a dental bridge?</AccordionTrigger>
             <AccordionContent className='faq-ans'>
               <p>The process usually involves two or three appointments. After crowns are placed on adjacent teeth, impressions are taken to ensure the bridge fits perfectly. A follow-up ensures the restoration is successful.</p>
-              <p className='mt-3'>To schedule a consultation about crowns or bridges, call Nova Dental or use the online booking tool.</p>
+              <p className='mt-3'>To schedule a consultation about crowns or bridges, call Maple Dental or use the online booking tool.</p>
             </AccordionContent>
           </AccordionItem>
         </Accordion>

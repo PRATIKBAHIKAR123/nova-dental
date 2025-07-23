@@ -13,7 +13,7 @@ export default function CosmeticDentistryPage() {
                 </Fade>
                 <Fade direction='down' duration={1000}>
                 <p>
-                    Cosmetic Dentistry for Newark and East Orange, NJ | Nova Dental | Cosmetic & Family Dentist
+                    Cosmetic Dentistry for Newark and East Orange, NJ | Maple Dental | Cosmetic & Family Dentist
                 </p>
                 </Fade>
                 {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
@@ -45,7 +45,7 @@ export default function CosmeticDentistryPage() {
           <div className='desc-text-subtitle'>Cosmetic Dentistry</div>
           <h3 className='desc-text-title'>About Cosmetic Dentistry</h3>
           <p>
-            If you have crooked, stained, or damaged teeth, cosmetic dentistry can enhance your smile and boost your oral health. If you’re searching for a skilled dentist near you, Nova Dental offers a range of cosmetic services, including veneers, teeth whitening, and cosmetic bonding. To schedule an appointment at their Newark or East Orange, New Jersey locations, call the office or book online today.
+            If you have crooked, stained, or damaged teeth, cosmetic dentistry can enhance your smile and boost your oral health. If you’re searching for a skilled dentist near you, Maple Dental offers a range of cosmetic services, including veneers, teeth whitening, and cosmetic bonding. To schedule an appointment at their Newark or East Orange, New Jersey locations, call the office or book online today.
           </p>
         </Fade>
       </div>
@@ -99,7 +99,7 @@ export default function CosmeticDentistryPage() {
         <AccordionItem value="q3">
           <AccordionTrigger className='faq-qn'>What services fall under the umbrella of cosmetic dentistry?</AccordionTrigger>
           <AccordionContent className='faq-ans'>
-            <p>Nova Dental offers a variety of cosmetic dentistry services, including:</p>
+            <p>Maple Dental offers a variety of cosmetic dentistry services, including:</p>
             <ul className="mt-2 space-y-2">
               <li><strong>Dental implants</strong>
               <p>Dental implants are oral prosthetics that replace missing teeth. Instead of resting on your gums like dentures, they’re inserted into your jaw during an outpatient procedure. Dental implants provide a base for restorations, including crowns, bridges, and implant-retained overdentures.</p>
@@ -122,7 +122,7 @@ Veneers are thin porcelain coverings bonded to your natural teeth. They cover up
                     Teeth whitening
                 </strong>
                 <p>
-                    Teeth whitening uses FDA-approved solutions like carbamide peroxide or hydrogen peroxide to eliminate stains from the surface of your teeth. Nova Dental offers several types of teeth-whitening treatment, including in-office whitening and take-home teeth whitening trays.
+                    Teeth whitening uses FDA-approved solutions like carbamide peroxide or hydrogen peroxide to eliminate stains from the surface of your teeth. Maple Dental offers several types of teeth-whitening treatment, including in-office whitening and take-home teeth whitening trays.
                 </p>
               </li>
                 <li>
@@ -138,7 +138,7 @@ Veneers are thin porcelain coverings bonded to your natural teeth. They cover up
                     Cosmetic gum contouring
                 </strong>
                 <p>
-                    If you have excess tissue that results in a “gummy smile,” your provider might recommend cosmetic gum contouring. During this procedure, your Nova Dental provider uses specialized tools to reshape your gums, improving their cosmetic appearance.
+                    If you have excess tissue that results in a “gummy smile,” your provider might recommend cosmetic gum contouring. During this procedure, your Maple Dental provider uses specialized tools to reshape your gums, improving their cosmetic appearance.
                 </p>
               </li>
             </ul>
@@ -152,10 +152,10 @@ Veneers are thin porcelain coverings bonded to your natural teeth. They cover up
                 Anyone who’s unhappy with the color, condition, or aesthetic appearance of their teeth and smile qualifies for cosmetic dentistry.
             </p>
             <p className='mt-2'>
-                Following an oral exam and a discussion of what you like and don’t like about your smile, your Nova Dental provider can design a treatment plan that aligns with your budget and goals.
+                Following an oral exam and a discussion of what you like and don’t like about your smile, your Maple Dental provider can design a treatment plan that aligns with your budget and goals.
             </p>
             <p className='mt-2'>
-To learn more about cosmetic dentistry, make an appointment at Nova Dental by calling the office or clicking the online booking tool today.
+To learn more about cosmetic dentistry, make an appointment at Maple Dental by calling the office or clicking the online booking tool today.
             </p>
           </AccordionContent>
         </AccordionItem>

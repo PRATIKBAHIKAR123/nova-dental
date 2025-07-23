@@ -12,7 +12,7 @@ export default function InvisalignPage() {
           <h1>Invisalign</h1>
         </Fade>
         <Fade direction='down' duration={1000}>
-          <p>Invisalign for Newark and East Orange, NJ | Nova Dental</p>
+          <p>Invisalign for Newark and East Orange, NJ | Maple Dental</p>
         </Fade>
       </div>
 
@@ -35,7 +35,7 @@ export default function InvisalignPage() {
             <div className='desc-text-subtitle'>Invisalign</div>
             <h3 className='desc-text-title'>About Invisalign</h3>
             <p>
-              Invisalign® is a popular alternative to traditional metal braces, offering a discreet way to straighten your teeth. If you’re looking for a dentist near you, the experienced team at Nova Dental proudly provides Invisalign to residents in Newark and East Orange, New Jersey. To learn more or get started, call the office or book an appointment online today.
+              Invisalign® is a popular alternative to traditional metal braces, offering a discreet way to straighten your teeth. If you’re looking for a dentist near you, the experienced team at Maple Dental proudly provides Invisalign to residents in Newark and East Orange, New Jersey. To learn more or get started, call the office or book an appointment online today.
             </p>
           </Fade>
         </div>

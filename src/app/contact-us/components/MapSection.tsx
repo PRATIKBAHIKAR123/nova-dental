@@ -11,7 +11,7 @@ export default function MapSection() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Nova Dental Location"
+            title="Maple Dental Location"
             className="w-full h-full"
           />
           

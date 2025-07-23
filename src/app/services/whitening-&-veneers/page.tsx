@@ -12,7 +12,7 @@ export default function WhiteningAndVeneersPage() {
           <h1>Whitening & Veneers</h1>
         </Fade>
         <Fade direction='down' duration={1000}>
-          <p>Whitening & Veneers for Newark and East Orange, NJ | Nova Dental</p>
+          <p>Whitening & Veneers for Newark and East Orange, NJ | Maple Dental</p>
         </Fade>
       </div>
 
@@ -35,7 +35,7 @@ export default function WhiteningAndVeneersPage() {
             <div className='desc-text-subtitle'>Whitening & Veneers</div>
             <h3 className='desc-text-title'>About Whitening & Veneers</h3>
             <p>
-              A bright, white smile is always appealing, but tooth discoloration is common over time. If you’re looking for a dentist near you, Nova Dental offers professional teeth whitening to help restore your smile’s brilliance. With two offices in Newark and one in East Orange, New Jersey, brighter teeth are just an appointment away. Call or book online today.
+              A bright, white smile is always appealing, but tooth discoloration is common over time. If you’re looking for a dentist near you, Maple Dental offers professional teeth whitening to help restore your smile’s brilliance. With two offices in Newark and one in East Orange, New Jersey, brighter teeth are just an appointment away. Call or book online today.
             </p>
           </Fade>
         </div>
@@ -64,7 +64,7 @@ export default function WhiteningAndVeneersPage() {
           <AccordionItem value='q2'>
             <AccordionTrigger className='faq-qn'>How does professional teeth whitening work?</AccordionTrigger>
             <AccordionContent className='faq-ans'>
-              <p>Nova Dental offers both in-office and at-home teeth whitening options. When you come in for your consultation, your dentist listens to your treatment goals and helps you choose the right approach.</p>
+              <p>Maple Dental offers both in-office and at-home teeth whitening options. When you come in for your consultation, your dentist listens to your treatment goals and helps you choose the right approach.</p>
               <p className='mt-3'>In-office whitening uses a powerful solution to blast apart surface stains. Your dentist begins by isolating your tongue and other soft oral tissues before painting the solution onto the visible surfaces of your teeth. Some systems use a special light to activate the solution, while others simply need a few moments to whiten teeth. Your dentist then rinses away all traces of the solution, revealing your newly bright smile.</p>
               <p className='mt-3'>At-home whitening relies on custom-molded dental trays to hold the whitening solution against the surface of your teeth. You simply apply a thin line of whitening gel, pop the trays in, and go about your daily routine. With at-home whitening, you can control the brightness of your smile. Simply use the remaining gel to achieve a quick whitening boost any time you like.</p>
             </AccordionContent>

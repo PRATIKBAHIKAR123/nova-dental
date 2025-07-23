@@ -12,7 +12,7 @@ export default function RootCanalPage() {
                 </Fade>
                 <Fade direction='down' duration={1000}>
                 <p>
-                    Root Canal for Newark and East Orange, NJ | Nova Dental | Cosmetic & Family Dentist
+                    Root Canal for Newark and East Orange, NJ | Maple Dental | Cosmetic & Family Dentist
                 </p>
                 </Fade>
                 {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
@@ -44,7 +44,7 @@ export default function RootCanalPage() {
           <div className='desc-text-subtitle'>Root Canal</div>
           <h3 className='desc-text-title'>About Root Canal</h3>
           <p>
-            A painful, infected tooth can make it difficult to eat, sleep, and get through your day. A root canal can save your tooth and provide lasting relief. If you&aosp;re searching for a dentist near you, Nova Dental offers expert root canal therapy to help you feel at ease. To schedule an appointment at their Newark or East Orange, New Jersey locations, call the office or book online today. 
+            A painful, infected tooth can make it difficult to eat, sleep, and get through your day. A root canal can save your tooth and provide lasting relief. If you&aosp;re searching for a dentist near you, Maple Dental offers expert root canal therapy to help you feel at ease. To schedule an appointment at their Newark or East Orange, New Jersey locations, call the office or book online today. 
           </p>
         </Fade>
       </div>
@@ -95,14 +95,14 @@ export default function RootCanalPage() {
         <AccordionItem value="q2">
           <AccordionTrigger className='faq-qn'>Why would I need a root canal?</AccordionTrigger>
           <AccordionContent className='faq-ans'>
-            Nova Dental uses root canal therapy to treat damaged or infected tooth pulp. These issues occur for various reasons, including:
+            Maple Dental uses root canal therapy to treat damaged or infected tooth pulp. These issues occur for various reasons, including:
             <ul className="list-disc list-inside mt-2 space-y-1">
               <li>Deep decay due to an untreated cavity</li>
               <li>Fractures, chips, and other damage</li>
               <li>Undergoing extensive dental work</li>
               <li>Oral trauma</li>
             </ul>
-            <p className="mt-2">Pulp problems don&aosp;t always present obvious symptoms. If your gums become red, swollen, or emit a sensation of warmth, make an appointment at Nova Dental right away.</p>
+            <p className="mt-2">Pulp problems don&aosp;t always present obvious symptoms. If your gums become red, swollen, or emit a sensation of warmth, make an appointment at Maple Dental right away.</p>
           </AccordionContent>
         </AccordionItem>
 
@@ -116,7 +116,7 @@ export default function RootCanalPage() {
                 After the anesthesia kicks in, they make a hole in the root canal and insert tiny instruments to remove all the pulp. Your dentist then sanitizes and seals the root canal and access hole with a filling-like material. 
                 </p>
                 <p className='mt-2'>
-                    When the filling material dries, your provider takes impressions of your tooth. They send your impressions to a dental laboratory that uses them to design and manufacture a custom dental crown. Once the technicians finish your crown, you return to Nova Dental.
+                    When the filling material dries, your provider takes impressions of your tooth. They send your impressions to a dental laboratory that uses them to design and manufacture a custom dental crown. Once the technicians finish your crown, you return to Maple Dental.
                 </p>
                 <p className='mt-2'>
                     Your provider once again administers a local anesthetic, bonds the crown in place, and polishes your tooth. 
@@ -134,7 +134,7 @@ export default function RootCanalPage() {
                 Continue to brush and floss as normal, but be gentle around your treated tooth. Avoid biting down on your new crown for at least 48 hours, to ensure the bonding material dries. 
             </p>
             <p className='mt-2'>
-                If you need to schedule a root canal, call or use the online booking option to speak to the team at Nova Dental today.
+                If you need to schedule a root canal, call or use the online booking option to speak to the team at Maple Dental today.
             </p>
           </AccordionContent>
         </AccordionItem>

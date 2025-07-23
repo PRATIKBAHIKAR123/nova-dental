@@ -61,11 +61,10 @@ const InsuranceSection = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Most Insurances Accepted
+            We Accept Most Insurance Plans
           </h2>
           <p className="text-lg max-w-3xl mx-auto leading-relaxed">
-            Here at Maple Dental, we accept most major dental insurance providers. For additional 
-            questions regarding insurance, please contact our office.
+            At Maple Dental Harrisburg, we work with most major dental insurance providers. If you have any questions about your coverage, feel free to contact our office.
           </p>
         </div>
 

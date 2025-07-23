@@ -7,7 +7,7 @@ import FloatingButton from "@/components/ui/floatingButton";
 const privacySections = [
   {
     title: "PRIVACY STATEMENT",
-    content: `Nova Dental is committed to protecting your privacy and developing technology that gives you the most powerful and safe online experience. This Statement of Privacy applies to our Practice’s Web site and governs data collection and usage. By using this website, you consent to the data practices described in this statement.`,
+    content: `Maple Dental is committed to protecting your privacy and developing technology that gives you the most powerful and safe online experience. This Statement of Privacy applies to our Practice’s Web site and governs data collection and usage. By using this website, you consent to the data practices described in this statement.`,
   },
   {
     title: "Collection of your Personal Information",

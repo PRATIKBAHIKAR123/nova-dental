@@ -44,7 +44,7 @@ export default function EmergencyDentistryPage() {
             <div className='desc-text-subtitle'>Emergency Dentistry</div>
             <h3 className='desc-text-title'>About Emergency Dentistry</h3>
             <p>
-              Emergency dentistry provides 24/7 oral health care, ensuring you get the treatment you need when it matters most. If you&aosp;re looking for an emergency dentist near you, Nova Dental offers prompt care for patients of all ages. To schedule an appointment at their Newark or East Orange, New Jersey locations, call the office or book appointment today.
+              Emergency dentistry provides 24/7 oral health care, ensuring you get the treatment you need when it matters most. If you&aosp;re looking for an emergency dentist near you, Maple Dental offers prompt care for patients of all ages. To schedule an appointment at their Newark or East Orange, New Jersey locations, call the office or book appointment today.
             </p>
           </Fade>
         </div>
@@ -84,14 +84,14 @@ export default function EmergencyDentistryPage() {
           <AccordionItem value="q1">
             <AccordionTrigger className='faq-qn'>What is emergency dentistry?</AccordionTrigger>
             <AccordionContent className='faq-ans'>
-              Emergency dentistry provides rapid care for potentially serious but non-life-threatening oral health problems. If you lose a permanent tooth, develop a severe toothache, or damage a dental restoration, don’t wait to seek professional help. The sooner you make it to Nova Dental, the sooner you can minimize uncomfortable symptoms and restore your smile.
+              Emergency dentistry provides rapid care for potentially serious but non-life-threatening oral health problems. If you lose a permanent tooth, develop a severe toothache, or damage a dental restoration, don’t wait to seek professional help. The sooner you make it to Maple Dental, the sooner you can minimize uncomfortable symptoms and restore your smile.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="q2">
             <AccordionTrigger className='faq-qn'>What conditions can benefit from emergency dentistry?</AccordionTrigger>
             <AccordionContent className='faq-ans'>
-              Nova Dental uses emergency dentistry to treat a variety of conditions, including:
+              Maple Dental uses emergency dentistry to treat a variety of conditions, including:
               <ul className="list-disc list-inside mt-2 space-y-1">
                 <li>Chipped and cracked teeth</li>
                 <li>Knocked-out teeth</li>
@@ -109,8 +109,8 @@ export default function EmergencyDentistryPage() {
           <AccordionItem value="q3">
             <AccordionTrigger className='faq-qn'>What should I do if I need emergency dental care?</AccordionTrigger>
             <AccordionContent className='faq-ans'>
-              <strong>Severe toothache:</strong> Rinse your mouth with warm salt water and take over-the-counter pain medication. Be gentle while brushing and flossing. If pain persists over a day, contact Nova Dental.<br /><br />
-              <strong>Knocked-out tooth:</strong> Rinse the tooth (holding it by the crown) and place it back into your mouth. If not possible, place it in milk. Call Nova Dental immediately.<br /><br />
+              <strong>Severe toothache:</strong> Rinse your mouth with warm salt water and take over-the-counter pain medication. Be gentle while brushing and flossing. If pain persists over a day, contact Maple Dental.<br /><br />
+              <strong>Knocked-out tooth:</strong> Rinse the tooth (holding it by the crown) and place it back into your mouth. If not possible, place it in milk. Call Maple Dental immediately.<br /><br />
               <strong>Damaged dental restoration:</strong> Collect all the broken pieces, clean them, and place them in a plastic bag. Call the office right away.
             </AccordionContent>
           </AccordionItem>
@@ -125,7 +125,7 @@ export default function EmergencyDentistryPage() {
                 <li>Wearing a mouthguard while playing sports</li>
                 <li>Avoiding habits like nail-biting and opening items with your teeth</li>
               </ul>
-              <p className="mt-2">If you need emergency care, call Nova Dental, walk in, or book appointment today.</p>
+              <p className="mt-2">If you need emergency care, call Maple Dental, walk in, or book appointment today.</p>
             </AccordionContent>
           </AccordionItem>
 

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Bounce, Fade } from "react-awesome-reveal";
+import BookingModal from "../booking/bookingScreen";
 
 const locations = [
   // {
@@ -77,6 +78,7 @@ const locations = [
 
 export default function LocationTabs() {
   const [selected, setSelected] = useState(locations[0]);
+const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   return (
     <div className="max-w-7xl mx-auto px-4 md:px-8 py-12 space-y-12">
@@ -112,8 +114,8 @@ export default function LocationTabs() {
 
         <div className="mt-6 flex justify-center gap-4 flex-wrap">
           <a
-            href="#"
-            className="bg-primary text-white px-5 py-2 rounded-md text-sm hover:bg-blue-700 transition"
+            onClick={()=>setIsBookingOpen(true)}
+            className="bg-primary text-white px-5 py-2 rounded-md text-sm hover:bg-blue-700 transition cursor-pointer"
           >
             Book Online
           </a>
@@ -139,6 +141,7 @@ export default function LocationTabs() {
         />
       </div>
       </div>
+      <BookingModal open={isBookingOpen} setOpen={setIsBookingOpen}/>
     </div>
   );
 }

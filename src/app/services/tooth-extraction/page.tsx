@@ -12,7 +12,7 @@ export default function ToothExtractionPage() {
           <h1>Tooth Extraction</h1>
         </Fade>
         <Fade direction='down' duration={1000}>
-          <p>Tooth Extraction for Newark and East Orange, NJ | Nova Dental</p>
+          <p>Tooth Extraction for Newark and East Orange, NJ | Maple Dental</p>
         </Fade>
       </div>
 
@@ -35,7 +35,7 @@ export default function ToothExtractionPage() {
             <div className='desc-text-subtitle'>Tooth Extraction</div>
             <h3 className='desc-text-title'>About Tooth Extraction</h3>
             <p>
-              While most dental procedures are noninvasive, some situations require oral surgery. If you’re looking for a skilled dentist near you, the experienced team at Nova Dental offers a range of oral surgery services, including tooth extractions. With two offices in Newark and one in East Orange, New Jersey, it’s easy to find a convenient location. Call today to schedule an appointment or book online.
+              While most dental procedures are noninvasive, some situations require oral surgery. If you’re looking for a skilled dentist near you, the experienced team at Maple Dental offers a range of oral surgery services, including tooth extractions. With two offices in Newark and one in East Orange, New Jersey, it’s easy to find a convenient location. Call today to schedule an appointment or book online.
             </p>
           </Fade>
         </div>
@@ -48,7 +48,7 @@ export default function ToothExtractionPage() {
             <AccordionTrigger className='faq-qn'>What is tooth extraction?</AccordionTrigger>
             <AccordionContent className='faq-ans'>
               <p>
-                Tooth extraction, also called tooth removal, removes one or more of your permanent teeth. Your Nova Dental provider might recommend an extraction if you have gum disease (periodontitis), dental trauma, or wisdom teeth complications. Many people undergo wisdom teeth extractions, but you might also benefit if you have impacted teeth, a severely decaying tooth, or are preparing to undergo orthodontic treatment.
+                Tooth extraction, also called tooth removal, removes one or more of your permanent teeth. Your Maple Dental provider might recommend an extraction if you have gum disease (periodontitis), dental trauma, or wisdom teeth complications. Many people undergo wisdom teeth extractions, but you might also benefit if you have impacted teeth, a severely decaying tooth, or are preparing to undergo orthodontic treatment.
               </p>
             </AccordionContent>
           </AccordionItem>
@@ -56,7 +56,7 @@ export default function ToothExtractionPage() {
           <AccordionItem value='q2'>
             <AccordionTrigger className='faq-qn'>Why would you need a tooth extraction?</AccordionTrigger>
             <AccordionContent className='faq-ans'>
-              <p>Your Nova Dental provider may recommend tooth extraction for any of the following reasons:</p>
+              <p>Your Maple Dental provider may recommend tooth extraction for any of the following reasons:</p>
               <ul className='list-disc list-inside mt-2 space-y-2'>
                 <li>Decay</li>
                 <li>Periodontal and gum disease</li>
@@ -77,19 +77,19 @@ export default function ToothExtractionPage() {
             <AccordionTrigger className='faq-qn'>What is the difference between oral surgery and tooth extraction?</AccordionTrigger>
             <AccordionContent className='faq-ans'>
               <p>Simple dental tooth extraction is the procedure of removing teeth that are easily accessible and visible. Whereas surgical dental extraction often involves an incision to access the tooth.</p>
-              <p className='mt-3'>Sometimes, your Nova Dental provider may advise you that tooth extraction isn't necessary.</p>
+              <p className='mt-3'>Sometimes, your Maple Dental provider may advise you that tooth extraction isn't necessary.</p>
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value='q4'>
             <AccordionTrigger className='faq-qn'>What are some common types of oral surgery besides tooth extraction?</AccordionTrigger>
             <AccordionContent className='faq-ans'>
-              <p>In addition to tooth extraction, Nova Dental offers various types of oral surgery, including:</p>
+              <p>In addition to tooth extraction, Maple Dental offers various types of oral surgery, including:</p>
               <ul className='list-disc list-inside mt-2 space-y-2'>
                 <li><strong>Dental implant placement:</strong> Prosthetics that replace missing natural teeth and provide a foundation for restorations.</li>
                 <li><strong>Gum grafts:</strong> A surgical solution to restore gum tissue lost due to gingivitis or periodontitis.</li>
               </ul>
-              <p className='mt-3'>Schedule a visit at Nova Dental by calling any of their three offices to find out if you're a good candidate for tooth extraction. Or book an appointment online today.</p>
+              <p className='mt-3'>Schedule a visit at Maple Dental by calling any of their three offices to find out if you're a good candidate for tooth extraction. Or book an appointment online today.</p>
             </AccordionContent>
           </AccordionItem>
         </Accordion>

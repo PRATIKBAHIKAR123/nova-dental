@@ -12,7 +12,7 @@ export default function DentalImplantsPage() {
           <h1>Dental Implants Specialist</h1>
         </Fade>
         <Fade direction='down' duration={1000}>
-          <p>Dental Implants for Newark and East Orange, NJ | Nova Dental</p>
+          <p>Dental Implants for Newark and East Orange, NJ | Maple Dental</p>
         </Fade>
       </div>
 
@@ -35,7 +35,7 @@ export default function DentalImplantsPage() {
             <div className='desc-text-subtitle'>Dental Implants</div>
             <h3 className='desc-text-title'>About Dental Implants</h3>
             <p>
-              If you’ve lost some or all of your permanent teeth, dental implants can restore your smile and make everyday tasks like biting and chewing easier. If you’re searching for a trusted dentist near you, Nova Dental has years of experience placing dental implants with precision and care. To schedule an appointment at their Newark or East Orange, New Jersey locations, call the office or book online today.
+              If you’ve lost some or all of your permanent teeth, dental implants can restore your smile and make everyday tasks like biting and chewing easier. If you’re searching for a trusted dentist near you, Maple Dental has years of experience placing dental implants with precision and care. To schedule an appointment at their Newark or East Orange, New Jersey locations, call the office or book online today.
             </p>
           </Fade>
         </div>
@@ -78,11 +78,11 @@ export default function DentalImplantsPage() {
           <AccordionItem value='q4'>
             <AccordionTrigger className='faq-qn'>What does getting dental implants involve?</AccordionTrigger>
             <AccordionContent className='faq-ans'>
-              <p>At Nova Dental, getting dental implants takes several appointments and a period of 6-12 months.</p>
+              <p>At Maple Dental, getting dental implants takes several appointments and a period of 6-12 months.</p>
               <p className='mt-3'><strong>First appointment:</strong> If your provider determines you qualify for implants, they administer a local anesthetic and insert a series of titanium posts into your jaw. Following the procedure, your provider writes a prescription for pain medication and antibiotics and provides care instructions.</p>
-              <p className='mt-3'><strong>Second appointment:</strong> When the implants finish fusing with your jaw, 12-16 weeks later, you return to Nova Dental. Your provider takes impressions of your mouth with an intraoral scanner and sends them to a dental laboratory to create restorations.</p>
-              <p className='mt-3'><strong>Third appointment:</strong> When Nova Dental receives your restorations from the lab, you return to the office. Your provider administers a local anesthetic, bonds the restorations to your implants, and polishes them.</p>
-              <p className='mt-3'>To see if you’re a candidate for dental implants, make an appointment at Nova Dental by calling the office, or clicking the online booking tool today.</p>
+              <p className='mt-3'><strong>Second appointment:</strong> When the implants finish fusing with your jaw, 12-16 weeks later, you return to Maple Dental. Your provider takes impressions of your mouth with an intraoral scanner and sends them to a dental laboratory to create restorations.</p>
+              <p className='mt-3'><strong>Third appointment:</strong> When Maple Dental receives your restorations from the lab, you return to the office. Your provider administers a local anesthetic, bonds the restorations to your implants, and polishes them.</p>
+              <p className='mt-3'>To see if you’re a candidate for dental implants, make an appointment at Maple Dental by calling the office, or clicking the online booking tool today.</p>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
