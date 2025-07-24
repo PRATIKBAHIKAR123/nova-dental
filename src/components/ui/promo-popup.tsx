@@ -63,7 +63,7 @@ export default function FloatingPromo() {
         </div> */}
 
         {/* Content */}
-        <div className="p-4">
+        <div className="p-2">
           <div className="flex items-start gap-2">
             {/* Icon */}
             <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center">
@@ -72,13 +72,13 @@ export default function FloatingPromo() {
             
             {/* Text Content */}
             <div className="flex-1">
-              <div className="text-gray-800 font-bold text-base mb-1">
+              <div className="text-gray-800 font-bold text-base">
                 $299 Teeth Whitening Special
               </div>
-              <div className="text-gray-600 text-sm mb-1">
+              <div className="text-gray-600 text-sm">
                 Someone just claimed this offer
               </div>
-              <div className="text-gray-400 text-xs mb-2">
+              <div className="text-gray-400 text-xs ">
                 10 min ago
               </div>
               
