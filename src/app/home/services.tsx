@@ -22,7 +22,7 @@ export default function ServicesSection() {
     { id: 6, title: "Oral Surgery", description: "Advanced procedures", image: "/Images/banners/div.elementor-widget-wrap.png", icon: "/Images/icons/oral surgery.png", href: "/services/oral-surgery" },
     { id: 12, title: "Tooth Extraction", description: "Safe tooth removal", image: "/Images/banners/Tooth Extraction_ homepage.jpg", icon: "/Images/icons/tooth-extraction.png", href: "/services/tooth-extraction" },
     { id: 14, title: "Dental Crowns", description: "Restore damaged teeth", image: "/Images/banners/dental crown_homepage.jpg", icon: "/Images/icons/dental-crown (1).png", href: "/services/crowns-and-bridges" },
-    { id: 16, title: "Dental Fillings", description: "Repair cavities", image: "/Images/banners/Tooth filling.jpg", icon: "/Images/icons/tooth-filling (1).png", href: "/services/fillings" },
+    { id: 16, title: "Dental Fillings", description: "Repair cavities", image: "/Images/banners/Tooth filling.jpg", icon: "/Images/icons/tooth-filling.png", href: "/services/fillings" },
   ];
 
   const slidesPerView = isMobile?1:3;

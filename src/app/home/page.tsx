@@ -274,7 +274,7 @@ export default function HomePage() {
                     {/* Left Side - Image */}
                     <Slide direction="right" className="w-full md:w-1/2 h-120">
                         <img
-                            src="/Images/banners/close-up-man-carrying-young-woman-his-back.jpg"
+                            src="/Images/banners/About Us (1).jpg"
                             alt="dental-banner"
                             className="rounded-xl w-full h-full object-cover shadow-md"
                         />
@@ -360,7 +360,7 @@ export default function HomePage() {
                     {/* Left Side - Image */}
                     <Slide direction="right" className="w-full md:w-1/2 h-120">
                         <img
-                            src="/Images/banners/portrait-smiling-teenage-girl-with-braces-sitting-chair-while-dentist-standing-clinic.jpg"
+                            src="/Images/banners/Insurance.jpg"
                             alt="dental-banner"
                             className="rounded-xl w-full h-full object-cover shadow-md"
                         />
