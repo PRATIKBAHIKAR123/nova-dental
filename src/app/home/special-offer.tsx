@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Phone, CheckCircle, Globe, Clock, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Bounce, Fade } from 'react-awesome-reveal';
+import BookingModal from '../booking/bookingScreen';
 
 const SpecialOffersSection = () => {
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
   const offers = [
     {
       id: 1,
@@ -125,7 +127,7 @@ const SpecialOffersSection = () => {
 
                 {/* CTA Button */}
                 <div className='text-center mt-2'>
-                <Button className='w-full'>Book Now</Button>
+                <Button onClick={()=>setIsBookingOpen(true)} className='w-full'>Book Now</Button>
                 </div>
               </div>
             </div>
@@ -164,7 +166,7 @@ const SpecialOffersSection = () => {
                 <Phone className="w-5 h-5" />
                 Call Now
               </button>
-              <button className="inline-flex items-center gap-3 bg-transparent border-2 border-white text-white font-semibold py-4 px-8 rounded-xl hover:bg-white/10 transition-colors duration-200">
+              <button onClick={()=>setIsBookingOpen(true)} className="inline-flex items-center gap-3 bg-transparent border-2 border-white text-white font-semibold py-4 px-8 rounded-xl hover:bg-white/10 transition-colors duration-200">
                 <Users className="w-5 h-5" />
                 Book Online
               </button>
@@ -172,6 +174,7 @@ const SpecialOffersSection = () => {
           </div>
         </div>
       </div>
+      <BookingModal open={isBookingOpen} setOpen={setIsBookingOpen}/>
     </section>
   );
 };

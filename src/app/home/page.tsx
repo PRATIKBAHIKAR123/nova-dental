@@ -15,6 +15,7 @@ import Link from 'next/link';
 import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
 import FloatingPromo from '@/components/ui/promo-popup';
+import BookingModal from '../booking/bookingScreen';
 
 
 
@@ -64,6 +65,7 @@ const services = [
 ];
 
 export default function HomePage() {
+      const [isBookingOpen, setIsBookingOpen] = useState(false);
     const [current, setCurrent] = useState(0);
     const { ref, inView } = useInView();
 
@@ -153,11 +155,8 @@ export default function HomePage() {
 
                                             {/* Call to Action */}
                                             <div className="flex flex-col sm:flex-row gap-4 mt-4">
-                                                <button className="bg-white text-cyan-600 px-8 py-3 rounded-full font-semibold text-md hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                                                <button className="bg-white text-cyan-600 px-8 py-3 rounded-full font-semibold text-md hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105" onClick={()=>setIsBookingOpen(true)}>
                                                     Book Appointment
-                                                </button>
-                                                <button className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold text-md hover:bg-white hover:text-cyan-600 transition-all duration-300">
-                                                    Learn More
                                                 </button>
                                             </div>
                                         </div>
@@ -174,20 +173,20 @@ export default function HomePage() {
                                                     <img
                                                         src={banner.image}
                                                         alt={banner.title}
-                                                        className="w-full h-64 md:h-104 lg:h-120 object-cover rounded-xl shadow-lg"
+                                                        className="w-full h-64 md:h-110 lg:h-140 object-cover rounded-xl shadow-lg"
                                                     />
                                                 </div>
 
                                                 {/* Special Offer Badge */}
-                                                <div className="absolute -top-20 -right-28 z-5">
+                                                {/* <div className="absolute -top-20 -right-28 z-5">
                                                     <div className="bg-white/10 backdrop-blur-sm rounded-xl p-0 shadow-2xl border border-white/20">
                                                         <img
                                                             src={banner.image2}
                                                             alt={banner.title}
-                                                            className="w-32 md:w-56 h-42 md:h-58 lg:h-74 object-cover rounded-xl shadow-lg"
+                                                            className="w-32 md:w-48 lg:w-48 h-42 md:h-58 lg:h-64 object-cover rounded-xl shadow-lg"
                                                         />
                                                     </div>
-                                                </div>
+                                                </div> */}
 
                                                 {/* Decorative elements around image */}
                                                 <div className="absolute -bottom-4 -left-4 w-8 h-8 bg-white/20 rounded-full"></div>
@@ -331,7 +330,7 @@ export default function HomePage() {
             <img src={service.icon} alt={service.title} className="w-16 h-16 mb-4" />
             
             <div className="text-3xl font-bold text-primary mb-2">
-              {inView ? (
+              ${inView ? (
                 <CountUp end={parseInt(service.price)} duration={1.5} separator="," />
               ) : (
                 '0'
@@ -402,6 +401,7 @@ export default function HomePage() {
             <LocationTabs />
             <FloatingTextForm />
             <FloatingPromo/>
+            <BookingModal open={isBookingOpen} setOpen={setIsBookingOpen}/>
         </div>
     );
 }

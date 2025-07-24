@@ -115,13 +115,13 @@ const [isBookingOpen, setIsBookingOpen] = useState(false);
         <div className="mt-6 flex justify-center gap-4 flex-wrap">
           <a
             onClick={()=>setIsBookingOpen(true)}
-            className="bg-primary text-white px-5 py-2 rounded-md text-sm hover:bg-blue-700 transition cursor-pointer"
+            className="bg-primary text-white px-5 py-2 rounded-md text-sm hover:bg-secondary transition cursor-pointer"
           >
             Book Online
           </a>
           <a
             href={`tel:${selected.phone}`}
-            className="bg-blue-100 text-blue-700 border border-blue-500 px-5 py-2 rounded-md text-sm hover:bg-blue-200 transition"
+            className="bg-blue-100 text-primary border border-primary px-5 py-2 rounded-md text-sm hover:opacity-50 transition"
           >
             {selected.phone}
           </a>

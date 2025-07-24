@@ -155,10 +155,10 @@ export default function Header() {
 
         {/* Desktop Buttons */}
         <div className="hidden md:flex gap-3">
-          <button className="border border-primary text-primary rounded-lg px-4 py-3 hover:bg-blue-50 text-sm font-medium transition">
+          <button className="border border-primary text-primary rounded-lg px-4 py-3 hover:opacity-50 text-sm font-medium transition">
             717-745-2700
           </button>
-          <button onClick={()=>setIsBookingOpen(true)}  className="bg-primary text-white rounded-lg px-4 py-3 hover:bg-blue-700 text-sm font-medium transition">
+          <button onClick={()=>setIsBookingOpen(true)}  className="bg-primary text-white rounded-lg px-4 py-3 hover:bg-secondary text-sm font-medium transition">
             Book Online
           </button>
         </div>

@@ -47,9 +47,9 @@ export default function FloatingPromo() {
         isAnimating ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
       }`}
     >
-      <div className="bg-white rounded-lg shadow-2xl border border-gray-200 max-w-80 overflow-hidden">
+      <div className="bg-white rounded-lg shadow-2xl border border-gray-200 max-w-auto overflow-hidden">
         {/* Header */}
-        <div className="bg-gradient-to-r from-secondary to-primary px-4 py-2 flex items-center justify-between">
+        {/* <div className="bg-gradient-to-r from-secondary to-primary px-4 py-2 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
             <span className="text-white text-sm font-medium">Special Offer</span>
@@ -60,11 +60,11 @@ export default function FloatingPromo() {
           >
             <X size={16} />
           </button>
-        </div>
+        </div> */}
 
         {/* Content */}
         <div className="p-4">
-          <div className="flex items-start gap-3">
+          <div className="flex items-start gap-2">
             {/* Icon */}
             <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center">
               <img src="/Images/Maple.png" alt="Whitening Icon" className="w-auto h-auto" />
@@ -75,14 +75,20 @@ export default function FloatingPromo() {
               <div className="text-gray-800 font-bold text-base mb-1">
                 $299 Teeth Whitening Special
               </div>
-              <div className="text-gray-600 text-sm mb-2">
+              <div className="text-gray-600 text-sm mb-1">
                 Someone just claimed this offer
               </div>
-              <div className="text-gray-400 text-xs mb-3">
+              <div className="text-gray-400 text-xs mb-2">
                 10 min ago
               </div>
               
             </div>
+            <button
+            onClick={handleClose}
+            className="text-gray-500 hover:text-gray-200 transition-colors p-1"
+          >
+            <X size={16} />
+          </button>
           </div>
         </div>
       </div>
