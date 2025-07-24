@@ -410,7 +410,7 @@ export default function HomePage() {
 function HomepageSections() {
     const sections = [
         { label: 'About Us', icon: <InfoIcon />, bg: 'bg-primary', href: '/about-us' },
-        { label: 'Our Providers', icon: <User />, bg: 'bg-primary/70', href: '/about-us' },
+        { label: 'Our Providers', icon: <User />, bg: 'bg-primary/70', href: '/providers' },
         { label: 'Our Services', icon: <Stethoscope />, bg: 'bg-secondary', href: '/services' },
         { label: 'Contact Us', icon: <MessageCircle />, bg: 'bg-secondary/70', href: '/contact-us' },
     ];
