@@ -8,14 +8,14 @@ export default function FloatingPromo() {
   const [isAnimating, setIsAnimating] = useState(false);
 
   // Show notification after a delay
-//   useEffect(() => {
-//     const timer = setTimeout(() => {
-//       setIsVisible(true);
-//       setIsAnimating(true);
-//     }, 2000); // Show after 2 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+      setIsAnimating(true);
+    }, 6000); // Show after 2 seconds
 
-//     return () => clearTimeout(timer);
-//   }, []);
+    return () => clearTimeout(timer);
+  }, []);
 
     useEffect(() => {
       const onScroll = () => {
@@ -25,11 +25,6 @@ export default function FloatingPromo() {
       window.addEventListener("scroll", onScroll);
       return () => window.removeEventListener("scroll", onScroll);
     }, []);
-
-    useEffect(() => {
-      if (!isVisible) return;
-      setIsAnimating(true);
-    }, [isVisible]);
 
   const handleClose = () => {
     setIsAnimating(false);
