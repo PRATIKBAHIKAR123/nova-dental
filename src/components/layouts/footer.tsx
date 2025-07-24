@@ -1,3 +1,4 @@
+import { Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,7 +9,7 @@ export default function Footer() {
         {/* Left: Logo & About */}
         <div className="space-y-4 col-span-1 md:col-span-1">
           <div className="flex items-center gap-2 mb-2">
-            <Image src="/Images/Maple MHA website header.png" alt="Maple Dental Logo" width={120} height={60} />
+            <Image src="/Images/maple-pa-new-large_20250723_180822_0000 (1).png" alt="Maple Dental Logo" width={120} height={80} />
           </div>
           <p className="text-sm text-gray-200">
             Maple Dental provides comprehensive dental care in Newark, NJ, with a focus on patient comfort and advanced treatments.
@@ -67,9 +68,10 @@ export default function Footer() {
         <div className="space-y-4 col-span-1">
           <h4 className="font-semibold mb-3 text-lg">Contact Us</h4>
           <div className="text-sm text-gray-200">
-            <p className="mb-2">📍 240 Mulberry Street, 2nd floor, Newark, NJ 07102</p>
-            <p className="mb-2">📞 <a href="tel:9737553500" className="underline">973-755-3500</a></p>
-            <p className="mb-2">✉️ <a href="mailto:info@example.com" className="underline">info@example.com</a></p>
+            <p className="mb-2 flex gap-2"><MapPin size={24}/>
+2017 Eg Drive, Suite 200, Harrisburg, PA 17110</p>
+            <p className="mb-2 flex gap-2"><Phone size={18}/> <a href="tel:9737553500" className="underline">717-745-2700</a></p>
+            <p className="mb-2 flex gap-2"><Mail size={18}/> <a href="mailto:info@example.com" className="underline">info@example.com</a></p>
           </div>
         </div>
       </div>

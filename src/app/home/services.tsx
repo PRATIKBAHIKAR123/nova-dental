@@ -40,9 +40,9 @@ export default function ServicesSection() {
   }, []);
 
   return (
-    <section className="relative w-full mt-20 mx-auto px-4">
+    <section className="relative w-full mt-10 mx-auto px-4">
         <Fade delay={200}>
-      <h2 className="text-center text-primary text-3xl md:text-5xl font-extrabold font-['Manrope'] mb-10">
+      <h2 className="text-center text-primary text-3xl md:text-5xl font-extrabold mb-10">
         Services We Offer
       </h2>
       </Fade>
@@ -76,7 +76,7 @@ export default function ServicesSection() {
                           {service.icon}
                         </div> */}
                         <div className="rounded-tr-sm absolute bottom-0 left-0 p-5 bg-white w-[270px]">
-                        <h3 className="flex items-center gap-2 text-[#000a2d] text-xl font-bold font-['Manrope'] leading-tight mb-1">
+                        <h3 className="flex items-center gap-2 text-primary text-xl font-bold leading-tight mb-1">
                           <img src={service.icon} alt="icon" className="w-8 h-8" />{service.title}
                         </h3>
                         <p className="text-gray-600 text-sm mb-3">
@@ -123,18 +123,18 @@ export default function ServicesSection() {
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`w-3 h-3 rounded-full transition-colors duration-200 ${
-              currentSlide === index ? "bg-blue-500" : "bg-gray-300"
+              currentSlide === index ? "bg-primary" : "bg-gray-300"
             }`}
           />
         ))}
       </div>
       <Fade delay={200}>
-      <h2 className="text-center text-primary text-3xl md:text-5xl font-extrabold font-['Manrope'] my-10">
+      <h2 className="text-center text-3xl md:text-5xl font-extrabold my-10">
         Are you in need of emergency dental work?
       </h2>
       </Fade>
       <Fade delay={500}>
-      <h4 className="text-center text-primary text-md md:text-2xl font-bold font-['Manrope'] mb-5">
+      <h4 className="text-center text-md md:text-2xl font-bold mb-5">
         Book an appointment with us today!
       </h4>
       </Fade>

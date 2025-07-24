@@ -5,51 +5,154 @@ const InsuranceSection = () => {
     {
       id: 1,
       name: "Assurant",
-      logo: "/Images/Insurance companies/1771832.webp",
+      logo: "/Images/Insurance companies/1771704.webp",
       alt: "Assurant Insurance"
     },
     {
       id: 2,
       name: "UnitedHealthcare",
-      logo: "/Images/Insurance companies/1771881.webp",
+      logo: "/Images/Insurance companies/1771818.webp",
       alt: "UnitedHealthcare Insurance"
     },
     {
       id: 3,
       name: "Aetna",
-      logo: "/Images/Insurance companies/1772502.webp",
+      logo: "/Images/Insurance companies/1771832.webp",
       alt: "Aetna Insurance"
     },
     {
       id: 4,
       name: "AIG",
-      logo: "/Images/Insurance companies/1772499.webp",
+      logo: "/Images/Insurance companies/1771872.webp",
       alt: "AIG Insurance"
     },
     {
       id: 5,
       name: "Blue Cross Blue Shield",
-      logo: "/Images/Insurance companies/1773057.webp",
+      logo: "/Images/Insurance companies/1771881.webp",
       alt: "Blue Cross Blue Shield Insurance"
     },
     {
       id: 6,
       name: "Cigna",
-      logo: "/Images/Insurance companies/1858337.webp",
+      logo: "/Images/Insurance companies/1771885.webp",
       alt: "Cigna Healthcare"
     },
     {
       id: 7,
       name: "Humana",
-      logo: "/Images/Insurance companies/2206449.webp",
+      logo: "/Images/Insurance companies/1772499.webp",
       alt: "Humana Insurance"
     },
     {
       id: 8,
       name: "MetLife",
-      logo: "/Images/Insurance companies/2761735.webp",
+      logo: "/Images/Insurance companies/1772502.webp",
       alt: "MetLife Insurance"
+    },
+    {
+      id: 9,
+      name: "Guardian",
+      logo: "/Images/Insurance companies/1773057.webp",
+      alt: "Guardian Insurance"
+    },
+    {
+      id: 10,
+      name: "Delta Dental",
+      logo: "/Images/Insurance companies/1773061.webp",
+      alt: "Delta Dental Insurance"
+    },
+    {
+      id: 11,
+      name: "Cigna Dental",
+      logo: "/Images/Insurance companies/1778123.webp",
+      alt: "Cigna Dental Insurance"
+    },
+    {
+      id: 12,
+      name: "Principal",
+      logo: "/Images/Insurance companies/1779364.webp",
+      alt: "Principal Insurance"
+    },
+    {
+      id: 13,
+      name: "Lincoln Financial",
+      logo: "/Images/Insurance companies/1785544.webp",
+      alt: "Lincoln Financial Insurance"
+    },
+    {
+      id: 14,
+      name: "Ameritas",
+      logo: "/Images/Insurance companies/1789355.webp",
+      alt: "Ameritas Insurance"
+    },
+    {
+      id: 15,
+      name: "Sun Life",
+      logo: "/Images/Insurance companies/1790631.webp",
+      alt: "Sun Life Insurance"
+    },
+    {
+      id: 16,
+      name: "Principal",
+      logo: "/Images/Insurance companies/1790652.webp",
+      alt: "Principal Insurance"
+    },
+    {
+      id: 17,
+      name: "Lincoln Financial",
+      logo: "/Images/Insurance companies/1790912.webp",
+      alt: "Lincoln Financial Insurance"
+    },
+    {
+      id: 18,
+      name: "Ameritas",
+      logo: "/Images/Insurance companies/1825835.webp",
+      alt: "Ameritas Insurance"
+    },
+    {
+      id: 19,
+      name: "Sun Life",
+      logo: "/Images/Insurance companies/1858337.webp",
+      alt: "Sun Life Insurance"
+    },
+    {
+      id: 20,
+      name: "MetLife Dental",
+      logo: "/Images/Insurance companies/2206449.webp",
+      alt: "MetLife Dental Insurance"
+    },
+    {
+      id: 21,
+      name: "Cigna Dental",
+      logo: "/Images/Insurance companies/2272134.webp",
+      alt: "Cigna Dental Insurance"
+    },
+    {
+      id: 22,
+      name: "Delta Dental",
+      logo: "/Images/Insurance companies/2367708.webp",
+      alt: "Delta Dental Insurance"
+    },
+    {
+      id: 23,
+      name: "Guardian Dental",
+      logo: "/Images/Insurance companies/2614660.webp",
+      alt: "Guardian Dental Insurance"
+    },
+    {
+      id: 24,
+      name: "Humana Dental",
+      logo: "/Images/Insurance companies/2761735.webp",
+      alt: "Humana Dental Insurance"
+    },
+    {
+      id: 25,
+      name: "Aetna Dental",
+      logo: "/Images/Insurance companies/2781630.webp",
+      alt: "Aetna Dental Insurance"
     }
+    
   ];
 
   // Duplicate logos for seamless loop
@@ -60,7 +163,7 @@ const InsuranceSection = () => {
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl font-bold text-primary mb-6">
             We Accept Most Insurance Plans
           </h2>
           <p className="text-lg max-w-3xl mx-auto leading-relaxed">

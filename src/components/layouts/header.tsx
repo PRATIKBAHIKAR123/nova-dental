@@ -61,14 +61,14 @@ export default function Header() {
         isScrolled ? "py-4" : "py-6"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between px-4 md:px-8">
+      <div className=" mx-auto flex items-center justify-between px-4 md:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/Images/Maple MHA website header.png"
             alt="Maple Dental Logo"
-            width={isScrolled ? 140 : 220}
-            height={isScrolled ? 60 : 110}
+            width={isScrolled ? 180 : 220}
+            height={isScrolled ? 90 : 110}
             className="transition-all duration-300"
           />
         </Link>
@@ -120,20 +120,45 @@ export default function Header() {
           <Link href="/reviews" className="hover:text-primary transition">
             Reviews
           </Link>
-          <Link href="/locations" className="hover:text-primary transition">
-            Locations
+          <Link href="/blog" className="hover:text-primary transition">
+            Blogs
           </Link>
           <Link href="/contact-us" className="hover:text-primary transition">
             Contact
           </Link>
+          <div className="relative group">
+            <Link href="/services" className="hover:text-primary transition flex items-center gap-1">
+              Services Areas
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </Link>
+            
+            {/* Desktop Dropdown */}
+            <div className="absolute -left-5 mt-2 w-80 max-w-5xl bg-white border shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-40 rounded-lg">
+  <div className="grid grid-cols-1 gap-6 p-6 text-sm">
+    {[
+      "New Haven, IN", "Maplecrest Rd, Fort Wayne, IN", "Georgetown Place, Fort Wayne, IN"
+    ].map((service, index) => (
+      <Link
+        key={index}
+        href={`/service-areas/${service.toLowerCase().replace(/\s+/g, "-")}`}
+        className="text-gray-700 hover:text-primary hover:underline transition"
+      >
+        {service}
+      </Link>
+    ))}
+  </div>
+</div>
+          </div>
         </nav>
 
         {/* Desktop Buttons */}
         <div className="hidden md:flex gap-3">
-          <button className="border border-primary text-primary rounded-lg px-4 py-1 hover:bg-blue-50 text-sm font-medium transition">
-            Call Us
+          <button className="border border-primary text-primary rounded-lg px-4 py-3 hover:bg-blue-50 text-sm font-medium transition">
+            717-745-2700
           </button>
-          <button onClick={()=>setIsBookingOpen(true)}  className="bg-primary text-white rounded-lg px-4 py-1 hover:bg-blue-700 text-sm font-medium transition">
+          <button onClick={()=>setIsBookingOpen(true)}  className="bg-primary text-white rounded-lg px-4 py-3 hover:bg-blue-700 text-sm font-medium transition">
             Book Online
           </button>
         </div>

@@ -61,7 +61,7 @@ const SpecialOffersSection = () => {
           {/* <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-6">
             <span className="text-3xl">🎉</span>
           </div> */}
-          <h2 className="text-2xl font-bold text-white mb-4">
+          <h2 className="text-4xl font-bold text-white mb-4">
             <Bounce>
             Special Offers
             </Bounce>
