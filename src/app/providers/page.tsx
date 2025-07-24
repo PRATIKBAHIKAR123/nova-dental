@@ -67,7 +67,7 @@ export default function ProvidersPage() {
                             >
                                 {/* Add empty divs to center the last card if last row has fewer than 3 cards */}
                                 {isLastRow && isPartialRow && Array.from({ length: Math.floor((3 - row.length) / 2) }).map((_, i) => (
-                                    <div key={i} className="flex-1 max-w-[260px]" />
+                                    <div key={i} className="flex-1 max-w-[320px]" />
                                 ))}
                                 {row.map((provider, idx) => (
                                     <div
@@ -75,7 +75,7 @@ export default function ProvidersPage() {
                                         className={clsx(
                                             "relative bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col items-center w-full sm:w-56 md:w-56 transition-transform hover:-translate-y-2 hover:shadow-2xl border border-blue-100 h-72"
                                         )}
-                                        style={{ minWidth: 200, maxWidth: 260 }}
+                                        style={{ minWidth: 260, maxWidth: 320 }}
                                     >
                                         <div className="w-full h-2/3 relative">
                                             <Image
