@@ -8,7 +8,7 @@ export default function EmergencyDentistryPage() {
   return (
     <div className='flex min-h-screen bg-gray-50'>
       <ServiceSidebar />
-      <main className='ml-72 flex-1 overflow-y-auto p-4'>
+      <main className='ml-1 flex-1 overflow-y-auto p-4'>
         <div className='flex flex-col items-center gap-4 bg-white'>
           <div className='details-page-header-section'>
             <Fade direction='up' duration={1000}>
