@@ -26,7 +26,7 @@ export default function DentalEmergenciesPage() {
                 <Zoom cascade damping={0.3} duration={800}>
                   <div className='main-image'>
                     <img
-                      src='/Images/banners/Tooth Extraction1.jpg'
+                      src='/Images/Dental Emergency.jpg'
                       alt='Dental Emergencies Banner'
                     />
                   </div>
