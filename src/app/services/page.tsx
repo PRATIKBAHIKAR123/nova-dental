@@ -92,7 +92,7 @@ const services = [
   },
   {
     title: "Same-day Dentistry",
-    image: "/Images/banners/same day denstiry.jpg",
+    image: "/Images/same.jpg",
     link: "/services/same-day-dentistry",
   },
   {
@@ -107,13 +107,10 @@ const services = [
   },
   {
     title: "Halitosis",
-      image: "/Images/dentist4.jpg",
+    image: "/Images/Halitosis.jpg",
     link: "/services/halitosis",
   },
 ];
-
-// Unequal card heights for modern look
-const cardHeights = ["h-72", "h-80", "h-64", "h-96", "h-72"];
 
 export default function ServicesPage() {
   // Split into rows of 5
@@ -153,8 +150,7 @@ export default function ServicesPage() {
                   <div
                     key={service.title}
                     className={clsx(
-                      "relative bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col items-center w-full sm:w-56 md:w-56 transition-transform hover:-translate-y-2 hover:shadow-2xl border border-blue-100",
-                      cardHeights[(rowIdx * 5 + idx) % cardHeights.length]
+                      "relative bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col items-center w-full sm:w-56 md:w-56 transition-transform hover:-translate-y-2 hover:shadow-2xl border border-blue-100 h-72"
                     )}
                     style={{ minWidth: 200, maxWidth: 260 }}
                   >

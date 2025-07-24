@@ -2,22 +2,26 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import React from 'react';
 import Reveal, { Fade, Zoom } from 'react-awesome-reveal';
+import ServiceSidebar from '@/components/ServiceSidebar';
 
 export default function OralSurgeryPage() {
     return (
-        <div className='flex flex-col items-center gap-4 bg-white'>
-            <div className='details-page-header-section'>
-                <Fade direction='up' duration={1000}>
-                <h1>Oral Surgery Specialist</h1>
-                </Fade>
-                <Fade direction='down' duration={1000}>
-                <p>
-                    Oral Surgery for Newark and East Orange, NJ | Maple Dental | Cosmetic & Family Dentist
-                </p>
-                </Fade>
-                {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
-            </div>
-            <div className='details-page-desc-section'>
+        <div className='flex min-h-screen bg-gray-50'>
+            <ServiceSidebar />
+            <main className='ml-72 flex-1 overflow-y-auto p-4'>
+                <div className='flex flex-col items-center gap-4 bg-white'>
+                    <div className='details-page-header-section'>
+                        <Fade direction='up' duration={1000}>
+                        <h1>Oral Surgery Specialist</h1>
+                        </Fade>
+                        <Fade direction='down' duration={1000}>
+                        <p>
+                            Oral Surgery for Newark and East Orange, NJ | Maple Dental | Cosmetic & Family Dentist
+                        </p>
+                        </Fade>
+                        {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
+                    </div>
+                    <div className='details-page-desc-section'>
 
       {/* Image Section */}
       <div className='image_section'>
@@ -127,6 +131,8 @@ export default function OralSurgeryPage() {
 
       </Accordion>
     </div>
+        </div>
+            </main>
         </div>
     );
 }
