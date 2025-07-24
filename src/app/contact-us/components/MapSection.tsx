@@ -4,7 +4,7 @@ export default function MapSection() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="relative w-full h-[500px] rounded-lg overflow-hidden shadow-lg">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.4354875674995!2d-74.1906044!3d40.7594038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c253e013fd8125%3A0x7497a1117e95a6d5!2s539%20Bloomfield%20Ave%2C%20Newark%2C%20NJ%2007107%2C%20USA!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48699.53187959969!2d-76.92187807181904!3d40.28195319387061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8c116b8079e97%3A0xbb6e42c8128d46d5!2sHarrisburg%2C%20PA%2C%20USA!5e0!3m2!1sen!2sin!4v1753263853796!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -16,7 +16,7 @@ export default function MapSection() {
           />
           
           {/* Overlay with location info */}
-                      <div className="absolute top-4 left-4 bg-white rounded-lg p-4 shadow-lg max-w-sm">
+                      {/* <div className="absolute top-4 left-4 bg-white rounded-lg p-4 shadow-lg max-w-sm">
               <h3 className="font-semibold text-foreground mb-2">
                 Bloomfield Avenue Newark
               </h3>
@@ -34,7 +34,7 @@ export default function MapSection() {
                 Call: 973-604-1600
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
         
         <div className="text-center mt-6">

@@ -178,7 +178,7 @@ const InsuranceSection = () => {
           <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-gray-50 to-transparent z-10"></div>
           
           {/* Scrolling container */}
-          <div className="flex animate-scroll-horizontal">
+          <div className="scroll-track flex animate-scroll-horizontal">
             {duplicatedLogos.map((insurance, index) => (
               <div
                 key={`${insurance.id}-${index}`}
@@ -197,25 +197,27 @@ const InsuranceSection = () => {
       </div>
 
       {/* Custom CSS for animation */}
-      <style jsx>{`
-        @keyframes scroll-horizontal {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-        
-        .animate-scroll-horizontal {
-          animation: scroll-horizontal 10s linear infinite;
-        }
-        
-        /* Pause animation on hover */
-        .animate-scroll-horizontal:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
+       <style jsx>{`
+         .scroll-track {
+      width: fit-content;
+    }
+      @keyframes scroll-horizontal {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .animate-scroll-horizontal {
+      animation: scroll-horizontal 60s linear infinite;
+    }
+
+    .animate-scroll-horizontal:hover {
+      animation-play-state: paused;
+    }
+  `}</style>
     </section>
   );
 };

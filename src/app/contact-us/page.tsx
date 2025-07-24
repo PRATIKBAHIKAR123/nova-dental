@@ -15,15 +15,17 @@ export default function ContactUsPage() {
       <Fade triggerOnce>
         <section className="max-w-7xl mx-auto px-4 py-16">
           <div className="text-center mb-12">
-            <h2 className="text-secondary font-semibold text-sm uppercase tracking-wider mb-2">
-              Contact Us
-            </h2>
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Our <span className="text-secondary">Contact</span> <span className="text-primary">Information</span>
-            </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Feel free to contact us any time. We will get back to you as soon as we can!
-            </p>
+            
+            <Fade delay={200}>
+                          <h2 className="text-3xl md:text-5xl font-semibold text-primary leading-tight mb-3">
+                            Our Contact Information
+                          </h2>
+                        </Fade>
+            <Fade delay={500}>
+                          <p className="text-lg ">
+                            Feel free to contact us any time. We will get back to you as soon as we can!
+                          </p>
+                        </Fade>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-start">

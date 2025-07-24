@@ -1,40 +1,44 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Fade, Slide, Zoom, Bounce } from "react-awesome-reveal";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { useInView } from 'react-intersection-observer';
+import CountUp from 'react-countup';
+import Link from "next/link";
+import BookingModal from "../booking/bookingScreen";
 
 const services = [
   {
-    icon: "/Images/implant.png",
-    price: "$65",
+    icon: "/Images/icons/implant.png",
+    price: "65",
     title: "Dental Implant",
   },
   {
-    icon: "/Images/teeth-whitening.png",
-    price: "$135",
+    icon: "/Images/icons/tooth-whitening.png",
+    price: "135",
     title: "Teeth Whitening",
   },
   {
-    icon: "/Images/braces.png.png",
-    price: "$230",
+    icon: "/Images/icons/braces.png",
+    price: "230",
     title: "Dental Crown",
   },
 ];
 
 const features = [
   {
-    icon: "/Images/doctor_9439268.png",
+    icon: "/Images/icons/emergency denstiry.png",
     title: "Expert Dentist",
     desc: "Our qualified dental professionals provide exceptional care with years of experience and advanced training.",
   },
   {
-    icon: "/Images/dental-care.png",
+    icon: "/Images/icons/orthodontics.png",
     title: "24/7 Advance Care",
     desc: "Round-the-clock emergency dental services ensuring you receive immediate care when you need it most.",
   },
   {
-    icon: "/Images/teeth-whitening.png",
+    icon: "/Images/icons/dental-floss.png",
     title: "Available Products",
     desc: "Comprehensive range of dental products and treatments to meet all your oral health needs.",
   },
@@ -43,32 +47,46 @@ const features = [
 const team = [
   {
     img: "/Images/dentist1.jpg",
-    name: "Dr. David Costa",
-    role: "General Dentist",
+    name: "Bhavneet Singh",
+    role: "Family Dentist",
     time: "09 am - 12 pm",
     rating: 5.0,
   },
   {
     img: "/Images/dentist2.jpg",
-    name: "Dr. Julia Smith",
-    role: "Orthodontist",
+    name: "Joyce Lau",
+    role: "Cosmetic Dentist",
     time: "10 am - 04 pm",
     rating: 4.9,
   },
   {
     img: "/Images/dentist3.jpg",
-    name: "Dr. Thomas Albart",
-    role: "Dental Surgeon",
+    name: "Sahiba Atwal-Purewal",
+    role: "General Dentist",
     time: "09 am - 12 pm",
     rating: 4.8,
   },
   {
-    img: "/Images/dentist4.jpg",
-    name: "Dr. Rebeca Smith",
-    role: "Cosmetic Dentist",
+    img: "/Images/dentist2.jpg",
+    name: "Egli Hajdarmataj",
+    role: "Restorative Dentist",
     time: "12 pm - 05 pm",
     rating: 5.0,
   },
+  {
+    img: "/Images/dentist3.jpg",
+    name: "Jimi Stewart",
+    role: "Pediatric Dentist",
+    time: "01 pm - 06 pm",
+    rating: 4.7,
+  },
+  {
+    img: "/Images/dentist3.jpg",
+    name: "Joey Kim",
+    role: "Orthodontist",
+    time: "11 am - 03 pm",
+    rating: 4.9,
+  }
 ];
 
 const testimonials = [
@@ -104,77 +122,96 @@ const testimonials = [
 // ];
 
 export default function AboutUs() {
+  const { ref, inView } = useInView();
+    const [isBookingOpen, setIsBookingOpen] = useState(false);
   return (
     <div className="w-full min-h-screen bg-background text-foreground font-sans">
       {/* Hero Section */}
-      <Fade triggerOnce>
         <section className="flex flex-col md:flex-row items-center justify-between gap-8 py-16 px-4 md:px-16 max-w-7xl mx-auto">
           <div className="flex-1 space-y-6 md:pr-8">
             <span className="uppercase tracking-widest text-sm text-secondary font-semibold">Science 2005</span>
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-2 leading-tight">
-              Keep your <span className="text-secondary">Teeth</span> Clean &amp; Shine
-            </h1>
-            <p className="text-base text-muted-foreground max-w-xl">
-              Dental care is the maintenance of healthy teeth and the practice of keeping the mouth and teeth clean. We pursue excellence rationally and encounter solutions that are extremely beneficial for your oral health.
-            </p>
-            <p className="text-secondary font-medium">
-              You need to brush your teeth everyday for healthy teeth and smile.
-            </p>
+
+            <Fade delay={200}>
+              <h2 className="text-3xl md:text-5xl font-semibold text-primary leading-tight">
+                Keep your Teeth Clean &amp; Shine
+              </h2>
+            </Fade>
+            <Fade delay={500}>
+              <p className="text-lg ">
+                Whether you need a routine checkup or advanced cosmetic treatment, our expert team offers comprehensive services using the latest dental technology. From preventive care to smile makeovers, we tailor each treatment plan to your unique needs and goals.
+              </p>
+            </Fade>
+            <Fade delay={700}>
+                                        <p className="text-base leading-relaxed">
+                                            You need to brush your teeth everyday for healthy teeth and smile.
+                                        </p>
+                                    </Fade>
+
             <div className="flex gap-6 mt-4 items-center">
-              <Button asChild className="bg-secondary text-white hover:bg-secondary/80">
-                <a href="/booking">
-                  <div className="w-2 h-2 bg-white rounded-full mr-2"></div>
-                  Book now
-                </a>
+              <Button className="bg-primary text-white hover:bg-secondary/80">
+                  Book Appointment
+                
               </Button>
-              <a href="#video-tour" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-                <div className="w-4 h-4 border-2 border-muted-foreground rounded-full flex items-center justify-center">
-                  <div className="w-0 h-0 border-l-4 border-l-muted-foreground border-t-2 border-t-transparent border-b-2 border-b-transparent ml-0.5"></div>
-                </div>
-                Video tour
-              </a>
             </div>
           </div>
           <div className="flex-1 flex justify-center md:justify-end">
-            <img 
-              src="/Images/banners/doctor-presenting-something-isolated-white-background.jpg" 
-              alt="Dentists with patient" 
-              className="rounded-xl shadow-lg w-full max-w-md object-cover" 
+            <Slide direction="right">
+            <img
+              src="/Images/banners/doctor-presenting-something-isolated-white-background.jpg"
+              alt="Dentists with patient"
+              className="rounded-xl shadow-lg w-full max-w-md object-cover"
             />
+            </Slide>
           </div>
         </section>
-      </Fade>
 
       {/* Services/Pricing Section */}
-      <Slide direction="up" triggerOnce>
-        <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div key={index} className="bg-card rounded-lg p-6 flex flex-col items-center text-center shadow-lg hover:shadow-xl transition-shadow">
-                <img src={service.icon} alt={service.title} className="w-16 h-16 mb-4" />
-                <div className="text-3xl font-bold text-primary mb-2">{service.price}</div>
-                <div className="text-lg font-semibold text-muted-foreground">{service.title}</div>
-              </div>
-            ))}
+      <Slide direction="up" >
+                     <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {services.map((service, index) => {
+
+        return (
+          <div
+            key={index}
+            ref={ref}
+            className="bg-card rounded-lg p-6 flex flex-col items-center text-center shadow-lg hover:shadow-xl transition-shadow"
+          >
+            <img src={service.icon} alt={service.title} className="w-16 h-16 mb-4" />
+            
+            <div className="text-3xl font-bold text-primary mb-2">
+              ${inView ? (
+                <CountUp end={parseInt(service.price)} duration={1.5} separator="," />
+              ) : (
+                '0'
+              )}
+            </div>
+            
+            <div className="text-lg font-semibold">
+              {service.title}
+            </div>
           </div>
-        </section>
-      </Slide>
+        );
+      })}
+    </div>
+  </section>
+                  </Slide>
 
       {/* Why Choose Us Section */}
       <Slide direction="right" triggerOnce>
         <section className="flex flex-col md:flex-row items-center justify-between gap-8 py-16 px-4 md:px-16 max-w-7xl mx-auto">
           <div className="flex-1 flex justify-center md:justify-start mb-8 md:mb-0">
-            <img 
-              src="/Images/banners/young-man-with-patient-bib-dental-chair-dentist-who-sits-him-he-looks-his-teeth-using-dental-microscope-holds-dental-bur-mirror.jpg" 
-              alt="Dental procedure" 
-              className="rounded-xl shadow-lg w-full max-w-md object-cover" 
+            <img
+              src="/Images/banners/young-man-with-patient-bib-dental-chair-dentist-who-sits-him-he-looks-his-teeth-using-dental-microscope-holds-dental-bur-mirror.jpg"
+              alt="Dental procedure"
+              className="rounded-xl shadow-lg w-full max-w-md object-cover"
             />
           </div>
           <div className="flex-1 md:pl-12">
             <span className="uppercase tracking-widest text-sm text-secondary font-semibold">Why we best</span>
             <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-primary mt-2">People Choose Us because...</h2>
-            <p className="text-base text-muted-foreground mb-6">
-              Dental care is the maintenance of healthy teeth and the practice of keeping the teeth clean. We provide comprehensive solutions for optimal oral health.
+            <p className="text-base mb-6">
+              Each room is equipped with modern technology to ensure early diagnosis and minimally invasive procedures. We strive to make every visit as comfortable and efficient as possible, with a strong focus on patient education, preventative care, and long-term oral health.
             </p>
             <div className="space-y-6">
               {features.map((feature, index) => (
@@ -182,7 +219,7 @@ export default function AboutUs() {
                   <img src={feature.icon} alt={feature.title} className="w-12 h-12 mt-1" />
                   <div>
                     <h3 className="text-lg font-bold text-primary mb-1">{feature.title}</h3>
-                    <p className="text-sm text-muted-foreground">{feature.desc}</p>
+                    <p className="text-sm">{feature.desc}</p>
                   </div>
                 </div>
               ))}
@@ -198,18 +235,19 @@ export default function AboutUs() {
           <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-primary">Meet our Dentist qualified staff</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {team.map((member, index) => (
-              <div key={index} className="bg-card rounded-lg p-6 flex flex-col items-center shadow-lg hover:shadow-xl transition-shadow">
-                <img src={member.img} alt={member.name} className="w-24 h-24 rounded-full object-cover mb-4 border-4 border-secondary" />
+              <Link href={`/providers/${member.name.toString().toLowerCase().replace(/\s+/g, "-")}`} key={index} className="bg-card rounded-lg p-6 flex flex-col items-center text-center shadow-lg hover:shadow-xl transition-shadow">
+              
+                <img src={member.img} alt={member.name} className="w-24 h-24 rounded-full object-cover mb-4 border-4 border-primary" />
                 <h4 className="text-lg font-bold text-primary mb-1">{member.name}</h4>
-                <span className="text-sm text-muted-foreground mb-2">{member.role}</span>
-                <div className="flex items-center gap-2 text-xs text-muted-foreground mb-1">
+                <span className="text-sm mb-2">{member.role}</span>
+                {/* <div className="flex items-center gap-2 text-xs text-muted-foreground mb-1">
                   <span className="text-secondary">♥</span>
                   <span className="font-semibold">{member.rating.toFixed(1)}</span>
                   <span>|</span>
                   <span>🕐</span>
                   <span>{member.time}</span>
-                </div>
-              </div>
+                </div> */}
+              </Link>
             ))}
           </div>
         </section>
@@ -218,31 +256,21 @@ export default function AboutUs() {
       {/* Call to Action Section */}
       <Fade direction="up" triggerOnce>
         <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Button asChild className="bg-secondary text-white h-16 text-lg font-semibold hover:bg-secondary/80">
-              <a href="tel:+12345698741" className="flex items-center justify-between">
-                <div>
-                  <div>Call us for Booking</div>
-                  <div className="text-2xl font-bold">+12345 698 741</div>
-                </div>
-                <div className="text-3xl">🦷</div>
-              </a>
-            </Button>
-            <Button asChild className="bg-primary text-white h-16 text-lg font-semibold hover:bg-primary/80">
-              <a href="/booking" className="flex items-center justify-between">
-                <div>
-                  <div>Book Now</div>
-                  <div className="text-sm opacity-90">Click here for appointment</div>
-                </div>
-                <div className="text-3xl">👨‍⚕️</div>
-              </a>
-            </Button>
-          </div>
+          <div className="hidden md:flex gap-3">
+          <button className="w-full flex flex-col border border-primary text-primary rounded-lg px-4 py-3 hover:opacity-50 text-sm font-medium transition">
+            <span className="text-base">Call Us for Booking</span>
+            717-745-2700
+          </button>
+          <button onClick={()=>setIsBookingOpen(true)}  className="w-full flex flex-col bg-primary text-white rounded-lg px-4 py-3 hover:bg-secondary text-sm font-medium transition">
+            Book Online
+            <span className="text-base">Click Here for Appointment</span>
+          </button>
+        </div>
         </section>
       </Fade>
 
       {/* Testimonials Section */}
-      <Fade direction="up" triggerOnce>
+      {/* <Fade direction="up" triggerOnce>
         <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto">
           <span className="uppercase tracking-widest text-sm text-secondary font-semibold block mb-2">Testimonials</span>
           <h2 className="text-3xl md:text-4xl font-semibold mb-10 text-primary">Happy Patients with Satisfaction words</h2>
@@ -273,47 +301,9 @@ export default function AboutUs() {
             </div>
           </div>
         </section>
-      </Fade>
+      </Fade> */}
 
-      {/* Partners Section */}
-      {/* <Slide direction="up" triggerOnce>
-        <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto">
-          <div className="flex flex-wrap justify-center items-center gap-12">
-            {partners.map((partner, index) => (
-              <div key={index} className="flex flex-col items-center gap-2">
-                <img src={partner.icon} alt={partner.name} className="h-12 w-auto object-contain opacity-80 grayscale hover:grayscale-0 transition-all" />
-                <span className="text-sm font-semibold text-muted-foreground">{partner.name}</span>
-              </div>
-            ))}
-          </div>
-        </section>
-      </Slide> */}
-
-      {/* Newsletter Section */}
-      {/* <Bounce triggerOnce>
-        <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto">
-          <div className="bg-primary rounded-xl p-8 md:p-12 shadow-lg">
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="flex-1 text-center md:text-left">
-                <span className="uppercase tracking-widest text-sm text-primary-foreground/80 font-semibold">Newsletter</span>
-                <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-2">Subscribe our Newsletter</h3>
-                <p className="text-primary-foreground/80">Stay updated with the latest dental care tips and exclusive offers.</p>
-              </div>
-              <form className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
-                <Input 
-                  type="email" 
-                  placeholder="Enter Your email address" 
-                  className="bg-white text-primary placeholder:text-muted-foreground border-0"
-                  required 
-                />
-                <Button type="submit" className="bg-secondary text-white hover:bg-secondary/80">
-                  Subscribe
-                </Button>
-              </form>
-            </div>
-          </div>
-        </section>
-      </Bounce> */}
+      <BookingModal open={isBookingOpen} setOpen={setIsBookingOpen}/>
     </div>
   );
 } 

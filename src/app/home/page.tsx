@@ -217,27 +217,6 @@ export default function HomePage() {
                         ))}
                     </div>
                 </div>
-
-                {/* Navigation Arrows */}
-                {/* <button
-        onClick={() => setCurrent(current === 0 ? banners.length - 1 : current - 1)}
-        className="absolute left-6 top-1/2 transform -translate-y-1/2 z-30 bg-white/10 hover:bg-white/20 text-white p-4 rounded-full backdrop-blur-sm transition-all duration-300 border border-white/20"
-        aria-label="Previous slide"
-      >
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-      
-      <button
-        onClick={() => setCurrent((current + 1) % banners.length)}
-        className="absolute right-6 top-1/2 transform -translate-y-1/2 z-30 bg-white/10 hover:bg-white/20 text-white p-4 rounded-full backdrop-blur-sm transition-all duration-300 border border-white/20"
-        aria-label="Next slide"
-      >
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
-      </button> */}
             </section>
             {/* <div className='h-20 w-full flex'>
                 <div className='flex-1 bg-primary flex flex-col text-center items-center justify-center'>
@@ -266,6 +245,10 @@ export default function HomePage() {
                 </div>
 
             </div> */}
+            <div className='w-full bg-[#ffffff84] flex items-center justify-center overflow-hidden py-10 md:py-20'>
+                <img src="/Images/Maple MHA Logo.png" alt="dental-banner" className='w-auto h-48 object-cover' />  
+
+            </div>
             <HomepageSections />
 
             <section className="w-full bg-gradient-to-br from-white to-sky-50 relative overflow-hidden py-10 md:py-20">
@@ -274,7 +257,7 @@ export default function HomePage() {
                     {/* Left Side - Image */}
                     <Slide direction="right" className="w-full md:w-1/2 h-120">
                         <img
-                            src="/Images/banners/close-up-man-carrying-young-woman-his-back.jpg"
+                            src="/Images/banners/About Us (1).jpg"
                             alt="dental-banner"
                             className="rounded-xl w-full h-full object-cover shadow-md"
                         />
@@ -360,7 +343,7 @@ export default function HomePage() {
                     {/* Left Side - Image */}
                     <Slide direction="right" className="w-full md:w-1/2 h-120">
                         <img
-                            src="/Images/banners/portrait-smiling-teenage-girl-with-braces-sitting-chair-while-dentist-standing-clinic.jpg"
+                            src="/Images/banners/Insurance.jpg"
                             alt="dental-banner"
                             className="rounded-xl w-full h-full object-cover shadow-md"
                         />
@@ -410,7 +393,7 @@ export default function HomePage() {
 function HomepageSections() {
     const sections = [
         { label: 'About Us', icon: <InfoIcon />, bg: 'bg-primary', href: '/about-us' },
-        { label: 'Our Providers', icon: <User />, bg: 'bg-primary/70', href: '/about-us' },
+        { label: 'Our Providers', icon: <User />, bg: 'bg-primary/70', href: '/providers' },
         { label: 'Our Services', icon: <Stethoscope />, bg: 'bg-secondary', href: '/services' },
         { label: 'Contact Us', icon: <MessageCircle />, bg: 'bg-secondary/70', href: '/contact-us' },
     ];
