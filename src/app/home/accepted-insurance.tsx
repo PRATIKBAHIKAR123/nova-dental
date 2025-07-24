@@ -211,7 +211,7 @@ const InsuranceSection = () => {
     }
 
     .animate-scroll-horizontal {
-      animation: scroll-horizontal 40s linear infinite;
+      animation: scroll-horizontal 60s linear infinite;
     }
 
     .animate-scroll-horizontal:hover {
