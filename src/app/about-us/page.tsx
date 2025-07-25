@@ -123,79 +123,79 @@ const testimonials = [
 
 export default function AboutUs() {
   const { ref, inView } = useInView();
-    const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
   return (
     <div className="w-full min-h-screen bg-background text-foreground font-sans">
       {/* Hero Section */}
-        <section className="flex flex-col md:flex-row items-center justify-between gap-8 py-16 px-4 md:px-16 max-w-7xl mx-auto">
-          <div className="flex-1 space-y-6 md:pr-8">
-            <span className="uppercase tracking-widest text-sm text-secondary font-semibold">Science 2005</span>
+      <section className="flex flex-col md:flex-row items-center justify-between gap-8 py-16 px-4 md:px-16 max-w-7xl mx-auto">
+        <div className="flex-1 space-y-6 md:pr-8">
+          <span className="uppercase tracking-widest text-sm text-secondary font-semibold">Science 2005</span>
 
-            <Fade delay={200}>
-              <h2 className="text-3xl md:text-5xl font-semibold text-primary leading-tight">
-                Keep your Teeth Clean &amp; Shine
-              </h2>
-            </Fade>
-            <Fade delay={500}>
-              <p className="text-lg ">
-                Whether you need a routine checkup or advanced cosmetic treatment, our expert team offers comprehensive services using the latest dental technology. From preventive care to smile makeovers, we tailor each treatment plan to your unique needs and goals.
-              </p>
-            </Fade>
-            <Fade delay={700}>
-                                        <p className="text-base leading-relaxed">
-                                            You need to brush your teeth everyday for healthy teeth and smile.
-                                        </p>
-                                    </Fade>
+          <Fade delay={200}>
+            <h2 className="text-3xl md:text-5xl font-semibold text-primary leading-tight">
+              Keep your Teeth Clean &amp; Shine
+            </h2>
+          </Fade>
+          <Fade delay={500}>
+            <p className="text-lg ">
+              Whether you need a routine checkup or advanced cosmetic treatment, our expert team offers comprehensive services using the latest dental technology. From preventive care to smile makeovers, we tailor each treatment plan to your unique needs and goals.
+            </p>
+          </Fade>
+          <Fade delay={700}>
+            <p className="text-base leading-relaxed">
+              You need to brush your teeth everyday for healthy teeth and smile.
+            </p>
+          </Fade>
 
-            <div className="flex gap-6 mt-4 items-center">
-              <Button className="bg-primary text-white hover:bg-secondary/80">
-                  Book Appointment
-                
-              </Button>
-            </div>
+          <div className="flex gap-6 mt-4 items-center">
+            <Button className="bg-primary text-white hover:bg-secondary/80">
+              Book Appointment
+
+            </Button>
           </div>
-          <div className="flex-1 flex justify-center md:justify-end">
-            <Slide direction="right">
+        </div>
+        <div className="flex-1 flex justify-center md:justify-end">
+          <Slide direction="right">
             <img
               src="/Images/banners/doctor-presenting-something-isolated-white-background.jpg"
               alt="Dentists with patient"
               className="rounded-xl shadow-lg w-full max-w-md object-cover"
             />
-            </Slide>
-          </div>
-        </section>
+          </Slide>
+        </div>
+      </section>
 
       {/* Services/Pricing Section */}
       <Slide direction="up" >
-                     <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto">
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {services.map((service, index) => {
+        <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {services.map((service, index) => {
 
-        return (
-          <div
-            key={index}
-            ref={ref}
-            className="bg-card rounded-lg p-6 flex flex-col items-center text-center shadow-lg hover:shadow-xl transition-shadow"
-          >
-            <img src={service.icon} alt={service.title} className="w-16 h-16 mb-4" />
-            
-            <div className="text-3xl font-bold text-primary mb-2">
-              ${inView ? (
-                <CountUp end={parseInt(service.price)} duration={1.5} separator="," />
-              ) : (
-                '0'
-              )}
-            </div>
-            
-            <div className="text-lg font-semibold">
-              {service.title}
-            </div>
+              return (
+                <div
+                  key={index}
+                  ref={ref}
+                  className="bg-card rounded-lg p-6 flex flex-col items-center text-center shadow-lg hover:shadow-xl transition-shadow"
+                >
+                  <img src={service.icon} alt={service.title} className="w-16 h-16 mb-4" />
+
+                  <div className="text-3xl font-bold text-primary mb-2">
+                    ${inView ? (
+                      <CountUp end={parseInt(service.price)} duration={1.5} separator="," />
+                    ) : (
+                      '0'
+                    )}
+                  </div>
+
+                  <div className="text-lg font-semibold">
+                    {service.title}
+                  </div>
+                </div>
+              );
+            })}
           </div>
-        );
-      })}
-    </div>
-  </section>
-                  </Slide>
+        </section>
+      </Slide>
 
       {/* Why Choose Us Section */}
       <Slide direction="right" triggerOnce>
@@ -236,7 +236,7 @@ export default function AboutUs() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {team.map((member, index) => (
               <Link href={`/providers/${member.name.toString().toLowerCase().replace(/\s+/g, "-")}`} key={index} className="bg-card rounded-lg p-6 flex flex-col items-center text-center shadow-lg hover:shadow-xl transition-shadow">
-              
+
                 <img src={member.img} alt={member.name} className="w-24 h-24 rounded-full object-cover mb-4 border-4 border-primary" />
                 <h4 className="text-lg font-bold text-primary mb-1">{member.name}</h4>
                 <span className="text-sm mb-2">{member.role}</span>
@@ -257,15 +257,15 @@ export default function AboutUs() {
       <Fade direction="up" triggerOnce>
         <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto">
           <div className="hidden md:flex gap-3">
-          <button className="w-full flex flex-col border border-primary text-primary rounded-lg px-4 py-3 hover:opacity-50 text-sm font-medium transition">
-            <span className="text-base">Call Us for Booking</span>
-            717-745-2700
-          </button>
-          <button onClick={()=>setIsBookingOpen(true)}  className="w-full flex flex-col bg-primary text-white rounded-lg px-4 py-3 hover:bg-secondary text-sm font-medium transition">
-            Book Online
-            <span className="text-base">Click Here for Appointment</span>
-          </button>
-        </div>
+            <button className="w-full flex flex-col border border-primary text-primary rounded-lg px-4 py-3 hover:opacity-50 text-sm font-medium transition">
+              <span className="text-base">Call Us for Booking</span>
+              717-745-2700
+            </button>
+            <button onClick={() => setIsBookingOpen(true)} className="w-full flex flex-col bg-primary text-white rounded-lg px-4 py-3 hover:bg-secondary text-sm font-medium transition">
+              Book Online
+              <span className="text-base">Click Here for Appointment</span>
+            </button>
+          </div>
         </section>
       </Fade>
 
@@ -303,7 +303,7 @@ export default function AboutUs() {
         </section>
       </Fade> */}
 
-      <BookingModal open={isBookingOpen} setOpen={setIsBookingOpen}/>
+      <BookingModal open={isBookingOpen} setOpen={setIsBookingOpen} />
     </div>
   );
 } 

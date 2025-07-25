@@ -142,7 +142,8 @@ export default function Header() {
     ].map((service, index) => (
       <Link
         key={index}
-        href={`/service-areas/${service.toLowerCase().replace(/\s+/g, "-")}`}
+        // href={`/service-areas/${service.toLowerCase().replace(/\s+/g, "-")}`}
+         href={`/service-areas`}
         className="text-gray-700 hover:text-primary hover:underline transition"
       >
         {service}
