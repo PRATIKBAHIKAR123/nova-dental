@@ -69,17 +69,11 @@ function StarRating({ rating }: { rating: number }) {
 }
 
 export default function ReviewsPage() {
-  // Split into rows of 3
-  const rows = [];
-  for (let i = 0; i < reviews.length; i += 3) {
-    rows.push(reviews.slice(i, i + 3));
-  }
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white pb-12">
       {/* Header Section */}
       <div className="details-page-header-section">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-2 tracking-tight drop-shadow-lg text-center">Reviews</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-2 tracking-tight drop-shadow-lg text-center">Reviews</h1>
         <div className="flex justify-center mt-4">
           <button className="px-6 py-2 rounded-full bg-white text-teal-700 font-semibold shadow hover:bg-teal-100 transition-all duration-200 text-base flex items-center gap-2">
             SHARE FEEDBACK
@@ -87,51 +81,28 @@ export default function ReviewsPage() {
           </button>
         </div>
       </div>
-      <div className="max-w-7xl mt-10 mx-auto">
-        <h2 className="text-center text-xl font-semibold mb-8">Patient Reviews</h2>
-        <div className="space-y-12">
-          {rows.map((row, rowIdx) => {
-            const isLastRow = rowIdx === rows.length - 1;
-            const isPartialRow = row.length < 3;
-            return (
-              <div
-                key={rowIdx}
-                className={clsx(
-                  "flex gap-12",
-                  isPartialRow ? "justify-center" : "justify-center"
-                )}
-                style={{ minHeight: '20rem' }}
-              >
-                {/* Add empty divs to center the last card if last row has fewer than 3 cards */}
-                {isLastRow && isPartialRow && Array.from({ length: Math.floor((3 - row.length) / 2) }).map((_, i) => (
-                  <div key={i} className="flex-1 max-w-[320px]" />
-                ))}
-                {row.map((review, idx) => (
-                  <div
-                    key={review.name + review.date}
-                    className="relative bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col items-center w-full sm:w-80 md:w-96 transition-transform hover:-translate-y-2 hover:shadow-2xl border border-teal-100 h-80"
-                    style={{ minWidth: 260, maxWidth: 320 }}
-                  >
-                    <div className="flex-1 flex flex-col justify-between items-center p-6 w-full">
-                      <div className="mb-3 flex justify-center w-full">
-                        <StarRating rating={review.rating} />
-                      </div>
-                      <p className="text-gray-700 text-base text-left mb-3 leading-relaxed flex-1 flex items-center justify-center">
-                        {review.text}
-                      </p>
-                      <div className="mt-auto text-sm text-gray-500 text-center w-full">
-                        <span className="font-semibold">{review.name}</span> | {review.date}
-                      </div>
-                    </div>
-                  </div>
-                ))}
-                {/* Add empty divs to center the last card if last row has fewer than 3 cards */}
-                {isLastRow && isPartialRow && Array.from({ length: Math.ceil((3 - row.length) / 2) }).map((_, i) => (
-                  <div key={i} className="flex-1 max-w-[320px]" />
-                ))}
+      <div className="max-w-7xl mt-10 mx-auto px-2 sm:px-4 md:px-8">
+        <h2 className="text-center text-lg sm:text-xl font-semibold mb-8">Patient Reviews</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+          {reviews.map((review, idx) => (
+            <div
+              key={review.name + review.date}
+              className="relative bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col items-center w-full transition-transform hover:-translate-y-2 hover:shadow-2xl border border-teal-100 h-72 sm:h-80 md:h-80 lg:h-80 xl:h-80 mx-auto"
+              style={{ minWidth: 0 }}
+            >
+              <div className="flex-1 flex flex-col justify-between items-center p-4 sm:p-6 w-full">
+                <div className="mb-3 flex justify-center w-full">
+                  <StarRating rating={review.rating} />
+                </div>
+                <p className="text-gray-700 text-sm sm:text-base text-left mb-3 leading-relaxed flex-1 flex items-center justify-center">
+                  {review.text}
+                </p>
+                <div className="mt-auto text-xs sm:text-sm text-gray-500 text-center w-full">
+                  <span className="font-semibold">{review.name}</span> | {review.date}
+                </div>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </div>
     </div>

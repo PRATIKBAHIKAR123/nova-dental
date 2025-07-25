@@ -16,96 +16,123 @@ export const blogPostsData: BlogPost[] = [
     shortDescription:
       "Discover if your dental discomfort means it's time for wisdom teeth removal. Learn the top signs and what to expect during the procedure.",
     detailsDescription: `
-<h2>Top 5 Signs You Need Wisdom Teeth Removal in East Orange, NJ | Maple Dental</h2>
-<p>If you've ever felt a sharp ache in the back of your mouth or noticed swelling in your gums, you might be facing an unwelcome guest: wisdom teeth. Usually, these third molars erupt between the ages of 17 and 25. Sometimes, they grow without issue. But often, they become problematic – and when that happens, removal becomes necessary.</p>
+<section class="mb-8">
+  <h2 class="text-2xl font-bold mb-4">Top 5 Signs You Need Wisdom Teeth Removal in East Orange, NJ | Maple Dental</h2>
+  <p>If you've ever felt a sharp ache in the back of your mouth or noticed swelling in your gums, you might be facing an unwelcome guest: wisdom teeth. Usually, these third molars erupt between the ages of 17 and 25. Sometimes, they grow without issue. But often, they become problematic – and when that happens, removal becomes necessary.</p>
+</section>
 
-<h3>1. Ongoing Pain Towards the Back of Your Jaw</h3>
-<p>Is there a dull ache or sharp pain at the very back of your jaw? This could be your wisdom teeth trying to push their way in.</p>
-<ul>
-  <li>Impacted teeth pushing against others</li>
-  <li>Inflamed or infected gum tissue</li>
-  <li>Pressure on nerves</li>
-</ul>
+<section class="mb-8 bg-gray-50 p-6 rounded-lg">
+  <h3 class="text-xl font-semibold mb-2">1. Ongoing Pain Towards the Back of Your Jaw</h3>
+  <p>Is there a dull ache or sharp pain at the very back of your jaw? This could be your wisdom teeth trying to push their way in.</p>
+  <ul class="list-disc list-inside">
+    <li>Impacted teeth pushing against others</li>
+    <li>Inflamed or infected gum tissue</li>
+    <li>Pressure on nerves</li>
+  </ul>
+</section>
 
-<h3>2. Swelling and Redness Around the Gums</h3>
-<p>Notice your gums looking puffier or redder than usual?</p>
-<ul>
-  <li>Gum infections (pericoronitis)</li>
-  <li>Abscesses</li>
-  <li>Bleeding while brushing</li>
-</ul>
+<section class="mb-8">
+  <h3 class="text-xl font-semibold mb-2">2. Swelling and Redness Around the Gums</h3>
+  <p>Notice your gums looking puffier or redder than usual?</p>
+  <ul class="list-disc list-inside">
+    <li>Gum infections (pericoronitis)</li>
+    <li>Abscesses</li>
+    <li>Bleeding while brushing</li>
+  </ul>
+</section>
 
-<h3>3. Difficulty Opening Your Mouth or Chewing</h3>
-<p>Are you struggling to open your mouth wide or chew comfortably?</p>
-<ul>
-  <li>Limited jaw mobility</li>
-  <li>Pain while chewing</li>
-  <li>Clicking or popping sounds</li>
-</ul>
+<section class="mb-8 bg-gray-50 p-6 rounded-lg">
+  <h3 class="text-xl font-semibold mb-2">3. Difficulty Opening Your Mouth or Chewing</h3>
+  <p>Are you struggling to open your mouth wide or chew comfortably?</p>
+  <ul class="list-disc list-inside">
+    <li>Limited jaw mobility</li>
+    <li>Pain while chewing</li>
+    <li>Clicking or popping sounds</li>
+  </ul>
+</section>
 
-<h3>4. Recurring Headaches or Ear-aches</h3>
-<p>Believe it or not, wisdom teeth can affect more than just your mouth.</p>
-<ul>
-  <li>Tension headaches</li>
-  <li>Referred pain to the ears or sinuses</li>
-</ul>
+<section class="mb-8">
+  <h3 class="text-xl font-semibold mb-2">4. Recurring Headaches or Ear-aches</h3>
+  <p>Believe it or not, wisdom teeth can affect more than just your mouth.</p>
+  <ul class="list-disc list-inside">
+    <li>Tension headaches</li>
+    <li>Referred pain to the ears or sinuses</li>
+  </ul>
+</section>
 
-<h3>5. Crowded or Shifting Teeth</h3>
-<p>Have you noticed your once-straight teeth starting to overlap?</p>
-<ul>
-  <li>Shifting front teeth</li>
-  <li>Damage to neighboring molars</li>
-  <li>Bite misalignment</li>
-</ul>
+<section class="mb-8 bg-gray-50 p-6 rounded-lg">
+  <h3 class="text-xl font-semibold mb-2">5. Crowded or Shifting Teeth</h3>
+  <p>Have you noticed your once-straight teeth starting to overlap?</p>
+  <ul class="list-disc list-inside">
+    <li>Shifting front teeth</li>
+    <li>Damage to neighboring molars</li>
+    <li>Bite misalignment</li>
+  </ul>
+</section>
 
-<h3>Risks of Delayed Wisdom Tooth Extraction</h3>
-<ul>
-  <li>Cysts or tumors</li>
-  <li>Damage to jawbone or nerves</li>
-  <li>Chronic infection</li>
-</ul>
+<section class="mb-8">
+  <h3 class="text-xl font-semibold mb-2">Risks of Delayed Wisdom Tooth Extraction</h3>
+  <ul class="list-disc list-inside">
+    <li>Cysts or tumors</li>
+    <li>Damage to jawbone or nerves</li>
+    <li>Chronic infection</li>
+  </ul>
+</section>
 
-<h3>Potential for Serious Infections</h3>
-<p>Ignoring infection signs can lead to swelling that spreads, fever, and even hospitalization. Early removal is often the safest and smartest choice.</p>
+<section class="mb-8 bg-gray-50 p-6 rounded-lg">
+  <h3 class="text-xl font-semibold mb-2">Potential for Serious Infections</h3>
+  <p>Ignoring infection signs can lead to swelling that spreads, fever, and even hospitalization. Early removal is often the safest and smartest choice.</p>
+</section>
 
-<h3>When & How Maple Dental, East Orange Can Help</h3>
-<ul>
-  <li><strong>Timing is Everything:</strong> The best time to remove wisdom teeth is before they cause complications. This often means early detection through regular check-ups and X-rays.</li>
-  <li><strong>Preventative Vs. Emergency Extractions:</strong> Planned, preventative removals are less painful, cheaper, and heal faster than emergency surgeries. If you're in East Orange, it's wise to visit a trusted local dental provider at 90 Washington Street, Suite 309, East Orange, NJ 07017, before it becomes urgent.</li>
-</ul>
+<section class="mb-8">
+  <h3 class="text-xl font-semibold mb-2">When & How Maple Dental, East Orange Can Help</h3>
+  <ul class="list-disc list-inside">
+    <li><strong>Timing is Everything:</strong> The best time to remove wisdom teeth is before they cause complications. This often means early detection through regular check-ups and X-rays.</li>
+    <li><strong>Preventative Vs. Emergency Extractions:</strong> Planned, preventative removals are less painful, cheaper, and heal faster than emergency surgeries. If you're in East Orange, it's wise to visit a trusted local dental provider at 90 Washington Street, Suite 309, East Orange, NJ 07017, before it becomes urgent.</li>
+  </ul>
+</section>
 
-<h3>Personalized Consultations</h3>
-<ul>
-  <li>At Maple Dental NJ, you'll get a custom treatment plan tailored to your needs.</li>
-  <li>State-of-the-Art Technology: Maple Dental NJ uses digital X-rays and 3D imaging to get a full view of your teeth and jaw, ensuring precise and safe removal.</li>
-  <li>Experienced Dental Team in East Orange: Led by professionals who specialize in oral surgery, Maple Dental NJ offers comfortable, efficient, and compassionate care for patients in East Orange and beyond.</li>
-</ul>
+<section class="mb-8 bg-gray-50 p-6 rounded-lg">
+  <h3 class="text-xl font-semibold mb-2">Personalized Consultations</h3>
+  <ul class="list-disc list-inside">
+    <li>At Maple Dental NJ, you'll get a custom treatment plan tailored to your needs.</li>
+    <li>State-of-the-Art Technology: Maple Dental NJ uses digital X-rays and 3D imaging to get a full view of your teeth and jaw, ensuring precise and safe removal.</li>
+    <li>Experienced Dental Team in East Orange: Led by professionals who specialize in oral surgery, Maple Dental NJ offers comfortable, efficient, and compassionate care for patients in East Orange and beyond.</li>
+  </ul>
+</section>
 
-<h3>Wisdom Teeth Removal Procedure at Maple Dental NJ - What to Expect</h3>
-<ol>
-  <li>Numbing or sedation</li>
-  <li>Incision to remove teeth</li>
-  <li>Stitches (if necessary)</li>
-  <li>Post-op guidance</li>
-</ol>
-<p>Most patients are usually finished and heading home in under 60 minutes.</p>
+<section class="mb-8">
+  <h3 class="text-xl font-semibold mb-2">Wisdom Teeth Removal Procedure at Maple Dental NJ - What to Expect</h3>
+  <ol class="list-decimal list-inside">
+    <li>Numbing or sedation</li>
+    <li>Incision to remove teeth</li>
+    <li>Stitches (if necessary)</li>
+    <li>Post-op guidance</li>
+  </ol>
+  <p>Most patients are usually finished and heading home in under 60 minutes.</p>
+</section>
 
-<h3>Recovery and Aftercare Tips</h3>
-<ul>
-  <li>Rest for 24–48 hours</li>
-  <li>Use cold compresses to reduce swelling</li>
-  <li>Eat soft foods like yogurt and smoothies</li>
-  <li>Avoid smoking or drinking through straws</li>
-</ul>
-<p>Maple Dental, NJ provides full recovery instructions and check-ins to ensure you heal quickly.</p>
+<section class="mb-8 bg-gray-50 p-6 rounded-lg">
+  <h3 class="text-xl font-semibold mb-2">Recovery and Aftercare Tips</h3>
+  <ul class="list-disc list-inside">
+    <li>Rest for 24–48 hours</li>
+    <li>Use cold compresses to reduce swelling</li>
+    <li>Eat soft foods like yogurt and smoothies</li>
+    <li>Avoid smoking or drinking through straws</li>
+  </ul>
+  <p>Maple Dental, NJ provides full recovery instructions and check-ins to ensure you heal quickly.</p>
+</section>
 
-<h3>Conclusion</h3>
-<p>Your wisdom teeth might not bother you yet, but they can really start to hurt later on. The sooner you catch the signs, the easier the treatment. If you're experiencing any of the 5 signs above, it's time to schedule a visit with your local East Orange dental experts at Maple Dental NJ.</p>
-<p>In addition to our East Orange office, we also proudly serve patients from nearby Newark with two convenient locations:</p>
-<ul>
-  <li>539 Bloomfield Avenue, Suite 3, Newark, NJ 07107</li>
-  <li>240 Mulberry Street, 2nd Floor, Newark, NJ 07102</li>
-</ul>
+<section class="mb-8">
+  <h3 class="text-xl font-semibold mb-2">Conclusion</h3>
+  <p>Your wisdom teeth might not bother you yet, but they can really start to hurt later on. The sooner you catch the signs, the easier the treatment. If you're experiencing any of the 5 signs above, it's time to schedule a visit with your local East Orange dental experts at Maple Dental NJ.</p>
+  <p class="mt-2">In addition to our East Orange office, we also proudly serve patients from nearby Newark with two convenient locations:</p>
+  <ul class="list-disc list-inside">
+    <li>539 Bloomfield Avenue, Suite 3, Newark, NJ 07107</li>
+    <li>240 Mulberry Street, 2nd Floor, Newark, NJ 07102</li>
+  </ul>
+</section>
+
 `
   },
   {
@@ -116,52 +143,68 @@ export const blogPostsData: BlogPost[] = [
     shortDescription:
       "Root canal treatment doesn't have to be scary. Discover why choosing Maple Dental for your root canal procedure ensures a comfortable experience with advanced technology and experienced professionals.",
     detailsDescription: `
-<h2>At Maple Dental, root canals are done with precision and care.</h2>
-<p>Our friendly staff ensures a stress-free experience with fast, effective relief from tooth pain.</p>
-<p>Sharp tooth pain is often your body's way of signaling that there's a deeper issue going on. One of the most common causes? An infected or damaged tooth root. That's where root canal therapy comes in and if you're in Newark or East Orange, Maple Dental, NJ, is the trusted name to turn to.</p>
+<section class="mb-8">
+  <h2 class="text-2xl font-bold mb-4">At Maple Dental, root canals are done with precision and care.</h2>
+  <p>Our friendly staff ensures a stress-free experience with fast, effective relief from tooth pain.</p>
+  <p>Sharp tooth pain is often your body's way of signaling that there's a deeper issue going on. One of the most common causes? An infected or damaged tooth root. That's where root canal therapy comes in and if you're in Newark or East Orange, Maple Dental, NJ, is the trusted name to turn to.</p>
+</section>
 
-<h3>Why Choose Maple Dental, NJ, for Your Root Canal?</h3>
-<p>With locations in both Newark and East Orange, this practice serves individuals and families of all ages. Whether it's a routine cleaning or a more complex procedure like a root canal, Maple Dental, NJ, offers the same high level of precision and patient-centered care.</p>
+<section class="mb-8 bg-gray-50 p-6 rounded-lg">
+  <h3 class="text-xl font-semibold mb-2">Why Choose Maple Dental, NJ, for Your Root Canal?</h3>
+  <p>With locations in both Newark and East Orange, this practice serves individuals and families of all ages. Whether it's a routine cleaning or a more complex procedure like a root canal, Maple Dental, NJ, offers the same high level of precision and patient-centered care.</p>
+</section>
 
-<h3>Understanding the Importance of Root Canals</h3>
-<p>Let's be real—no one's ever excited about needing a root canal. But when the pulp inside your tooth becomes inflamed or infected, delaying treatment can lead to pain, abscesses, and even tooth loss. A root canal removes the infected tissue and saves your natural tooth, avoiding the need for extraction.</p>
+<section class="mb-8">
+  <h3 class="text-xl font-semibold mb-2">Understanding the Importance of Root Canals</h3>
+  <p>Let's be real—no one's ever excited about needing a root canal. But when the pulp inside your tooth becomes inflamed or infected, delaying treatment can lead to pain, abscesses, and even tooth loss. A root canal removes the infected tissue and saves your natural tooth, avoiding the need for extraction.</p>
+</section>
 
-<h3>What Makes Maple Dental, NJ, Stand Out?</h3>
-<ul>
-  <li>State-of-the-art equipment in every room</li>
-  <li>Highly trained general and cosmetic dentists</li>
-  <li>Friendly, bilingual staff</li>
-  <li>Affordable pricing and flexible payment options</li>
-  <li>Emergency appointments available</li>
-</ul>
-<p>But beyond the tech and team, it's the patient experience that sets Maple Dental, NJ apart. Right from the start, you'll feel the friendly and attentive care that makes all the difference.</p>
+<section class="mb-8 bg-gray-50 p-6 rounded-lg">
+  <h3 class="text-xl font-semibold mb-2">What Makes Maple Dental, NJ, Stand Out?</h3>
+  <ul class="list-disc list-inside">
+    <li>State-of-the-art equipment in every room</li>
+    <li>Highly trained general and cosmetic dentists</li>
+    <li>Friendly, bilingual staff</li>
+    <li>Affordable pricing and flexible payment options</li>
+    <li>Emergency appointments available</li>
+  </ul>
+  <p class="mt-2">But beyond the tech and team, it's the patient experience that sets Maple Dental, NJ apart. Right from the start, you'll feel the friendly and attentive care that makes all the difference.</p>
+</section>
 
-<h3>Root Canal Treatment Process at Maple Dental, NJ</h3>
-<ol>
-  <li><strong>Thorough Examination and Diagnosis:</strong> The process always starts with a detailed dental exam. Using advanced digital X-rays and diagnostic tools, your dentist will assess the health of your tooth and identify the extent of the infection or damage. You'll also be walked through your treatment options so you understand what to expect.</li>
-  <li><strong>Local Anesthesia:</strong> Worried about pain? Don't be. To keep you comfortable, we gently numb the area so the procedure feels pain-free. Most people say they feel some pressure during the procedure, but not actual pain.</li>
-  <li><strong>Removing the Infected Pulp:</strong> Once you're settled in, the dentist gently opens the top of the tooth to reach the problem area inside. Then, using precision tools, the damaged tissue is removed and the canals are cleaned to stop the infection from coming back.</li>
-  <li><strong>Shaping and Disinfection:</strong> The canals are then carefully shaped and disinfected. We use cutting-edge rotary tools and antimicrobial solutions to make sure every bit of bacteria is removed, which is essential for long-term success.</li>
-  <li><strong>Filling the Canals:</strong> Once the tooth is thoroughly cleaned, the canals are filled with gutta-percha, a reliable, biocompatible material that helps keep the tooth stable.</li>
-  <li><strong>Temporary or Permanent Restoration:</strong> To protect the tooth in the meantime, a temporary filling is placed until the permanent solution is ready. Often, a custom crown is placed later to restore the tooth's full strength and function. We offer same-day crown options in some cases, depending on the condition of the tooth.</li>
-</ol>
+<section class="mb-8">
+  <h3 class="text-xl font-semibold mb-2">Root Canal Treatment Process at Maple Dental, NJ</h3>
+  <ol class="list-decimal list-inside space-y-2">
+    <li><strong>Thorough Examination and Diagnosis:</strong> The process always starts with a detailed dental exam. Using advanced digital X-rays and diagnostic tools, your dentist will assess the health of your tooth and identify the extent of the infection or damage. You'll also be walked through your treatment options so you understand what to expect.</li>
+    <li><strong>Local Anesthesia:</strong> Worried about pain? Don't be. To keep you comfortable, we gently numb the area so the procedure feels pain-free. Most people say they feel some pressure during the procedure, but not actual pain.</li>
+    <li><strong>Removing the Infected Pulp:</strong> Once you're settled in, the dentist gently opens the top of the tooth to reach the problem area inside. Then, using precision tools, the damaged tissue is removed and the canals are cleaned to stop the infection from coming back.</li>
+    <li><strong>Shaping and Disinfection:</strong> The canals are then carefully shaped and disinfected. We use cutting-edge rotary tools and antimicrobial solutions to make sure every bit of bacteria is removed, which is essential for long-term success.</li>
+    <li><strong>Filling the Canals:</strong> Once the tooth is thoroughly cleaned, the canals are filled with gutta-percha, a reliable, biocompatible material that helps keep the tooth stable.</li>
+    <li><strong>Temporary or Permanent Restoration:</strong> To protect the tooth in the meantime, a temporary filling is placed until the permanent solution is ready. Often, a custom crown is placed later to restore the tooth's full strength and function. We offer same-day crown options in some cases, depending on the condition of the tooth.</li>
+  </ol>
+</section>
 
-<h3>Who Can Benefit From a Root Canal at Maple Dental, NJ?</h3>
-<p>If any of these symptoms sound familiar, it's probably a good idea to book a dental checkup soon:</p>
-<ul>
-  <li>Persistent toothache</li>
-  <li>Sensitivity to hot or cold</li>
-  <li>Swelling or tenderness around a tooth</li>
-  <li>Darkening of the tooth</li>
-  <li>A pimple-like bump on the gums</li>
-</ul>
-<p>Don't ignore the signs. Acting quickly makes the process smoother and boosts your chances of a full, easy recovery.</p>
+<section class="mb-8 bg-gray-50 p-6 rounded-lg">
+  <h3 class="text-xl font-semibold mb-2">Who Can Benefit From a Root Canal at Maple Dental, NJ?</h3>
+  <p>If any of these symptoms sound familiar, it's probably a good idea to book a dental checkup soon:</p>
+  <ul class="list-disc list-inside">
+    <li>Persistent toothache</li>
+    <li>Sensitivity to hot or cold</li>
+    <li>Swelling or tenderness around a tooth</li>
+    <li>Darkening of the tooth</li>
+    <li>A pimple-like bump on the gums</li>
+  </ul>
+  <p class="mt-2">Don't ignore the signs. Acting quickly makes the process smoother and boosts your chances of a full, easy recovery.</p>
+</section>
 
-<h3>Serving Newark, East Orange & Essex County</h3>
-<p>Maple Dental, NJ, proudly cares for smiles throughout Newark (07103, 07104, 07105, 07107), East Orange (07017, 07018), and surrounding neighborhoods in Essex County.</p>
+<section class="mb-8">
+  <h3 class="text-xl font-semibold mb-2">Serving Newark, East Orange & Essex County</h3>
+  <p>Maple Dental, NJ, proudly cares for smiles throughout Newark (07103, 07104, 07105, 07107), East Orange (07017, 07018), and surrounding neighborhoods in Essex County.</p>
+</section>
 
-<h3>Conclusion</h3>
-<p>Root canals may have a bad reputation, but at Maple Dental, NJ, they're no big deal. Thanks to advanced technology, compassionate care, and expert providers, you'll be in good hands from diagnosis to aftercare. Don't suffer in pain, call us now to get relief.</p>
+<section class="mb-8 bg-gray-50 p-6 rounded-lg">
+  <h3 class="text-xl font-semibold mb-2">Conclusion</h3>
+  <p>Root canals may have a bad reputation, but at Maple Dental, NJ, they're no big deal. Thanks to advanced technology, compassionate care, and expert providers, you'll be in good hands from diagnosis to aftercare. Don't suffer in pain, call us now to get relief.</p>
+</section>
 `
   },
   {

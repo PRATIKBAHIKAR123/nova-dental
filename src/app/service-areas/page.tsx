@@ -5,9 +5,12 @@ export default function ServiceAreasPage() {
   return (
     <div>
       {/* Header Section */}
-      <div className="details-page-header-section">
-        <h1>Services Areas / New Haven, IN</h1>
+      <div className="details-page-header-section ">
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl ">
+          Services Areas / New Haven, IN
+        </h1>
       </div>
+
 
       {/* Main Content Section */}
       <div className="max-w-7xl mx-auto px-4 py-12 flex flex-col gap-16">
