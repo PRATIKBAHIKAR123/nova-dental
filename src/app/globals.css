@@ -193,8 +193,8 @@
     }
     .main-image {
       width: 100%;
-      padding-inline-end: 1.25rem; /* pe-5 */
-      padding-bottom: 1.25rem;     /* pb-5 */
+      /* padding-inline-end: 1.25rem;
+      padding-bottom: 1.25rem;  */
       img {
         width: 100%;
         border-radius: 0.375rem; /* rounded-md */
@@ -228,19 +228,179 @@
       }
        p {
         font-size: 1.125rem; /* text-lg */
-        color: gray; /* text-gray-100 */
+        color: black; /* text-gray-100 */
     }
   }
   }
+
+  .wcu-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .wcu-text-section{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem; /* gap-3 */
+      align-items: center;
+      justify-content: center;
+      background-color: var(--primary);
+      padding: 1.25rem; /* p-5 */
+    }
+    .wcu-subtitle{
+      font-size: 1rem; /* equivalent to text-md */
+      color: #fff;     /* equivalent to text-white */
+    }
+    .wcu-title{
+      text-align: center;
+      color: #fff;
+      font-size: 3rem; /* text-5xl */
+      font-weight: 600; /* font-semibold */
+    }
+    .wcu-points-section{
+      color: #fff;
+      font-size: 1.125rem; /* text-lg */
+      font-weight: 600;    /* font-semibold */
+    }
+    .wcu-points{
+      list-style-type: disc;
+      list-style-position: inside;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .wcu-points li {
+      margin-bottom: 0.5rem; /* space-y-2 equivalent */
+    }
+    .wcu-img-section{
+      flex: 1;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .wcu-section {
+      flex-direction: row;
+    }
+  }
+
+.features-section {
+  padding: 4rem 1rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+/* Heading Styles */
+.features-heading {
+  font-size: 2.25rem; /* Tailwind: text-6xl */
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* @media (min-width: 768px) {
+  .features-heading {
+    font-size: 1.875rem;
+  }
+} */
+
+/* Paragraph */
+.features-description {
+  max-width: 72rem;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  text-align: center;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+/* Cards Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card Styles */
+.feature-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-top: 0.5rem;
+}
+
+.feature-card p {
+  margin-bottom: 1rem;
+  color: #374151; /* Tailwind: text-gray-700 */
+}
+
+/* List */
+.feature-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.feature-list-item {
+  display: flex;
+  align-items: center;
+  color: #1f2937; /* text-gray-800 */
+}
+
+.feature-list-item svg {
+  margin-right: 0.5rem;
+  color: #22c55e; /* Tailwind: text-green-500 */
+  width: 1.25rem;
+  height: 1.25rem;
+}
   
     .faq-section {
-      max-width: 60rem;
-      width: 60rem;
+      max-width: 100%;
+      width: 100%;
       margin-left: auto;
       margin-right: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-block: 20px;
+    }
+
+    .faq-acc-container{
+      max-width: 1200px;
+      width: 100%;
+      margin-inline: auto;
+    }
+
+    .faq-acc{
+      background-color: #f9fafb; /* Tailwind's bg-gray-50 */
+      border-radius: 0.375rem;   /* Tailwind's rounded-md */
+      box-shadow: 0 1px 1px 0 rgb(201, 195, 195); 
+      padding-left: 1.8rem;      /* Tailwind's px-2 */
+      padding-right: 1.8rem;
+      transition: all 0.2s;
+      width: 100%;
     }
   
     .faq-section .faq-qn {

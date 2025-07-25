@@ -28,20 +28,20 @@ const banners = [
     },
     {
         image: '/Images/banners/senior-woman-having-dental-treatment-dentist-s-office-woman-is-being-treated-teeth.jpg',
-        title: 'Expert Dental Care',
-        subtitle: 'Modern solutions for healthy teeth.',
+        title: 'Emergency Dental Visit Just $55',
+        subtitle: 'Quick relief for dental pain - exam included, no insurance required.',
         image2: '/Images/banners/Whitening.jpg',
     },
     {
         image: '/Images/banners/Banner_4.jpg',
-        title: 'Expert Dental Care',
-        subtitle: 'Modern solutions for healthy teeth.',
+        title: 'New Patient Welcome Offer - Only $79',
+        subtitle: 'Enjoy a complete dental checkup with cleaning & X-rays, tailored for first-time visitors.',
         image2: '/Images/banners/Tooth filling.jpg',
     },
     {
         image: '/Images/banners/Banner_3.jpg',
-        title: 'Expert Dental Care',
-        subtitle: 'Modern solutions for healthy teeth.',
+        title: 'Whiten Your Smile for Only $299',
+        subtitle: 'Grab our limited-time professional teeth whitening deal and shine with confidence!',
         image2: '/Images/banners/woman-patient-dentist.jpg',
     },
 ];
@@ -78,7 +78,7 @@ export default function HomePage() {
 
     return (
         <div>
-            <section className="relative w-full h-[100vh] md:h-[92vh] overflow-hidden bg-gradient-to-br from-primary via-primary-500 to-secondary">
+            <section className="relative w-full h-[92vh] md:h-[92vh] overflow-hidden bg-gradient-to-br from-primary via-primary-500 to-secondary">
 
                 {/* Decorative Background Elements */}
                 <div className="absolute inset-0 overflow-hidden">
@@ -132,17 +132,17 @@ export default function HomePage() {
                         className={`absolute inset-0 transition-all duration-700 ease-in-out ${idx === current ? 'opacity-100 z-10' : 'opacity-0 z-0'
                             }`}
                     >
-                        <div className="container mx-auto px-6 h-full flex items-center">
+                        <div className="container mx-auto px-3 md:px-6 h-full flex items-start pt-6 md:pt-0 md:items-center">
                             <div className="w-full flex flex-col md:flex-row items-center gap-8 md:gap-16">
 
                                 {/* Left Content */}
                                 <div className="flex-1 text-white z-20">
                                     <Fade cascade direction='up' delay={1000} duration={600}>
                                         <div className="max-w-lg">
-                                            <h1 className="text-xl md:text-3xl lg:text-5xl font-semibold mb-6 leading-tight">
+                                            <h1 className="text-2xl md:text-3xl text-center md:text-left lg:text-5xl font-semibold mb-6 leading-tight">
                                                 {banner.title}
                                             </h1>
-                                            <p className="text-lg md:text-xl lg:text-2xl font-light leading-relaxed opacity-95">
+                                            <p className="text-md md:text-xl lg:text-2xl text-center md:text-left font-light leading-relaxed opacity-95">
                                                 {banner.subtitle}
                                             </p>
 
@@ -155,7 +155,7 @@ export default function HomePage() {
 
                                             {/* Call to Action */}
                                             <div className="flex flex-col sm:flex-row gap-4 mt-4">
-                                                <button className="bg-white text-cyan-600 px-8 py-3 rounded-full font-semibold text-md hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105" onClick={()=>setIsBookingOpen(true)}>
+                                                <button className="bg-white text-cyan-600 px-8 py-2 md:py-3 rounded-full font-semibold text-md hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105" onClick={()=>setIsBookingOpen(true)}>
                                                     Book Appointment
                                                 </button>
                                             </div>
@@ -173,7 +173,7 @@ export default function HomePage() {
                                                     <img
                                                         src={banner.image}
                                                         alt={banner.title}
-                                                        className="w-full h-64 md:h-110 lg:h-140 object-cover rounded-xl shadow-lg"
+                                                        className="w-full h-64 md:h-110 lg:h-140 object-cover rounded-sm md:rounded-xl shadow-lg"
                                                     />
                                                 </div>
 
@@ -217,6 +217,25 @@ export default function HomePage() {
                         ))}
                     </div>
                 </div>
+                      <button
+        onClick={() => setCurrent(current === 0 ? banners.length - 1 : current - 1)}
+        className="hidden md:block absolute left-6 top-1/2 transform -translate-y-1/2 z-30 bg-white/10 hover:bg-white/20 text-white p-4 rounded-full backdrop-blur-sm transition-all duration-300 border border-white/20"
+        aria-label="Previous slide"
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      
+      <button
+        onClick={() => setCurrent((current + 1) % banners.length)}
+        className="hidden md:block absolute right-6 top-1/2 transform -translate-y-1/2 z-30 bg-white/10 hover:bg-white/20 text-white p-4 rounded-full backdrop-blur-sm transition-all duration-300 border border-white/20"
+        aria-label="Next slide"
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
             </section>
             {/* <div className='h-20 w-full flex'>
                 <div className='flex-1 bg-primary flex flex-col text-center items-center justify-center'>
@@ -245,8 +264,8 @@ export default function HomePage() {
                 </div>
 
             </div> */}
-            <div className='w-full bg-[#ffffff84] flex items-center justify-center overflow-hidden py-10 md:py-20'>
-                <img src="/Images/Maple MHA Logo.png" alt="dental-banner" className='w-auto h-48 object-cover' />  
+            <div className='w-full bg-[#ffffff84] flex items-center justify-center overflow-hidden py-4 md:py-8'>
+                <img src="/Images/Maple MHA Logo.png" alt="dental-banner" className='w-auto h-16 md:h-32 object-cover' />  
 
             </div>
             <HomepageSections />
@@ -259,7 +278,7 @@ export default function HomePage() {
                         <img
                             src="/Images/banners/About Us (1).jpg"
                             alt="dental-banner"
-                            className="rounded-xl w-full h-full object-cover shadow-md"
+                            className="rounded-md md:rounded-xl w-full h-full object-cover shadow-md"
                         />
                     </Slide>
 
@@ -345,7 +364,7 @@ export default function HomePage() {
                         <img
                             src="/Images/banners/Insurance.jpg"
                             alt="dental-banner"
-                            className="rounded-xl w-full h-full object-cover shadow-md"
+                            className="rounded-md md:rounded-xl w-full h-full object-cover shadow-md"
                         />
                     </Slide>
 
@@ -364,7 +383,7 @@ export default function HomePage() {
                         </Fade>
 
                         <Fade delay={700}>
-                            <p className="text-base leading-relaxed">
+                            <p className="text-base text-left leading-relaxed">
                                 <ul className='list-disc gap-3 mt-2'>
                                 <li><Fade delay={800}>$55 Emergency Dental Visit (Includes Exam & X-ray)</Fade></li>
                                 <li><Fade delay={1000}>$79 New Patient Special (Exam , Cleaning + X-rays)</Fade></li>
@@ -402,10 +421,10 @@ function HomepageSections() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
             {sections.map((section, idx) => (
                 <Link href={section.href} key={idx}
-                    className={`rounded-sm shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer text-white ${section.bg} flex flex-col items-center justify-center p-6 text-center`}
+                    className={`rounded-sm shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer text-white ${section.bg} flex flex-col items-center justify-center p-3 md:p-6 text-center`}
                 >
                     <div className="text-4xl mb-2">{section.icon}</div>
-                    <div className="text-lg md:text-xl font-semibold">{section.label}</div>
+                    <div className="text-md md:text-xl font-semibold">{section.label}</div>
                 </Link>
             ))}
         </div>

@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Left: Logo & About */}
         <div className="space-y-4 col-span-1 md:col-span-1">
           <div className="flex items-center gap-2 mb-2">
-            <Image src="/Images/maple-pa-new-large_20250723_180822_0000 (1).png" alt="Maple Dental Logo" width={184} height={128} />
+            <Image src="/Images/maple-pa-large-Blue-white-website-header.png" alt="Maple Dental Logo" width={194} height={130} />
           </div>
           <p className="text-sm text-gray-200">
             Maple Dental provides comprehensive dental care in Newark, NJ, with a focus on patient comfort and advanced treatments.

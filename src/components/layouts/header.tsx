@@ -9,6 +9,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
     const [isBookingOpen, setIsBookingOpen] = useState(false);
+    const [isServicesAreasOpen, setIsServicesAreasOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -45,6 +46,10 @@ export default function Header() {
     setIsServicesOpen(!isServicesOpen);
   };
 
+  const toggleServicesAreas = () => {
+    setIsServicesAreasOpen(!isServicesAreasOpen);
+  };
+
   // Services submenu items
   const servicesItems = [
     { name: "General Dentistry", href: "/services/general" },
@@ -58,7 +63,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 w-full z-50 bg-white shadow transition-all duration-300 ${
-        isScrolled ? "py-4" : "py-6"
+        isScrolled ? "py-2 md:py-4" : "py-3 md:py-6"
       }`}
     >
       <div className=" mx-auto flex items-center justify-between px-4 md:px-8">
@@ -69,7 +74,14 @@ export default function Header() {
             alt="Maple Dental Logo"
             width={isScrolled ? 180 : 220}
             height={isScrolled ? 90 : 110}
-            className="transition-all duration-300"
+            className="hidden md:block transition-all duration-300"
+          />
+          <Image
+            src="/Images/Maple.png"
+            alt="Maple Dental Logo"
+            width={isScrolled ? 32 : 42}
+            height={isScrolled ? 18 : 24}
+            className="block md:hidden transition-all duration-300"
           />
         </Link>
 
@@ -168,10 +180,10 @@ export default function Header() {
         {/* Mobile Buttons and Menu Toggle */}
         <div className="flex md:hidden items-center gap-2">
           {/* Mobile Action Buttons */}
-          <button className="border border-primary text-primary rounded-lg px-3 py-1 hover:bg-blue-50 text-xs font-medium transition">
-            Call Us
+          <button className="border border-primary text-primary rounded-lg px-4 py-3 hover:bg-blue-50 text-xs font-medium transition">
+            717-745-2700
           </button>
-          <button onClick={()=>setIsBookingOpen(true)} className="bg-primary text-white rounded-lg px-3 py-1 hover:bg-blue-700 text-xs font-medium transition">
+          <button onClick={()=>setIsBookingOpen(true)} className="bg-primary text-white rounded-lg px-4 py-3 hover:bg-blue-700 text-xs font-medium transition">
             Book Online
           </button>
           
@@ -222,7 +234,7 @@ export default function Header() {
             <Image
               src="/Images/Maple MHA website header.png"
               alt="Maple Dental Logo"
-              width={100}
+              width={138}
               height={40}
             />
             <button
@@ -316,11 +328,11 @@ export default function Header() {
                 Reviews
               </Link>
               <Link
-                href="/locations"
+                href="/blog"
                 className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary transition border-b"
                 onClick={closeMobileMenu}
               >
-                Locations
+                Blogs
               </Link>
               <Link
                 href="/contact-us"
@@ -329,6 +341,46 @@ export default function Header() {
               >
                 Contact
               </Link>
+              <div className="border-b">
+                <button
+                  onClick={toggleServicesAreas}
+                  className="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary transition"
+                >
+                  Service Areas
+                  <svg
+                    className={`w-4 h-4 transform transition-transform ${
+                      isServicesAreasOpen ? "rotate-180" : ""
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                
+                {/* Services Submenu */}
+                {isServicesAreasOpen && (
+  <div className="bg-gray-50 px-4 py-2">
+    
+
+    <div className="grid grid-cols-2 gap-3 mt-2 text-sm">
+      {[
+      "New Haven, IN", "Maplecrest Rd, Fort Wayne, IN", "Georgetown Place, Fort Wayne, IN"
+    ].map((service, index) => (
+        <Link
+          key={index}
+          href={`/service-areas/${service.toLowerCase().replace(/\s+/g, "-")}`}
+          onClick={closeMobileMenu}
+          className="text-gray-600 hover:text-primary hover:underline transition"
+        >
+          {service}
+        </Link>
+      ))}
+    </div>
+  </div>
+)}
+              </div>
             </div>
           </nav>
         </div>

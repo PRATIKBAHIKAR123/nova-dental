@@ -23,7 +23,7 @@ export default function ServiceSidebar() {
             <li key={service.name}>
               <Link
                 href={service.link}
-                className="flex items-center gap-2 rounded-xl border border-gray-200 shadow-sm bg-white transition-all duration-200 group hover:bg-[var(--primary)] hover:text-white hover:border-[var(--primary)] focus:bg-[var(--primary)] focus:text-white focus:border-[var(--primary)] w-full overflow-hidden"
+                className="flex items-center gap-2 rounded-xl p-4 border border-gray-200 shadow-sm bg-white transition-all duration-200 group hover:bg-[var(--primary)] hover:text-white hover:border-[var(--primary)] focus:bg-[var(--primary)] focus:text-white focus:border-[var(--primary)] w-full overflow-hidden"
                 style={{ boxShadow: '0 2px 8px 0 rgba(0,0,0,0.05)' }}
               >
                 <img

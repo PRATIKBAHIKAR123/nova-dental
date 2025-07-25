@@ -36,7 +36,7 @@ export default function RootLayout({
     <html lang="en">
       <Header/>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.className} antialiased pt-20`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.className} antialiased pt-18 md:pt-20`}
       >
         <LoaderProvider>{children}</LoaderProvider>
       </body>

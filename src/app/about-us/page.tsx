@@ -11,36 +11,36 @@ import BookingModal from "../booking/bookingScreen";
 const services = [
   {
     icon: "/Images/icons/implant.png",
-    price: "65",
+    price: "1199",
     title: "Dental Implant",
   },
   {
     icon: "/Images/icons/tooth-whitening.png",
-    price: "135",
+    price: "299",
     title: "Teeth Whitening",
   },
   {
     icon: "/Images/icons/braces.png",
-    price: "230",
-    title: "Dental Crown",
+    price: "250",
+    title: "Braces",
   },
 ];
 
 const features = [
   {
     icon: "/Images/icons/emergency denstiry.png",
-    title: "Expert Dentist",
-    desc: "Our qualified dental professionals provide exceptional care with years of experience and advanced training.",
+    title: "Experienced & Friendly Team",
+    desc: "Our dentists bring years of clinical expertise and treat every patient like family.",
   },
   {
     icon: "/Images/icons/orthodontics.png",
-    title: "24/7 Advance Care",
-    desc: "Round-the-clock emergency dental services ensuring you receive immediate care when you need it most.",
+    title: "Emergency Dental Care",
+    desc: "We provide 24/7 advanced care for dental emergencies to ensure you're never left in pain",
   },
   {
     icon: "/Images/icons/dental-floss.png",
-    title: "Available Products",
-    desc: "Comprehensive range of dental products and treatments to meet all your oral health needs.",
+    title: "Full Range of Treatments",
+    desc: "From cosmetic enhancements to restorative work and pediatric care — everything under one roof.",
   },
 ];
 
@@ -123,79 +123,79 @@ const testimonials = [
 
 export default function AboutUs() {
   const { ref, inView } = useInView();
-  const [isBookingOpen, setIsBookingOpen] = useState(false);
+    const [isBookingOpen, setIsBookingOpen] = useState(false);
   return (
     <div className="w-full min-h-screen bg-background text-foreground font-sans">
       {/* Hero Section */}
-      <section className="flex flex-col md:flex-row items-center justify-between gap-8 py-16 px-4 md:px-16 max-w-7xl mx-auto">
-        <div className="flex-1 space-y-6 md:pr-8">
-          <span className="uppercase tracking-widest text-sm text-secondary font-semibold">Science 2005</span>
+        <section className="flex flex-col md:flex-row items-center justify-between gap-8 py-16 px-4 md:px-16 max-w-7xl mx-auto">
+          <div className="flex-1 space-y-6 md:pr-8">
+            <span className="uppercase tracking-widest text-sm font-semibold">Science 2005</span>
 
-          <Fade delay={200}>
-            <h2 className="text-3xl md:text-5xl font-semibold text-primary leading-tight">
-              Keep your Teeth Clean &amp; Shine
-            </h2>
-          </Fade>
-          <Fade delay={500}>
-            <p className="text-lg ">
-              Whether you need a routine checkup or advanced cosmetic treatment, our expert team offers comprehensive services using the latest dental technology. From preventive care to smile makeovers, we tailor each treatment plan to your unique needs and goals.
-            </p>
-          </Fade>
-          <Fade delay={700}>
-            <p className="text-base leading-relaxed">
-              You need to brush your teeth everyday for healthy teeth and smile.
-            </p>
-          </Fade>
+            <Fade delay={200}>
+              <h2 className="text-3xl md:text-5xl font-semibold text-primary leading-tight">
+                About Maple Dental Harrisburg
+              </h2>
+            </Fade>
+            <Fade delay={500}>
+              <p className="text-lg ">
+                Whether you need a routine checkup or advanced cosmetic treatment, our expert team offers comprehensive services using the latest dental technology. From preventive care to smile makeovers, we tailor each treatment plan to your unique needs and goals.
+              </p>
+            </Fade>
+            <Fade delay={700}>
+                                        <p className="text-base leading-relaxed">
+                                            You need to brush your teeth everyday for healthy teeth and smile.
+                                        </p>
+                                    </Fade>
 
-          <div className="flex gap-6 mt-4 items-center">
-            <Button className="bg-primary text-white hover:bg-secondary/80">
-              Book Appointment
-
-            </Button>
+            <div className="flex gap-6 mt-4 items-center">
+              <Button className="bg-primary text-white hover:bg-secondary/80">
+                  Book Appointment
+                
+              </Button>
+            </div>
           </div>
-        </div>
-        <div className="flex-1 flex justify-center md:justify-end">
-          <Slide direction="right">
+          <div className="flex-1 flex justify-center md:justify-end">
+            <Slide direction="right">
             <img
               src="/Images/banners/doctor-presenting-something-isolated-white-background.jpg"
               alt="Dentists with patient"
               className="rounded-xl shadow-lg w-full max-w-md object-cover"
             />
-          </Slide>
-        </div>
-      </section>
+            </Slide>
+          </div>
+        </section>
 
       {/* Services/Pricing Section */}
       <Slide direction="up" >
-        <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => {
+                     <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {services.map((service, index) => {
 
-              return (
-                <div
-                  key={index}
-                  ref={ref}
-                  className="bg-card rounded-lg p-6 flex flex-col items-center text-center shadow-lg hover:shadow-xl transition-shadow"
-                >
-                  <img src={service.icon} alt={service.title} className="w-16 h-16 mb-4" />
-
-                  <div className="text-3xl font-bold text-primary mb-2">
-                    ${inView ? (
-                      <CountUp end={parseInt(service.price)} duration={1.5} separator="," />
-                    ) : (
-                      '0'
-                    )}
-                  </div>
-
-                  <div className="text-lg font-semibold">
-                    {service.title}
-                  </div>
-                </div>
-              );
-            })}
+        return (
+          <div
+            key={index}
+            ref={ref}
+            className="bg-card rounded-lg p-6 flex flex-col items-center text-center shadow-lg hover:shadow-xl transition-shadow"
+          >
+            <img src={service.icon} alt={service.title} className="w-16 h-16 mb-4" />
+            
+            <div className="text-3xl font-bold text-primary mb-2">
+              ${inView ? (
+                <CountUp end={parseInt(service.price)} duration={1.5} separator="," />
+              ) : (
+                '0'
+              )}
+            </div>
+            
+            <div className="text-lg font-semibold">
+              {service.title}
+            </div>
           </div>
-        </section>
-      </Slide>
+        );
+      })}
+    </div>
+  </section>
+                  </Slide>
 
       {/* Why Choose Us Section */}
       <Slide direction="right" triggerOnce>
@@ -208,8 +208,8 @@ export default function AboutUs() {
             />
           </div>
           <div className="flex-1 md:pl-12">
-            <span className="uppercase tracking-widest text-sm text-secondary font-semibold">Why we best</span>
-            <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-primary mt-2">People Choose Us because...</h2>
+            <span className="uppercase tracking-widest text-sm  font-semibold">Why we best</span>
+            <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-primary mt-2">People Choose Us</h2>
             <p className="text-base mb-6">
               Each room is equipped with modern technology to ensure early diagnosis and minimally invasive procedures. We strive to make every visit as comfortable and efficient as possible, with a strong focus on patient education, preventative care, and long-term oral health.
             </p>
@@ -231,12 +231,12 @@ export default function AboutUs() {
       {/* Team Section */}
       <Zoom triggerOnce>
         <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto">
-          <span className="uppercase tracking-widest text-sm text-secondary font-semibold block text-center mb-2">Dentist</span>
+          <span className="uppercase tracking-widest text-sm  font-semibold block text-center mb-2">Dentist</span>
           <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-primary">Meet our Dentist qualified staff</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {team.map((member, index) => (
               <Link href={`/providers/${member.name.toString().toLowerCase().replace(/\s+/g, "-")}`} key={index} className="bg-card rounded-lg p-6 flex flex-col items-center text-center shadow-lg hover:shadow-xl transition-shadow">
-
+              
                 <img src={member.img} alt={member.name} className="w-24 h-24 rounded-full object-cover mb-4 border-4 border-primary" />
                 <h4 className="text-lg font-bold text-primary mb-1">{member.name}</h4>
                 <span className="text-sm mb-2">{member.role}</span>
@@ -257,15 +257,15 @@ export default function AboutUs() {
       <Fade direction="up" triggerOnce>
         <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto">
           <div className="hidden md:flex gap-3">
-            <button className="w-full flex flex-col border border-primary text-primary rounded-lg px-4 py-3 hover:opacity-50 text-sm font-medium transition">
-              <span className="text-base">Call Us for Booking</span>
-              717-745-2700
-            </button>
-            <button onClick={() => setIsBookingOpen(true)} className="w-full flex flex-col bg-primary text-white rounded-lg px-4 py-3 hover:bg-secondary text-sm font-medium transition">
-              Book Online
-              <span className="text-base">Click Here for Appointment</span>
-            </button>
-          </div>
+          <button className="w-full flex flex-col border border-primary text-primary rounded-lg px-4 py-3 hover:opacity-50 text-sm font-medium transition">
+            <span className="text-base">Call Us for Booking</span>
+            717-745-2700
+          </button>
+          <button onClick={()=>setIsBookingOpen(true)}  className="w-full flex flex-col bg-primary text-white rounded-lg px-4 py-3 hover:bg-secondary text-sm font-medium transition">
+            Book Online
+            <span className="text-base">Click Here for Appointment</span>
+          </button>
+        </div>
         </section>
       </Fade>
 
@@ -303,7 +303,7 @@ export default function AboutUs() {
         </section>
       </Fade> */}
 
-      <BookingModal open={isBookingOpen} setOpen={setIsBookingOpen} />
+      <BookingModal open={isBookingOpen} setOpen={setIsBookingOpen}/>
     </div>
   );
 } 
