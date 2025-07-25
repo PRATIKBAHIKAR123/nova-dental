@@ -188,18 +188,18 @@ export default function EmergencyDentistryPage() {
             <div className="w-full max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="w-full space-y-6">
                 <AccordionItem value="q1" className="bg-gray-50 rounded-md shadow-md border-0 px-2  transition-all w-full">
-                  <AccordionTrigger className="faq-qn text-xl md:text-xl font-semibold text-primary py-4 px-2 rounded-md w-full">
+                  <AccordionTrigger className="faq-qn rounded-md">
                     What is emergency dentistry?
                   </AccordionTrigger>
-                  <AccordionContent className="faq-ans text-lg text-gray-700 px-2 pb-6 w-full">
+                  <AccordionContent className="faq-ans ">
                     Emergency dentistry provides rapid care for potentially serious but non-life-threatening oral health problems. If you lose a permanent tooth, develop a severe toothache, or damage a dental restoration, don’t wait to seek professional help. The sooner you make it to Maple Dental, the sooner you can minimize uncomfortable symptoms and restore your smile.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="q2" className="bg-gray-50 rounded-md shadow-md border-0 px-2  transition-all w-full">
-                  <AccordionTrigger className="faq-qn text-xl md:text-xl font-semibold text-primary py-4 px-2 rounded-md w-full">
+                  <AccordionTrigger className="faq-qn rounded-md">
                     What conditions can benefit from emergency dentistry?
                   </AccordionTrigger>
-                  <AccordionContent className="faq-ans text-lg text-gray-700 px-2 pb-6 w-full">
+                  <AccordionContent className="faq-ans">
                     Maple Dental uses emergency dentistry to treat a variety of conditions, including:
                     <ul className="list-disc list-inside mt-2 space-y-1">
                       <li>Chipped and cracked teeth</li>
@@ -215,20 +215,20 @@ export default function EmergencyDentistryPage() {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="q3" className="bg-gray-50 rounded-md shadow-md border-0 px-2  transition-all w-full">
-                  <AccordionTrigger className="faq-qn text-xl md:text-xl font-semibold text-primary py-4 px-2 rounded-md w-full">
+                  <AccordionTrigger className="faq-qn rounded-md">
                     What should I do if I need emergency dental care?
                   </AccordionTrigger>
-                  <AccordionContent className="faq-ans text-lg text-gray-700 px-2 pb-6 w-full">
+                  <AccordionContent className="faq-ans">
                     <strong>Severe toothache:</strong> Rinse your mouth with warm salt water and take over-the-counter pain medication. Be gentle while brushing and flossing. If pain persists over a day, contact Maple Dental.<br /><br />
                     <strong>Knocked-out tooth:</strong> Rinse the tooth (holding it by the crown) and place it back into your mouth. If not possible, place it in milk. Call Maple Dental immediately.<br /><br />
                     <strong>Damaged dental restoration:</strong> Collect all the broken pieces, clean them, and place them in a plastic bag. Call the office right away.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="q4" className="bg-gray-50 rounded-md shadow-md border-0 px-2  transition-all w-full">
-                  <AccordionTrigger className="faq-qn text-xl md:text-xl font-semibold text-primary py-4 px-2 rounded-md w-full">
+                  <AccordionTrigger className="faq-qn rounded-md">
                     How can I preserve the health of my teeth and gums?
                   </AccordionTrigger>
-                  <AccordionContent className="faq-ans text-lg text-gray-700 px-2 pb-6 w-full">
+                  <AccordionContent className="faq-ans">
                     The most effective way to preserve your teeth and gums is by:
                     <ul className="list-disc list-inside mt-2 space-y-1">
                       <li>Brushing and flossing daily</li>
