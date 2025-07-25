@@ -93,7 +93,7 @@ export default function BlogGridPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header Section */}
-      <div className="bg-primary text-white py-16 px-4">
+      <div className="details-page-header-section text-white py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <Fade direction="down" triggerOnce>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">OUR BLOG</h1>
