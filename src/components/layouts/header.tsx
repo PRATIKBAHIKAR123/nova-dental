@@ -127,12 +127,13 @@ export default function Header() {
             Contact
           </Link>
           <div className="relative group">
-            <Link href="/services" className="hover:text-primary transition flex items-center gap-1">
+            <span className="hover:text-primary transition flex items-center gap-1 cursor-pointer">
               Services Areas
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
-            </Link>
+            </span>
+
             
             {/* Desktop Dropdown */}
             <div className="absolute -left-5 mt-2 w-80 max-w-5xl bg-white border shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-40 rounded-lg">
