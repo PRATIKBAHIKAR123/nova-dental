@@ -11,7 +11,7 @@ interface Service {
 export default function ServiceSidebar() {
   return (
     <aside
-      className="sticky top-20 z-20 h-[calc(100vh-80px)] w-72 bg-white shadow-lg flex flex-col overflow-y-auto"
+      className="sidebar-scrollbar sticky top-20 z-20 h-[calc(100vh-80px)] w-72 bg-white shadow-lg flex flex-col overflow-y-auto"
       style={{ minWidth: 260, maxWidth: 320 }}
     >
       <div className="p-6 border-b bg-primary sticky top-0 z-30">

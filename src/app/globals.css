@@ -808,3 +808,23 @@
   animation: moveBox-9 4s infinite;
 }
 }
+
+/* Custom scrollbar for sidebar */
+.sidebar-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) #f1f1f1; /* For Firefox */
+}
+
+/* For Chrome, Edge, and Safari */
+.sidebar-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 8px;
+}
+
+.sidebar-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
