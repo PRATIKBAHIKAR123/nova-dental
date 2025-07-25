@@ -6,14 +6,14 @@ const RequestSubmitted = ({  formData }: any) => {
         const provider = formData.provider;
         return(
     <div className="mt-4">
-        <h3 className="text-lg font-medium mb-4">Appointment Request Submitted</h3>
+        <h3 className="text-base sm:text-lg font-medium mb-4">Appointment Request Submitted</h3>
         <div className="flex items-start gap-3">
                     {/* Avatar */}
-                    <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
                         <img
                             src="/Images/doctor_9439268.png"
                             alt="Provider Avatar"
-                            className="w-10 h-10 rounded-full"
+                            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full"
                         />
                     </div>
                     
@@ -33,8 +33,8 @@ const RequestSubmitted = ({  formData }: any) => {
                       </div>
                     </div>
                   </div>
-        <p className='my-3'>Thank you for your request. We will reach out promptly to confirm and finalize your appointment</p>
-        <div className="flex-1 w-full h-[300px] rounded-xl overflow-hidden shadow">
+        <p className='my-3 text-sm sm:text-base'>Thank you for your request. We will reach out promptly to confirm and finalize your appointment</p>
+        <div className="flex-1 w-full h-[200px] sm:h-[250px] md:h-[300px] rounded-xl overflow-hidden shadow">
         <iframe
           src={provider!.mapUrl}
           width="100%"

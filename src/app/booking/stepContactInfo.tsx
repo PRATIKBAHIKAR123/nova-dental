@@ -33,11 +33,11 @@ const StepContactInfo = ({ nextStep, prevStep, formData, setFormData }: any) => 
     <div className="mt-4">
         <div className="flex items-start gap-3">
                     {/* Avatar */}
-                    <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
                         <img
                             src="/Images/doctor_9439268.png"
                             alt="Provider Avatar"
-                            className="w-10 h-10 rounded-full"
+                            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full"
                         />
                     </div>
                     
@@ -57,39 +57,39 @@ const StepContactInfo = ({ nextStep, prevStep, formData, setFormData }: any) => 
                       </div>
                     </div>
                   </div>
-       <div className="flex items-center gap-1 md:gap-4 mb-6 mt-3 w-full overflow-x-scroll md:overflow-x-hidden overflow-y-hidden">
+       <div className="flex items-center gap-1 md:gap-4 mb-4 sm:mb-6 mt-3 w-full overflow-x-auto pb-2 sm:pb-0">
   {/* Step 1 */}
-  <div className="flex items-center gap-2">
-    <div className="w-6 h-6 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-secondary text-white text-sm font-medium shrink-0">
-      <Check className="w-4 h-4" />
+  <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+    <div className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-secondary text-white text-xs sm:text-sm font-medium">
+      <Check className="w-3 h-3 sm:w-4 sm:h-4" />
     </div>
-    <span className="text-sm text-gray-500">Appointment details</span>
+    <span className="text-xs sm:text-sm text-gray-500 whitespace-nowrap">Appointment details</span>
   </div>
 
-  <div className="flex-1 h-1 bg-primary"></div>
+  <div className="flex-1 h-1 bg-primary min-w-[20px]"></div>
 
   {/* Step 2 */}
-  <div className="flex items-center gap-2">
-    <div className="w-6 h-6 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-primary text-white text-sm font-medium shrink-0">
+  <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+    <div className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-primary text-white text-xs sm:text-sm font-medium">
       2
     </div>
-    <span className="text-sm text-gray-900">Contact info</span>
+    <span className="text-xs sm:text-sm text-gray-900 whitespace-nowrap">Contact info</span>
   </div>
 
-  <div className="flex-1 h-1 bg-gray-300"></div>
+  <div className="flex-1 h-1 bg-gray-300 min-w-[20px]"></div>
 
   {/* Step 3 */}
-  <div className="flex items-center gap-2">
-    <div className="w-6 h-6 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 text-sm font-medium shrink-0">
+  <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+    <div className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 text-xs sm:text-sm font-medium">
       3
     </div>
-    <span className="text-sm text-gray-500">Insurance info</span>
+    <span className="text-xs sm:text-sm text-gray-500 whitespace-nowrap">Insurance info</span>
   </div>
 </div>
 
-      <h3 className="text-lg font-medium mb-4">Contact info</h3>
+      <h3 className="text-base sm:text-lg font-medium mb-4">Contact info</h3>
       
-      <div className="space-y-4 overflow-y-auto max-h-[40vh]">
+      <div className="space-y-4 overflow-y-auto max-h-[35vh] sm:max-h-[40vh]">
         <div>
             <label className="block text-sm text-gray-600 mb-1">Reason for visit (Optional)</label>
             <input
@@ -99,7 +99,7 @@ const StepContactInfo = ({ nextStep, prevStep, formData, setFormData }: any) => 
               className="w-full px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500"
             />
           </div>
-        <div className="grid grid-cols-2 gap-3">            
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">            
           <div>
             <label className="block text-sm text-gray-600 mb-1">First Name *</label>
             <input
@@ -141,7 +141,7 @@ const StepContactInfo = ({ nextStep, prevStep, formData, setFormData }: any) => 
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
             <label className="block text-sm text-gray-600 mb-1">Date of Birth</label>
             <input
@@ -183,7 +183,7 @@ const StepContactInfo = ({ nextStep, prevStep, formData, setFormData }: any) => 
                         {isPoliciesAgreed && <Check className="w-3 h-3 text-white" />}
                       </div>
                     </div>
-                    <label className="text-sm text-gray-700 cursor-pointer" onClick={() => setisPoliciesAgreed(!isPoliciesAgreed)}>
+                    <label className="text-xs sm:text-sm text-gray-700 cursor-pointer" onClick={() => setisPoliciesAgreed(!isPoliciesAgreed)}>
                       I have read and agreed to the Privacy Policy and Terms of Use that I am at least 13 and have the authority to make this appointment
                     </label>
                   </div>
@@ -204,25 +204,25 @@ const StepContactInfo = ({ nextStep, prevStep, formData, setFormData }: any) => 
                         {isMessagesAgreed && <Check className="w-3 h-3 text-white" />}
                       </div>
                     </div>
-                    <label className="text-sm text-gray-700 cursor-pointer" onClick={() => setisMessagesAgreed(!isMessagesAgreed)}>
-                      I agree to receive text messages from this practice and understand that message frequency and data rates may apply.
+                    <label className="text-xs sm:text-sm text-gray-700 cursor-pointer" onClick={() => setisMessagesAgreed(!isMessagesAgreed)}>
+                      I agree to receive appointment reminders and other important messages via email and text message
                     </label>
                   </div>
       </div>
 
-      {/* Navigation */}
-      <div className="flex justify-between mt-6">
+      {/* Navigation Buttons */}
+      <div className="flex justify-between mt-6 sm:mt-8">
         <Button 
-          variant="outline" 
           onClick={prevStep}
-          className="px-6 py-2 text-sm"
+          variant="outline"
+          className="px-4 sm:px-6 py-2 sm:py-3 text-sm font-medium"
         >
           Back
         </Button>
         <Button 
           onClick={handleNext}
           disabled={!contactData.firstName || !contactData.lastName || !contactData.email || !contactData.phone || !isPoliciesAgreed || !isMessagesAgreed}
-          className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-2 text-sm"
+          className="bg-teal-600 hover:bg-teal-700 text-white px-4 sm:px-6 py-2 sm:py-3 text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Next
         </Button>

@@ -198,56 +198,56 @@ const StepAppointment = ({ nextStep, formData, setFormData }: any) => {
       </div>
 
       {/* Progress Steps */}
-      <div className="flex items-center gap-4 mb-8">
+      <div className="flex items-center gap-2 sm:gap-4 mb-6 sm:mb-8 w-full overflow-x-auto pb-2 sm:pb-0">
         {/* Step 1 */}
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 flex items-center justify-center rounded-full text-white text-sm font-medium bg-teal-600 shrink-0">
+        <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+          <div className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full text-white text-xs sm:text-sm font-medium bg-teal-600">
             1
           </div>
-          <span className="text-sm text-gray-900 font-medium">Appointment details</span>
+          <span className="text-xs sm:text-sm text-gray-900 font-medium whitespace-nowrap">Appointment details</span>
         </div>
 
-        <div className="flex-1 h-0.5 bg-gray-300"></div>
+        <div className="flex-1 h-0.5 bg-gray-300 min-w-[20px]"></div>
 
         {/* Step 2 */}
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 text-sm font-medium shrink-0">
+        <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+          <div className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 text-xs sm:text-sm font-medium">
             2
           </div>
-          <span className="text-sm text-gray-500">Contact info</span>
+          <span className="text-xs sm:text-sm text-gray-500 whitespace-nowrap">Contact info</span>
         </div>
 
-        <div className="flex-1 h-0.5 bg-gray-300"></div>
+        <div className="flex-1 h-0.5 bg-gray-300 min-w-[20px]"></div>
 
         {/* Step 3 */}
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 text-sm font-medium shrink-0">
+        <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+          <div className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 text-xs sm:text-sm font-medium">
             3
           </div>
-          <span className="text-sm text-gray-500">Insurance info</span>
+          <span className="text-xs sm:text-sm text-gray-500 whitespace-nowrap">Insurance info</span>
         </div>
       </div>
 
       {/* Choose a time */}
-      <h3 className="text-lg font-semibold mb-6">Choose a time</h3>
+      <h3 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6">Choose a time</h3>
       
       {/* Date Navigation */}
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex items-center justify-between mb-4 sm:mb-6">
         <button 
           onClick={() => navigateWeek('prev')}
-          className="p-2 hover:bg-gray-100 rounded-full"
+          className="p-1 sm:p-2 hover:bg-gray-100 rounded-full flex-shrink-0"
           disabled={currentWeekStart <= new Date()}
         >
-          <ChevronLeft className="w-5 h-5 text-gray-600" />
+          <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
         </button>
         
-        <div className="flex gap-2">
+        <div className="flex gap-1 sm:gap-2 overflow-x-auto flex-1 mx-2 sm:mx-4 pb-2 sm:pb-0">
           {visibleDates.map((dateObj) => (
             <button
               key={dateObj.fullDate}
               onClick={() => handleDateSelect(dateObj.date)}
               disabled={!dateObj.available}
-              className={`flex flex-col items-center px-4 py-3 rounded-lg text-sm min-w-[80px] transition-all ${
+              className={`flex flex-col items-center px-2 sm:px-4 py-2 sm:py-3 rounded-lg text-xs sm:text-sm min-w-[60px] sm:min-w-[80px] transition-all flex-shrink-0 ${
                 selectedDate === dateObj.date
                   ? 'bg-teal-600 text-white'
                   : dateObj.available
@@ -263,14 +263,14 @@ const StepAppointment = ({ nextStep, formData, setFormData }: any) => {
         
         <button 
           onClick={() => navigateWeek('next')}
-          className="p-2 hover:bg-gray-100 rounded-full"
+          className="p-1 sm:p-2 hover:bg-gray-100 rounded-full flex-shrink-0"
         >
-          <ChevronRight className="w-5 h-5 text-gray-600" />
+          <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
         </button>
       </div>
 
       {/* Providers and Time Slots */}
-      <div className="space-y-6 overflow-y-auto max-h-[30vh]">
+      <div className="space-y-4 sm:space-y-6 overflow-y-auto max-h-[25vh] sm:max-h-[30vh]">
         {selectedLocation ? (
           // Show selected location only
           locations
@@ -279,17 +279,17 @@ const StepAppointment = ({ nextStep, formData, setFormData }: any) => {
               const timeSlots = selectedDateObj ? getTimeSlotsForDate(selectedDateObj, location) : [];
               
               return (
-                <div key={location.id} className="border border-gray-200 rounded-lg p-4">
-                  <div className="grid grid-cols-12 gap-6">
+                <div key={location.id} className="border border-gray-200 rounded-lg p-3 sm:p-4">
+                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6">
                     {/* Provider Info */}
-                    <div className="col-span-4">
+                    <div className="lg:col-span-4">
                       <div className="flex items-start gap-3">
                         {/* Avatar */}
-                        <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
                           <img
                             src={location.avatar}
                             alt="Provider Avatar"
-                            className="w-10 h-10 rounded-full"
+                            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full"
                           />
                         </div>
                         
@@ -303,7 +303,7 @@ const StepAppointment = ({ nextStep, formData, setFormData }: any) => {
                             <div>{location.suite}</div>
                             <div>{location.city}</div>
                           </div>
-                          <div className="flex items-center gap-1 mt-3 pt-1 border-t border-gray-100">
+                          <div className="flex items-center gap-1 mt-2 sm:mt-3 pt-1 border-t border-gray-100">
                             <Clock className="w-3 h-3 text-gray-500" />
                             <span className="text-xs text-gray-500">Appointments in EDT</span>
                           </div>
@@ -312,19 +312,19 @@ const StepAppointment = ({ nextStep, formData, setFormData }: any) => {
                     </div>
 
                     {/* Time Slots */}
-                    <div className="col-span-8">
+                    <div className="lg:col-span-8">
                       {!selectedDate ? (
-                        <div className="flex items-center justify-center h-24 text-gray-500 text-sm">
+                        <div className="flex items-center justify-center h-20 sm:h-24 text-gray-500 text-sm">
                           Please select a date to view available times
                         </div>
                       ) : timeSlots.length > 0 ? (
                         <>
-                          <div className="grid grid-cols-3 gap-2 mb-3">
+                          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-3">
                             {timeSlots.slice(0, 6).map((time:any) => (
                               <button
                                 key={time}
                                 onClick={() => handleTimeSelect(time, location.id)}
-                                className={`px-4 py-2 text-sm font-medium rounded-md border transition-all ${
+                                className={`px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium rounded-md border transition-all ${
                                   selectedTime === time && selectedLocation === location.id
                                     ? 'bg-teal-600 text-white border-teal-600'
                                     : 'bg-white text-teal-600 border-teal-200 hover:bg-teal-50'
@@ -335,13 +335,13 @@ const StepAppointment = ({ nextStep, formData, setFormData }: any) => {
                             ))}
                           </div>
                           {timeSlots.length > 6 && (
-                            <button className="text-sm text-teal-600 hover:text-teal-700 font-medium">
+                            <button className="text-xs sm:text-sm text-teal-600 hover:text-teal-700 font-medium">
                               more
                             </button>
                           )}
                         </>
                       ) : (
-                        <div className="flex items-center justify-center h-24 text-gray-500 text-sm">
+                        <div className="flex items-center justify-center h-20 sm:h-24 text-gray-500 text-sm">
                           — No appointments available
                         </div>
                       )}
@@ -356,17 +356,17 @@ const StepAppointment = ({ nextStep, formData, setFormData }: any) => {
             const timeSlots = selectedDateObj ? getTimeSlotsForDate(selectedDateObj, location) : [];
             
             return (
-              <div key={location.id} className="border border-gray-200 rounded-lg p-4">
-                <div className="grid grid-cols-12 gap-6">
+              <div key={location.id} className="border border-gray-200 rounded-lg p-3 sm:p-4">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6">
                   {/* Provider Info */}
-                  <div className="col-span-4">
+                  <div className="lg:col-span-4">
                     <div className="flex items-start gap-3">
                       {/* Avatar */}
-                      <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
                         <img
                           src={location.avatar}
                           alt="Provider Avatar"
-                          className="w-10 h-10 rounded-full"
+                          className="w-8 h-8 sm:w-10 sm:h-10 rounded-full"
                         />
                       </div>
                       
@@ -380,7 +380,7 @@ const StepAppointment = ({ nextStep, formData, setFormData }: any) => {
                           <div>{location.suite}</div>
                           <div>{location.city}</div>
                         </div>
-                        <div className="flex items-center gap-1 mt-3 pt-1 border-t border-gray-100">
+                        <div className="flex items-center gap-1 mt-2 sm:mt-3 pt-1 border-t border-gray-100">
                           <Clock className="w-3 h-3 text-gray-500" />
                           <span className="text-xs text-gray-500">Appointments in EDT</span>
                         </div>
@@ -389,19 +389,19 @@ const StepAppointment = ({ nextStep, formData, setFormData }: any) => {
                   </div>
 
                   {/* Time Slots */}
-                  <div className="col-span-8">
+                  <div className="lg:col-span-8">
                     {!selectedDate ? (
-                      <div className="flex items-center justify-center h-24 text-gray-500 text-sm">
+                      <div className="flex items-center justify-center h-20 sm:h-24 text-gray-500 text-sm">
                         Please select a date to view available times
                       </div>
                     ) : timeSlots.length > 0 ? (
                       <>
-                        <div className="grid grid-cols-3 gap-2 mb-3">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-3">
                           {timeSlots.slice(0, 6).map((time:any) => (
                             <button
                               key={time}
                               onClick={() => handleTimeSelect(time, location.id)}
-                              className={`px-4 py-2 text-sm font-medium rounded-md border transition-all ${
+                              className={`px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium rounded-md border transition-all ${
                                 selectedTime === time && selectedLocation === location.id
                                   ? 'bg-teal-600 text-white border-teal-600'
                                   : 'bg-white text-teal-600 border-teal-200 hover:bg-teal-50'
@@ -412,13 +412,13 @@ const StepAppointment = ({ nextStep, formData, setFormData }: any) => {
                           ))}
                         </div>
                         {timeSlots.length > 6 && (
-                          <button className="text-sm text-teal-600 hover:text-teal-700 font-medium">
+                          <button className="text-xs sm:text-sm text-teal-600 hover:text-teal-700 font-medium">
                             more
                           </button>
                         )}
                       </>
                     ) : (
-                      <div className="flex items-center justify-center h-24 text-gray-500 text-sm">
+                      <div className="flex items-center justify-center h-20 sm:h-24 text-gray-500 text-sm">
                         — No appointments available
                       </div>
                     )}
@@ -431,11 +431,11 @@ const StepAppointment = ({ nextStep, formData, setFormData }: any) => {
       </div>
 
       {/* Next Button */}
-      <div className="flex justify-end mt-8">
+      <div className="flex justify-end mt-6 sm:mt-8">
         <Button 
           onClick={handleNext}
           disabled={!selectedTime || !selectedLocation}
-          className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+          className="bg-teal-600 hover:bg-teal-700 text-white px-6 sm:px-8 py-2 sm:py-3 text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Next
         </Button>

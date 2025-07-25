@@ -55,10 +55,10 @@ const BookingModal: React.FC<BookingModalProps> = ({ open, setOpen }) => {
       setOpen(open);
       if (!open) resetModal();
     }}>
-      <DialogContent className="max-w-full md:!max-w-[900px] p-0 gap-0">
+      <DialogContent className="max-w-full w-[95vw] sm:w-[90vw] md:!max-w-[900px] lg:!max-w-[1000px] p-0 gap-0 max-h-[95vh] sm:max-h-[90vh] flex flex-col">
         {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b">
-          <h2 className="text-xl font-semibold">Book Appointment</h2>
+        <div className="flex items-center justify-between p-4 sm:p-6 border-b flex-shrink-0">
+          <h2 className="text-lg sm:text-xl font-semibold">Book Appointment</h2>
           {/* <button
             onClick={() => setOpen(false)}
             className="p-1 hover:bg-gray-100 rounded"
@@ -67,7 +67,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ open, setOpen }) => {
           </button> */}
         </div>
 
-        <div className="p-4 md:p-6">
+        <div className="p-3 sm:p-4 md:p-6 flex-1 overflow-y-auto">
           {/* New Patient Checkbox */}
           {/* <div className="flex items-center gap-2 mb-4">
             <div className="relative">

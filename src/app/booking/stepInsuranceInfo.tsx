@@ -76,11 +76,11 @@ const StepInsuranceInfo = ({ prevStep, formData, setFormData, onComplete }: any)
     <div className="mt-4">
         <div className="flex items-start gap-3">
                     {/* Avatar */}
-                    <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
                         <img
                             src="/Images/doctor_9439268.png"
                             alt="Provider Avatar"
-                            className="w-10 h-10 rounded-full"
+                            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full"
                         />
                     </div>
                     
@@ -100,38 +100,38 @@ const StepInsuranceInfo = ({ prevStep, formData, setFormData, onComplete }: any)
                       </div>
                     </div>
                   </div>
-        <div className="flex items-center gap-1 md:gap-4 mb-6 mt-3">
+        <div className="flex items-center gap-1 md:gap-4 mb-4 sm:mb-6 mt-3 w-full overflow-x-auto pb-2 sm:pb-0">
   {/* Step 1 */}
-  <div className="flex items-center gap-2">
-    <div className="w-6 h-6 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-secondary text-white text-sm font-medium shrink-0">
-      <Check className="w-4 h-4" />
+  <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+    <div className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-secondary text-white text-xs sm:text-sm font-medium">
+      <Check className="w-3 h-3 sm:w-4 sm:h-4" />
     </div>
-    <span className="text-sm text-gray-500">Appointment details</span>
+    <span className="text-xs sm:text-sm text-gray-500 whitespace-nowrap">Appointment details</span>
   </div>
 
-  <div className="flex-1 h-1 bg-primary"></div>
+  <div className="flex-1 h-1 bg-primary min-w-[20px]"></div>
 
   {/* Step 2 */}
-  <div className="flex items-center gap-2">
-    <div className="w-6 h-6 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-secondary text-white text-sm font-medium shrink-0">
-      <Check className="w-4 h-4" />
+  <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+    <div className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-secondary text-white text-xs sm:text-sm font-medium">
+      <Check className="w-3 h-3 sm:w-4 sm:h-4" />
     </div>
-    <span className="text-sm text-gray-500">Contact info</span>
+    <span className="text-xs sm:text-sm text-gray-500 whitespace-nowrap">Contact info</span>
   </div>
 
-  <div className="flex-1 h-1 bg-primary"></div>
+  <div className="flex-1 h-1 bg-primary min-w-[20px]"></div>
 
   {/* Step 3 */}
-  <div className="flex items-center gap-2">
-    <div className="w-6 h-6 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-primary text-white text-sm font-medium shrink-0">
+  <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+    <div className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-primary text-white text-xs sm:text-sm font-medium">
       3
     </div>
-    <span className="text-sm text-gray-900">Insurance info</span>
+    <span className="text-xs sm:text-sm text-gray-900 whitespace-nowrap">Insurance info</span>
   </div>
 </div>
-      <h3 className="text-lg font-medium mb-4">Insurance info</h3>
+      <h3 className="text-base sm:text-lg font-medium mb-4">Insurance info</h3>
       
-      <div className="space-y-4">
+      <div className="space-y-4 overflow-y-auto max-h-[35vh] sm:max-h-[40vh]">
         <div>
           <label className="block text-sm text-gray-600 mb-2">Do you have insurance?</label>
           <div className="flex gap-4">
@@ -144,7 +144,7 @@ const StepInsuranceInfo = ({ prevStep, formData, setFormData, onComplete }: any)
                 onChange={(e) => handleChange('hasInsurance', e.target.value)}
                 className="mr-2 text-teal-600"
               />
-              Yes
+              <span className="text-sm">Yes</span>
             </label>
             <label className="flex items-center">
               <input
@@ -155,7 +155,7 @@ const StepInsuranceInfo = ({ prevStep, formData, setFormData, onComplete }: any)
                 onChange={(e) => handleChange('hasInsurance', e.target.value)}
                 className="mr-2 text-teal-600"
               />
-              No
+              <span className="text-sm">No</span>
             </label>
           </div>
         </div>
@@ -203,17 +203,17 @@ const StepInsuranceInfo = ({ prevStep, formData, setFormData, onComplete }: any)
       </div>
 
       {/* Navigation */}
-      <div className="flex justify-between mt-6">
+      <div className="flex justify-between mt-6 sm:mt-8">
         <Button 
           variant="outline" 
           onClick={prevStep}
-          className="px-6 py-2 text-sm"
+          className="px-4 sm:px-6 py-2 sm:py-3 text-sm font-medium"
         >
           Back
         </Button>
         <Button 
           onClick={handleSubmit}
-          className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-2 text-sm"
+          className="bg-teal-600 hover:bg-teal-700 text-white px-4 sm:px-6 py-2 sm:py-3 text-sm font-medium"
         >
           Book Appointment
         </Button>
