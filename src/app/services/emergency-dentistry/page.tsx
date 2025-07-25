@@ -90,7 +90,7 @@ export default function EmergencyDentistryPage() {
           <div className="bg-gray-50 w-full flex flex-col items-center justify-center py-12 px-4 md:px-12 mb-8" >
             <Fade direction="up" duration={1000}>
               <h2 className="text-3xl md:text-3xl font-bold text-center mb-4">Fast, Reliable Emergency Dental Care When You Need It Most</h2>
-              <p className="max-w-3xl mx-auto text-lg md:text-xl mb-8 opacity-90">
+              <p className="max-w-3xl mx-auto text-lg md:text-lg mb-8 opacity-90">
                 At Maple Dental Harrisburg, we understand that dental emergencies can strike at any time. Our dedicated team is here to provide swift and effective care that relieves pain and prevents complications. Whether you're dealing with a cracked tooth, lost filling, or severe toothache, we’re prepared to act fast—with expert care and a compassionate touch. Patients from Harrisburg and surrounding areas trust us for urgent dental care that makes a difference.<br />Here’s what sets our emergency dental services apart:
               </p>
             </Fade>
