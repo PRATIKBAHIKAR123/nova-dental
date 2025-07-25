@@ -184,19 +184,19 @@ export default function EmergencyDentistryPage() {
             </div>
           </div>
           <div className='faq-section'>
-            <h4 className='text-secondary text-4xl text-center mb-8'>Emergency Dentistry Q&A</h4>
+            <h4 className='text-black text-4xl text-center mb-8'>Emergency Dentistry Q&A</h4>
             <div className="w-full max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="w-full space-y-6">
-                <AccordionItem value="q1" className="bg-gray-50 rounded-2xl shadow-md border-0 px-6 py-4 transition-all w-full">
-                  <AccordionTrigger className="faq-qn text-xl md:text-xl font-semibold text-primary py-6 px-2 rounded-2xl w-full">
+                <AccordionItem value="q1" className="bg-gray-50 rounded-md shadow-md border-0 px-2  transition-all w-full">
+                  <AccordionTrigger className="faq-qn text-xl md:text-xl font-semibold text-primary py-4 px-2 rounded-md w-full">
                     What is emergency dentistry?
                   </AccordionTrigger>
                   <AccordionContent className="faq-ans text-lg text-gray-700 px-2 pb-6 w-full">
                     Emergency dentistry provides rapid care for potentially serious but non-life-threatening oral health problems. If you lose a permanent tooth, develop a severe toothache, or damage a dental restoration, don’t wait to seek professional help. The sooner you make it to Maple Dental, the sooner you can minimize uncomfortable symptoms and restore your smile.
                   </AccordionContent>
                 </AccordionItem>
-                <AccordionItem value="q2" className="bg-gray-50 rounded-2xl shadow-md border-0 px-6 py-4 transition-all w-full">
-                  <AccordionTrigger className="faq-qn text-xl md:text-xl font-semibold text-primary py-6 px-2 rounded-2xl w-full">
+                <AccordionItem value="q2" className="bg-gray-50 rounded-md shadow-md border-0 px-2  transition-all w-full">
+                  <AccordionTrigger className="faq-qn text-xl md:text-xl font-semibold text-primary py-4 px-2 rounded-md w-full">
                     What conditions can benefit from emergency dentistry?
                   </AccordionTrigger>
                   <AccordionContent className="faq-ans text-lg text-gray-700 px-2 pb-6 w-full">
@@ -214,8 +214,8 @@ export default function EmergencyDentistryPage() {
                     <p className="mt-2">You might also benefit from emergency dentistry if you experience oral trauma due to a car accident, sports injury, or slip-and-fall.</p>
                   </AccordionContent>
                 </AccordionItem>
-                <AccordionItem value="q3" className="bg-gray-50 rounded-2xl shadow-md border-0 px-6 py-4 transition-all w-full">
-                  <AccordionTrigger className="faq-qn text-xl md:text-xl font-semibold text-primary py-6 px-2 rounded-2xl w-full">
+                <AccordionItem value="q3" className="bg-gray-50 rounded-md shadow-md border-0 px-2  transition-all w-full">
+                  <AccordionTrigger className="faq-qn text-xl md:text-xl font-semibold text-primary py-4 px-2 rounded-md w-full">
                     What should I do if I need emergency dental care?
                   </AccordionTrigger>
                   <AccordionContent className="faq-ans text-lg text-gray-700 px-2 pb-6 w-full">
@@ -224,8 +224,8 @@ export default function EmergencyDentistryPage() {
                     <strong>Damaged dental restoration:</strong> Collect all the broken pieces, clean them, and place them in a plastic bag. Call the office right away.
                   </AccordionContent>
                 </AccordionItem>
-                <AccordionItem value="q4" className="bg-gray-50 rounded-2xl shadow-md border-0 px-6 py-4 transition-all w-full">
-                  <AccordionTrigger className="faq-qn text-xl md:text-xl font-semibold text-primary py-6 px-2 rounded-2xl w-full">
+                <AccordionItem value="q4" className="bg-gray-50 rounded-md shadow-md border-0 px-2  transition-all w-full">
+                  <AccordionTrigger className="faq-qn text-xl md:text-xl font-semibold text-primary py-4 px-2 rounded-md w-full">
                     How can I preserve the health of my teeth and gums?
                   </AccordionTrigger>
                   <AccordionContent className="faq-ans text-lg text-gray-700 px-2 pb-6 w-full">

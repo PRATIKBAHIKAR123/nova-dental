@@ -234,25 +234,23 @@
   }
   
   .faq-section {
-    max-width: 80rem; /* max-w-7xl */
+    max-width: 60rem; /* max-w-7xl */
+    width: 60rem;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem;  /* px-4 */
-    padding-right: 1rem; /* px-4 */
-    padding-top: 1.5rem; /* py-6 */
-    padding-bottom: 1.5rem; /* py-6 */
+   
     .faq-qn{
       color: var(--primary);
-      font-size: 1.5rem !important; /* text-2xl */
+      font-size: 1rem !important; /* text-2xl */
     }
     .faq-title{
       color: var(--secondary);
-      font-size: 2.25rem; /* text-4xl */
+      font-size: 1.75rem; /* text-4xl */
       text-align: center;
     }
     .faq-ans {
-      font-size: 1.125rem; /* text-lg */
+      font-size: 1rem; /* text-lg */
       color: gray(500); /* text-gray-700 */
     }
   }
