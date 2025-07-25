@@ -1,8 +1,11 @@
+"use client"
+
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import React from 'react';
 import Reveal, { Fade, Zoom } from 'react-awesome-reveal';
 import ServiceSidebar from '@/components/ServiceSidebar';
+import BookCallBtn from '../book-call-btn';
 
 export default function OralSurgeryPage() {
     return (
@@ -12,11 +15,11 @@ export default function OralSurgeryPage() {
                 <div className='flex flex-col items-center gap-4 bg-white'>
                     <div className='details-page-header-section'>
                         <Fade direction='up' duration={1000}>
-                        <h1>Oral Surgery Specialist</h1>
+                        <h1>Oral Surgery in Harrisburg, PA</h1>
                         </Fade>
                         <Fade direction='down' duration={1000}>
                         <p>
-                            Oral Surgery for Newark and East Orange, NJ | Maple Dental | Cosmetic & Family Dentist
+                            Tooth Extractions & Wisdom Teeth Removal | Maple Dental | Oral Surgeon Near You
                         </p>
                         </Fade>
                         {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
@@ -48,89 +51,132 @@ export default function OralSurgeryPage() {
           <div className='desc-text-subtitle'>Oral Surgery</div>
           <h3 className='desc-text-title'>About Oral Surgery</h3>
           <p>
-            While most dental procedures are noninvasive, some situations require oral surgery. If you&aosp;re looking for a trusted dentist near you, Maple Dental provides a range of oral surgery services, including extractions, root canals, and dental implant placements. To schedule an appointment at their Newark or East Orange, New Jersey locations, call the office or book online today.
+           Oral surgery doesn't have to be stressful. At Maple Dental Harrisburg, we make it easy and comfortable for you. Whether you need a simple tooth pulled or wisdom teeth removed, we offer gentle and expert care in a safe environment. We proudly serve patients from Harrisburg (17110, 17109, 17111, 17112), Colonial Park (17109), Penbrook (17103), Paxtang (17111), Progress (17109, 17111), Lawnton (17111), and Linglestown (17112). Looking for a trusted oral surgeon or tooth extraction near you? You're in the right place.
           </p>
         </Fade>
       </div>
     </div>
-    <div className='why-us-section'>
-        <div className='why-us-descritption'>
-            <Fade cascade direction="up" delay={1000} duration={600}>
-        <div className='desc-subtitle'>
-         Top Reasons
-        </div>
-        <div className='desc-title'>
-            Why Choose Us
-        </div>
-        <div className='desc-points'>
-            <ul className='list-disc list-inside space-y-2'>
-                <li>Experienced & Gentle Dentists</li>
-                <li>State-of-the-Art Technology</li>
-                <li>Comprehensive Care</li>
-                <li>Convenient Locations</li>
-                <li>Flexible Scheduling</li>
-                <li>Insurance & Payment Options</li>
-            </ul>
-        </div>
-        </Fade>
-        </div>
-        <div className='why-us-img-section'>
-            <Zoom cascade damping={0.3} duration={800}>
-               <img src="/Images/banners/doctor-presenting-something-isolated-white-background.jpg" alt="dental" />
-               </Zoom>
-        </div>
-
-    </div>
-    <div className='faq-section'>
-           <h4 className='faq-title'>Oral Surgery Q&A</h4>
-            <Accordion type="multiple" defaultValue={['q1','q2','q3','q4']} className="w-full space-y-5">
+    <div className='wcu-section'>         
         
-        <AccordionItem value="q1">
+                    <div className='wcu-text-section'>
+                      <Fade cascade direction="up" delay={1000} duration={600}>
+                        <div className='wcu-subtitle'>
+                          Top Reasons
+                        </div>
+                        <div className='wcu-title'>
+                          Why Choose Maple Dental for Oral Surgery?
+                        </div>
+                        <div className='wcu-points-section'>
+                          <ul className='wcu-points'>
+                            <li>Gentle and safe extractions   </li>
+                            <li>Wisdom teeth removal with sedation options</li>
+                            <li>Modern technology for precise diagnosis</li>
+                            <li>Insurance accepted and payment plans available</li>
+                            <li>Friendly, experienced dental team</li>
+                          </ul>
+                        </div>
+                      </Fade>
+                    </div>
+                    <div className='wcu-img-section'>
+                      <Zoom cascade damping={0.3} duration={800}>
+                        <img src="/Images/banners/doctor-presenting-something-isolated-white-background.jpg" alt="dental" />
+                      </Zoom>
+                    </div>
+        
+                  </div>
+    <div className='faq-section'>
+           <h4 className='text-black text-4xl text-center mb-8'>Oral Surgery Q&A</h4>
+           <div className="faq-acc-container">
+            <Accordion type="single" className="w-full space-y-5">
+        
+        <AccordionItem value="q1" className="faq-acc">
           <AccordionTrigger className='faq-qn'>What is oral surgery?</AccordionTrigger>
           <AccordionContent className='faq-ans'>
-            Oral surgery uses specialized tools and treatment techniques to address problems affecting the teeth, gums, tongue, lips, or jaw. Dentists who perform oral surgery undergo four years of traditional dental school, followed by an additional two or three years of specialty training in surgical procedures.
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="q2">
-          <AccordionTrigger className='faq-qn'>What are some common types of oral surgery?</AccordionTrigger>
-          <AccordionContent className='faq-ans'>
-            <p>Maple Dental offers various types of oral surgery, including:</p>
-            <ul className='space-y-2 mt-2'>
-                <strong>Teeth extractions</strong>
-            <p className="mt-2">You might also benefit from emergency dentistry if you experience oral trauma due to a car accident, sports injury, or slip-and-fall.</p>
-            <strong>Root canal therapy</strong>
-            <p className="mt-2">Root canal therapy removes damaged or infected pulp from the center of a tooth. By removing the pulp, it’s possible to limit the pain, prevent the spread of infection, and preserve your natural tooth. Following the removal of the pulp, your provider covers your tooth with a dental crown. </p>
-            <strong>Dental implant placement</strong>
-            <p className='mt-2'>Dental implants are prosthetics that replace missing natural teeth. They’re inserted into your jaw during an outpatient procedure, fuse with your bone, and provide a foundation for dental restorations like crowns, bridges, or implant-retained overdentures.</p>
-            <strong>Gum grafts</strong>
-            <p className='mt-2'>If you have gum disease, like gingivitis or periodontitis, and it's caused your gum tissue to recede, your Maple Dental provider might recommend a gum graft. During this type of oral surgery, your provider removes a piece of healthy tissue from another part of your mouth and stitches it over your receding gums. </p>
+            <p>Oral surgery includes procedures like:</p>
+            <ul className='list-disc space-y-2 mt-2'>
+            <p className="mt-2">Simple and surgical tooth extractions</p>
+            <p className="mt-2">Wisdom teeth removal (including impacted cases) </p>
+            <p className='mt-2'>Minor surgeries for infected gums or tissue</p>
+            <p className='mt-2'>All procedures are done with patient comfort in mind</p>
             </ul>
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="q3">
-          <AccordionTrigger className='faq-qn'>Will oral surgery benefit me?</AccordionTrigger>
+        <AccordionItem value="q2" className="faq-acc">
+          <AccordionTrigger className='faq-qn'>When is a tooth extraction necessary?</AccordionTrigger>
           <AccordionContent className='faq-ans'>
-            <p>To determine if you’re a candidate for oral surgery, your Maple Dental provider does an oral exam, reviews your dental health history, and asks about your symptoms, including when they started and if any activities like biting or chewing make them worse. Afterward, they order a series of oral X-rays to assess parts of your mouth invisible to the naked eye.</p>
-            <p className="mt-2">Once your provider gathers the necessary information, they can make recommendations and design a custom surgical treatment plan.</p>
+            <p>You may need a tooth pulled if it is:</p>
+            <ul className='list-disc space-y-2 mt-2'>
+            <p className="mt-2">Severely decayed or broken</p>
+            <p className="mt-2">Causing crowding or bite issues</p>
+            <p className='mt-2'>Affected by gum disease</p>
+            <p className='mt-2'>Impacted or infected (like wisdom teeth)</p>
+            </ul>
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="q4">
-          <AccordionTrigger className='faq-qn'>Is oral surgery safe?</AccordionTrigger>
+        <AccordionItem value="q3" className="faq-acc">
+          <AccordionTrigger className='faq-qn'>What is involved in wisdom teeth removal?</AccordionTrigger>
+          <AccordionContent className='faq-ans'>
+            <p>Wisdom teeth often don’t grow in properly. We offer safe, effective removal, whether the teeth are fully erupted or impacted under the gums. Sedation is available to keep you calm and pain-free</p>
+            
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="q4" className="faq-acc">
+          <AccordionTrigger className='faq-qn'>Does oral surgery hurt?</AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>
-                Oral surgery is safe and usually well-tolerated. To ensure your comfort during treatment, your provider administers a local anesthetic. If you experience dental anxiety or have a low pain threshold, they can also provide sedation dentistry. Sedation dentistry uses prescription medication to help you relax while undergoing dental treatment. 
+                No — we use local anesthesia and sedation options to ensure your visit is painless. Our team is gentle and experienced with nervous patients.
             </p>
-            <p className='mt-2'>
-                To see if you’re a candidate for oral surgery, make an appointment at Maple Dental by calling the office, or clicking the online booking tool today.
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="q5" className="faq-acc">
+          <AccordionTrigger className='faq-qn'>How do I prepare for oral surgery?</AccordionTrigger>
+          <AccordionContent className='faq-ans'>
+            <p>
+                Before surgery:
             </p>
+            <ul className='list-disc space-y-2 mt-2'>
+            <p className="mt-2">Eat light (if not sedated)</p>
+            <p className="mt-2">Arrange for someone to drive you home (if sedated)</p>
+            <p className='mt-2'>Avoid smoking or alcohol</p>
+            <p className='mt-2'>Plan soft meals for after the procedure</p>
+            </ul>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="q6" className="faq-acc">
+          <AccordionTrigger className='faq-qn'>What is the recovery like?</AccordionTrigger>
+          <AccordionContent className='faq-ans'>
+            <ul className='list-disc space-y-2 mt-2'>
+            <p className="mt-2">Minor swelling or soreness for 1–3 days</p>
+            <p className="mt-2">Pain relief with over-the-counter meds</p>
+            <p className='mt-2'>Most patients return to normal within a few days</p>
+            <p className='mt-2'>We provide full post-op instructions to support healing</p>
+            </ul>
           </AccordionContent>
         </AccordionItem>
 
       </Accordion>
+      </div>
     </div>
+     <div className="features-section">
+                <Fade direction="up" duration={1000}>
+                  <h2 className="features-heading">
+                    Need an Oral Surgeon in Harrisburg?
+                  </h2>
+                  <p className="features-description">
+                    If you’re looking for oral surgery near Harrisburg — whether it’s a tooth extraction, wisdom tooth removal, or other surgical dental care — Maple Dental is here for you.
+                  </p>
+                  <p className="features-description">
+                    Call today to book your consultation.
+ We proudly serve: Harrisburg, Colonial Park, Penbrook, Paxtang, Progress, Lawnton, and Linglestown.
+                  </p>
+                </Fade>
+              </div>
+              <BookCallBtn/>
         </div>
             </main>
         </div>

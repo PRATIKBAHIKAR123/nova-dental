@@ -63,10 +63,10 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 w-full z-50 bg-white shadow transition-all duration-300 ${
-        isScrolled ? "py-2 md:py-4" : "py-3 md:py-6"
+        isScrolled ? "py-2 lg:py-4" : "py-3 lg:py-6"
       }`}
     >
-      <div className=" mx-auto flex items-center justify-between px-4 md:px-8">
+      <div className=" mx-auto flex items-center justify-between px-4 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image
@@ -74,19 +74,19 @@ export default function Header() {
             alt="Maple Dental Logo"
             width={isScrolled ? 180 : 220}
             height={isScrolled ? 90 : 110}
-            className="hidden md:block transition-all duration-300"
+            className="hidden lg:block transition-all duration-300"
           />
           <Image
             src="/Images/Maple.png"
             alt="Maple Dental Logo"
             width={isScrolled ? 32 : 42}
             height={isScrolled ? 18 : 24}
-            className="block md:hidden transition-all duration-300"
+            className="block lg:hidden transition-all duration-300"
           />
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-6 text-sm font-medium text-gray-700">
+        <nav className="hidden lg:flex gap-6 text-sm font-medium text-gray-700">
           <Link href="/" className="hover:text-primary transition">
             Home
           </Link>
@@ -168,7 +168,7 @@ export default function Header() {
         </nav>
 
         {/* Desktop Buttons */}
-        <div className="hidden md:flex gap-3">
+        <div className="hidden lg:flex gap-3">
           <button className="border border-primary text-primary rounded-lg px-4 py-3 hover:opacity-50 text-sm font-medium transition">
             717-745-2700
           </button>
@@ -178,7 +178,7 @@ export default function Header() {
         </div>
 
         {/* Mobile Buttons and Menu Toggle */}
-        <div className="flex md:hidden items-center gap-2">
+        <div className="flex lg:hidden items-center gap-2">
           {/* Mobile Action Buttons */}
           <button className="border border-primary text-primary rounded-lg px-4 py-3 hover:bg-blue-50 text-xs font-medium transition">
             717-745-2700
@@ -217,14 +217,14 @@ export default function Header() {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
+          className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
           onClick={closeMobileMenu}
         />
       )}
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-80 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 md:hidden ${
+        className={`fixed top-0 right-0 h-full w-80 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 lg:hidden ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

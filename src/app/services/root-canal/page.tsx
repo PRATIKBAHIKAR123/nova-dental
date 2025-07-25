@@ -162,6 +162,16 @@ export default function RootCanalPage() {
                   </Accordion>
                 </div>
               </div>
+              <div className="features-section">
+                              <Fade direction="up" duration={1000}>
+                                <h2 className="features-heading">
+                                  Pain-Free Root Canals in Harrisburg — Book Now
+                                </h2>
+                                <p className="features-description">
+                                  If you're experiencing tooth pain, don't wait. The team at Maple Dental Harrisburg offers gentle, effective root canal treatment designed to save your natural teeth and eliminate discomfort. Call us today to schedule your consultation and take the first step toward a healthier smile.
+                                </p>
+                              </Fade>
+                            </div>
               <BookCallBtn/>
         </div>
             </main>

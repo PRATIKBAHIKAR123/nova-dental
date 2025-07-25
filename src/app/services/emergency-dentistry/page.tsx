@@ -221,6 +221,16 @@ export default function EmergencyDentistryPage() {
           {/* Call to Action Section */}
 
         </div>
+        <div className="features-section">
+                        <Fade direction="up" duration={1000}>
+                          <h2 className="features-heading">
+                            Need Emergency Dental Help in Harrisburg?
+                          </h2>
+                          <p className="features-description">
+                            If you’re dealing with sudden dental pain or injury, don’t wait. Our expert emergency dental team is just a phone call away. Maple Dental Harrisburg is here to treat you with urgency, compassion, and care.
+                          </p>
+                        </Fade>
+                      </div>
           <BookCallBtn/>
       </main>
     </div>

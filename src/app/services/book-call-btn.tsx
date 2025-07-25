@@ -8,7 +8,7 @@ const BookCallBtn: React.FC = () => {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
 
     return (
-        <Fade direction="up" triggerOnce className='bg-white'>
+        <Fade direction="up" triggerOnce className='bg-white w-full'>
                     <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto">
                       <div className="hidden md:flex gap-3">
                         <button className="w-full flex flex-col border border-primary text-primary rounded-lg px-4 py-3 hover:opacity-50 text-sm font-medium transition">
