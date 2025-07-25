@@ -78,7 +78,7 @@ export default function HomePage() {
 
     return (
         <div>
-            <section className="relative w-full h-[92vh] md:h-[92vh] overflow-hidden bg-gradient-to-br from-primary via-primary-500 to-secondary">
+            <section className="relative w-full h-140 md:h-[92vh] min-h-[600px] max-h-[900px] overflow-hidden bg-gradient-to-br from-primary via-primary-500 to-secondary">
 
                 {/* Decorative Background Elements */}
                 <div className="absolute inset-0 overflow-hidden">
@@ -132,26 +132,20 @@ export default function HomePage() {
                         className={`absolute inset-0 transition-all duration-700 ease-in-out ${idx === current ? 'opacity-100 z-10' : 'opacity-0 z-0'
                             }`}
                     >
-                        <div className="container mx-auto px-3 md:px-6 h-full flex items-start pt-6 md:pt-0 md:items-center">
+                        <div className="container mx-auto px-3 md:px-6 h-full flex items-start pt-12 md:pt-0 md:items-center">
                             <div className="w-full flex flex-col md:flex-row items-center gap-8 md:gap-16">
 
                                 {/* Left Content */}
                                 <div className="flex-1 text-white z-20">
                                     <Fade cascade direction='up' delay={1000} duration={600}>
                                         <div className="max-w-lg">
-                                            <h1 className="text-2xl md:text-3xl text-center md:text-left lg:text-5xl font-semibold mb-6 leading-tight">
+                                            <h1 className="text-3xl md:text-3xl text-center md:text-left lg:text-5xl font-semibold mb-6 leading-tight">
                                                 {banner.title}
                                             </h1>
                                             <p className="text-md md:text-xl lg:text-2xl text-center md:text-left font-light leading-relaxed opacity-95">
                                                 {banner.subtitle}
                                             </p>
 
-                                            {/* Logo Placeholder */}
-                                            {/* <div className="mt-8 mb-8">
-                    <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-2 inline-block border border-white/20">
-                      <span className="text-white font-semibold text-md">Lorem</span>
-                    </div>
-                  </div> */}
 
                                             {/* Call to Action */}
                                             <div className="flex flex-col sm:flex-row gap-4 mt-4">
@@ -164,7 +158,7 @@ export default function HomePage() {
                                 </div>
 
                                 {/* Right Content - Image */}
-                                <div className="flex-1 relative z-20">
+                                <div className="flex-1 relative z-20 w-full max-w-lg lg:max-w-none">
                                     <div className="relative max-w-full mx-auto">
                                         {/* Image Container with curved background */}
                                         <Zoom cascade damping={0.3} duration={800}>
@@ -176,18 +170,6 @@ export default function HomePage() {
                                                         className="w-full h-64 md:h-110 lg:h-140 object-cover rounded-sm md:rounded-xl shadow-lg"
                                                     />
                                                 </div>
-
-                                                {/* Special Offer Badge */}
-                                                {/* <div className="absolute -top-20 -right-28 z-5">
-                                                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-0 shadow-2xl border border-white/20">
-                                                        <img
-                                                            src={banner.image2}
-                                                            alt={banner.title}
-                                                            className="w-32 md:w-48 lg:w-48 h-42 md:h-58 lg:h-64 object-cover rounded-xl shadow-lg"
-                                                        />
-                                                    </div>
-                                                </div> */}
-
                                                 {/* Decorative elements around image */}
                                                 <div className="absolute -bottom-4 -left-4 w-8 h-8 bg-white/20 rounded-full"></div>
                                                 <div className="absolute -top-2 left-8 w-4 h-4 bg-white/25 rounded-full"></div>
@@ -274,7 +256,7 @@ export default function HomePage() {
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-20 px-6 md:px-8">
 
                     {/* Left Side - Image */}
-                    <Slide direction="right" className="w-full md:w-1/2 h-120">
+                    <Slide direction="right" className="w-full md:w-1/2 h-64 md:h-120">
                         <img
                             src="/Images/banners/About Us (1).jpg"
                             alt="dental-banner"
@@ -360,11 +342,11 @@ export default function HomePage() {
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-20 px-6 md:px-8">
 
                     {/* Left Side - Image */}
-                    <Slide direction="right" className="w-full md:w-1/2 h-120">
+                    <Slide direction="right" className="w-full md:w-1/2 h-64 md:h-120">
                         <img
                             src="/Images/banners/Insurance.jpg"
                             alt="dental-banner"
-                            className="rounded-md md:rounded-xl w-full h-full object-cover shadow-md"
+                            className="rounded-md md:rounded-xl w-full h-full object-fit shadow-md"
                         />
                     </Slide>
 
