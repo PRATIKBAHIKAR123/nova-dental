@@ -10,14 +10,14 @@ const BookCallBtn: React.FC = () => {
     return (
         <Fade direction="up" triggerOnce className='bg-white w-full'>
                     <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto">
-                      <div className="hidden md:flex gap-3">
-                        <button className="w-full flex flex-col border border-primary text-primary rounded-lg px-4 py-3 hover:opacity-50 text-sm font-medium transition">
-                          <span className="text-base">Call Us for Booking</span>
+                      <div className="flex gap-3">
+                        <button className="w-full flex flex-col border border-primary text-primary rounded-lg px-2 md:px-4 py-3 hover:opacity-50 text-sm font-medium transition">
+                          <span className="text-[12px] md:text-base">Call Us for Booking</span>
                           717-745-2700
                         </button>
-                        <button onClick={() => setIsBookingOpen(true)} className="w-full flex flex-col bg-primary text-white rounded-lg px-4 py-3 hover:bg-secondary text-sm font-medium transition">
+                        <button onClick={() => setIsBookingOpen(true)} className="w-full flex flex-col bg-primary text-white rounded-lg px-1 md:px-4 py-3 hover:bg-secondary text-sm font-medium transition">
                           Book Online
-                          <span className="text-base">Click Here for Appointment</span>
+                          <span className="text-[10px] md:text-base">Click Here for Appointment</span>
                         </button>
                       </div>
                     </section>
