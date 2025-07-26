@@ -115,13 +115,13 @@ export default function AboutUs() {
             </h2>
           </Fade>
           <Fade delay={500}>
-            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-              Whether you need a routine checkup or advanced cosmetic treatment, our expert team offers comprehensive services using the latest dental technology. From preventive care to smile makeovers, we tailor each treatment plan to your unique needs and goals.
+            <p className="text-base sm:text-lg leading-relaxed">
+              Looking for a reliable dentist near you in Harrisburg, PA? At Maple Dental Harrisburg, we’re committed to delivering high-quality, affordable dental care in a comfortable and welcoming environment. Located at 2017 Eg Drive, Suite 200, our practice proudly serves patients from Harrisburg (17110, 17109, 17111, 17112), Colonial Park (17109), Penbrook (17103), Paxtang (17111), Progress (17109, 17111), Lawnton (17111), and Linglestown (17112) - helping families and individuals maintain healthy, confident smiles.
             </p>
           </Fade>
           <Fade delay={700}>
-            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-              You need to brush your teeth everyday for healthy teeth and smile.
+            <p className="text-base sm:text-lg leading-relaxed">
+              Whether you need a routine checkup or advanced cosmetic treatment, our expert team offers comprehensive services using the latest dental technology. From preventive care to smile makeovers, we tailor each treatment plan to your unique needs and goals.
             </p>
           </Fade>
 
@@ -147,7 +147,7 @@ export default function AboutUs() {
       </section>
 
       {/* Services/Pricing Section */}
-      <Slide direction="left" triggerOnce>
+      {/* <Slide direction="left" triggerOnce>
         <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {services.map((service, index) => {
@@ -180,7 +180,7 @@ export default function AboutUs() {
             })}
           </div>
         </section>
-      </Slide>
+      </Slide> */}
 
       {/* Why Choose Us Section */}
       <Slide direction="right" triggerOnce>
@@ -195,9 +195,12 @@ export default function AboutUs() {
           </div>
           <div className="flex-1 lg:pl-12 order-1 lg:order-2">
             <span className="uppercase tracking-widest text-xs sm:text-sm font-semibold text-primary">Why we best</span>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4 sm:mb-6 text-primary mt-2">People Choose Us</h2>
-            <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 leading-relaxed">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4 sm:mb-6 text-primary mt-2">Why Patients Choose Maple Dental Harrisburg</h2>
+            <p className="text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
               Each room is equipped with modern technology to ensure early diagnosis and minimally invasive procedures. We strive to make every visit as comfortable and efficient as possible, with a strong focus on patient education, preventative care, and long-term oral health.
+            </p>
+            <p className="text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
+              We’re more than just your neighborhood dentist — we’re your partners in oral health. Here's why patients from across Harrisburg and nearby areas trust us:
             </p>
             <div className="space-y-4 sm:space-y-6">
               {features.map((feature, index) => (
@@ -205,12 +208,12 @@ export default function AboutUs() {
                   <img 
                     src={feature.icon} 
                     alt={feature.title} 
-                    className="w-10 h-10 sm:w-12 sm:h-12 mt-1 flex-shrink-0" 
+                    className="w-10 h-16 sm:w-12 sm:h-12 mt-1 flex-shrink-0" 
                     loading="lazy"
                   />
                   <div>
                     <h3 className="text-base sm:text-lg font-bold text-primary mb-1">{feature.title}</h3>
-                    <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{feature.desc}</p>
+                    <p className="text-xs sm:text-sm leading-relaxed">{feature.desc}</p>
                   </div>
                 </div>
               ))}
@@ -238,7 +241,7 @@ export default function AboutUs() {
                   loading="lazy"
                 />
                 <h4 className="text-sm sm:text-base lg:text-lg font-bold text-primary mb-1">{member.name}</h4>
-                <span className="text-xs sm:text-sm text-muted-foreground">{member.role}</span>
+                <span className="text-xs sm:text-sm">{member.role}</span>
               </Link>
             ))}
           </div>
