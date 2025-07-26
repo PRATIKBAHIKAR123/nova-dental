@@ -8,8 +8,8 @@ const BookCallBtn: React.FC = () => {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
 
     return (
-        <Fade direction="up" triggerOnce className='bg-white w-full'>
-                    <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto">
+        <Fade direction="up" triggerOnce className='w-full'>
+                    <section className="py-6 px-4 md:px-16 max-w-7xl mx-auto">
                       <div className="flex gap-3">
                         <button className="w-full flex flex-col border border-primary text-primary rounded-lg px-2 md:px-4 py-3 hover:opacity-50 text-sm font-medium transition">
                           <span className="text-[12px] md:text-base">Call Us for Booking</span>

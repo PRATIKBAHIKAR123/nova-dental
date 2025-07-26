@@ -136,7 +136,7 @@ export default function HomePage() {
                             <div className="w-full flex flex-col md:flex-row items-center gap-8 md:gap-16">
 
                                 {/* Left Content */}
-                                <div className="flex-1 text-white z-20">
+                                <div className="flex-1 text-white z-20 order-2 md:order-1">
                                     <Fade cascade direction='up' delay={1000} duration={600}>
                                         <div className="max-w-lg">
                                             <h1 className="text-3xl md:text-3xl text-center md:text-left lg:text-5xl font-semibold mb-6 leading-tight">
@@ -158,7 +158,7 @@ export default function HomePage() {
                                 </div>
 
                                 {/* Right Content - Image */}
-                                <div className="flex-1 relative z-20 w-full max-w-lg lg:max-w-none">
+                                <div className="flex-1 relative z-20 w-full max-w-lg md:order-2 lg:max-w-none">
                                     <div className="relative max-w-full mx-auto">
                                         {/* Image Container with curved background */}
                                         <Zoom cascade damping={0.3} duration={800}>
@@ -366,7 +366,7 @@ export default function HomePage() {
 
                         <Fade delay={700}>
                             <p className="text-base text-left leading-relaxed">
-                                <ul className='list-disc gap-3 mt-2'>
+                                <ul className='list-disc gap-3 mt-2 p-6'>
                                 <li><Fade delay={800}>$55 Emergency Dental Visit (Includes Exam & X-ray)</Fade></li>
                                 <li><Fade delay={1000}>$79 New Patient Special (Exam , Cleaning + X-rays)</Fade></li>
                                 <li><Fade delay={1200}>Interest-Free Financing Available (Up to 12 Months)</Fade></li>

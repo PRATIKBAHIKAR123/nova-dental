@@ -60,10 +60,10 @@ export default function FloatingPromo() {
 
             {/* Text Content */}
             <div className="flex-1">
-              <div className="text-gray-800 font-bold text-base">
+              <div className="text-gray-800 font-semibold text-sm md:text-base">
                 $299 Teeth Whitening Special
               </div>
-              <div className="text-gray-600 text-sm">Someone just claimed this offer</div>
+              <div className="text-gray-600 md:text-sm text-[10px]">Someone just claimed this offer</div>
               <div className="text-gray-400 text-xs">10 min ago</div>
             </div>
 

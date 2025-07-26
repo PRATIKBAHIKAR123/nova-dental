@@ -54,7 +54,7 @@ export default function Footer() {
               <li><Link href="/privacy-policy" className="hover:underline">Privacy Policy</Link></li>
               {/* <li><Link href="/accessibility" className="hover:underline">Accessibility</Link></li> */}
               <li><Link href="/contact-us" className="hover:underline">Contact Us</Link></li>
-              <li><Link href="/locations" className="hover:underline">Locations</Link></li>
+              <li><Link href="/service-areas" className="hover:underline">Service Areas</Link></li>
               {/* <li><Link href="/services/endodontics" className="hover:underline">Endodontics</Link></li>
               <li><Link href="/services/same-day-dentistry" className="hover:underline">Same-Day Dentistry</Link></li> 
               <li><Link href="/services/painless-treatment" className="hover:underline">Painless Treatment</Link></li> 

@@ -1,10 +1,10 @@
 "use client"
 
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { services } from "@/app/services/serviceList";
-import { Menu, X } from "lucide-react";
+import { Menu, MenuIcon, X } from "lucide-react";
 
 interface Service {
   name: string;
@@ -14,6 +14,7 @@ interface Service {
 
 export default function ServiceSidebar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -23,18 +24,27 @@ export default function ServiceSidebar() {
     setIsMobileMenuOpen(false);
   };
 
+    useEffect(() => {
+      const onScroll = () => {
+        setIsScrolled(window.scrollY > 20);
+      };
+  
+      window.addEventListener("scroll", onScroll);
+      return () => window.removeEventListener("scroll", onScroll);
+    }, []);
+
   return (
     <>
       {/* Mobile Menu Toggle Button - Only visible on mobile */}
-      <div className="lg:hidden fixed top-20 left-4 z-50">
+      {!isScrolled?<div className="lg:hidden fixed bottom-2 left-4 z-50">
         <button
           onClick={toggleMobileMenu}
           className="bg-[var(--primary)] text-white p-3 rounded-xl shadow-lg hover:opacity-90 transition-opacity duration-200"
           aria-label="Toggle services menu"
         >
-          {isMobileMenuOpen ? <X size={20} /> : <span>Our Services</span>}
+          {isMobileMenuOpen ? <X size={20} /> : <span>{isScrolled?<MenuIcon/>:<span>Our Services</span>}</span>}
         </button>
-      </div>
+      </div>:null}
 
       {/* Mobile Backdrop - Only visible when mobile menu is open */}
       {isMobileMenuOpen && (
@@ -78,13 +88,13 @@ export default function ServiceSidebar() {
 
         {/* Navigation - Your existing design unchanged */}
         <nav className="flex-1 px-4 py-2">
-          <ul className="space-y-2">
+          <ul className="space-y-1">
             {services.map((service: Service) => (
               <li key={service.name}>
                 <Link
                   href={service.link}
                   onClick={closeMobileMenu} // Close mobile menu when service is selected
-                  className="flex items-center gap-2 rounded-xl p-4 border border-gray-200 shadow-sm bg-white transition-all duration-200 group hover:bg-[var(--primary)] hover:text-white hover:border-[var(--primary)] focus:bg-[var(--primary)] focus:text-white focus:border-[var(--primary)] w-full overflow-hidden"
+                  className="flex items-center gap-2 rounded-xl py-2 px-4 border border-gray-200 shadow-sm bg-white transition-all duration-200 group hover:bg-[var(--primary)] hover:text-white hover:border-[var(--primary)] focus:bg-[var(--primary)] focus:text-white focus:border-[var(--primary)] w-full overflow-hidden"
                   style={{ boxShadow: '0 2px 8px 0 rgba(0,0,0,0.05)' }}
                 >
                   <img
@@ -103,9 +113,9 @@ export default function ServiceSidebar() {
       </aside>
 
       {/* Optional: Mobile Service Tabs at Bottom - Alternative approach */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg z-30 overflow-x-scroll">
+      {/* <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg z-30 overflow-x-scroll">
         <div className="flex px-4 py-2 gap-2 min-w-max">
-          {services.map((service: Service) => ( // Show only first 4 services
+          {services.map((service: Service) => ( 
             <Link
               key={service.name}
               href={service.link}
@@ -117,12 +127,12 @@ export default function ServiceSidebar() {
                 className="w-5 h-5 object-contain"
               />
               <span className="text-xs font-medium text-center leading-tight text-gray-700">
-                {service.name} {/* Show only first word */}
+                {service.name} 
               </span>
             </Link>
           ))}
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

@@ -50,7 +50,7 @@ export default function EmergencyDentistryPage() {
   return (
     <div className='flex min-h-screen bg-gray-50'>
       <ServiceSidebar />
-      <main className='ml-1 flex-1 overflow-y-auto p-0 md:p-4'>
+      <main className='bg-white ml-1 flex-1 overflow-y-auto p-0 md:p-4'>
         <div className='flex flex-col items-center gap-4 bg-white'>
           <div className='details-page-header-section'>
             <Fade direction='up' duration={1000}>
@@ -229,9 +229,10 @@ export default function EmergencyDentistryPage() {
                           <p className="features-description">
                             If you’re dealing with sudden dental pain or injury, don’t wait. Our expert emergency dental team is just a phone call away. Maple Dental Harrisburg is here to treat you with urgency, compassion, and care.
                           </p>
+                          <BookCallBtn/>
                         </Fade>
                       </div>
-          <BookCallBtn/>
+          
       </main>
     </div>
   );
